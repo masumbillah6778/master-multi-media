@@ -1,1 +1,59 @@
+@mixin prefix ($property, $value, $prefixValue:false) {
+    $prefixes: -o-, -ms-, -moz-, -webkit-;
+    #{$property}: $value;
+    @each $prefix in $prefixes {
+        #{$prefix}#{$property}: if($prefixValue, $prefix + $value, $value);
+    }
+}
 
+html,
+body {
+    @include prefix(text-size-adjust, none);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(black, .5);
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    @media (min-width: 768px) {
+        position: fixed;
+        width: 100%;
+    }
+    input {
+        @include prefix(appearance, none);
+        background-color: white;
+        border-radius: 1em;
+        border: 1px solid lightgray;
+        box-shadow: 0 1px 2px rgba(black, .5) inset;
+        box-sizing: border-box;
+        font-size: inherit;
+        height: 2em;
+        max-width: 728px;
+        outline: 0;
+        padding: 0 .5em;
+        width: 100%;
+    }
+}
+
+.content {
+    background-color: white;
+    margin: 0 auto;
+    max-width: 768px;
+    box-sizing: border-box;
+    padding: 20px;
+    @media (min-width: 768px) {
+        padding-top: 92px;
+    }
+}
+
+.highlight {
+    background-color: yellow;
+    border-radius: .125em;
+}
