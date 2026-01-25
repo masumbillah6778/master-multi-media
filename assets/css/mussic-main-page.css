@@ -1,5 +1,5 @@
 @import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
-@import url('https://masumbillah6778.github.io/fonts/bangla/english-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
 
 :root {
   --body-color: #E4E9F7;
@@ -77,9 +77,10 @@ nav .nav-bar .sidebarOpen {
 }
 
 nav .nav-bar .logo a {
-  font-size: 50px;
-  font-weight: bold;
   color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'sonsieone';
   text-decoration: none;
 }
 
@@ -97,11 +98,43 @@ nav .nav-bar .logo a {
   list-style: none;
 }
 
+.nav-bar .nav-links li i {
+  color: yellow;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
 .nav-links li a {
-  position: relative;
+  color: white;
   font-size: 17px;
   font-weight: 400;
-  color: white;
+  position: relative;
   text-decoration: none;
   padding: 10px;
 }
@@ -267,16 +300,16 @@ body.dark .search-field::before {
 }
 
 .search-field input {
+  color: var(--search-text);
+  background-color: var(--search-bar);
   width: 100%;
   height: 100%;
   padding: 0 45px 0 15px;
+  font-size: 14px;
+  font-weight: 400;
   outline: none;
   border: none;
   border-radius: 4px;
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--search-text);
-  background-color: var(--search-bar);
 }
 
 body.dark .search-field input {
@@ -297,11 +330,7 @@ body.dark .search-field i{
 
 
 
-
-
-
-
-
+/*======================================= Main =======================================*/
 main {
   background-color: hite;
   width: 100%;
@@ -321,75 +350,32 @@ main {
   height: 100%;
   border: 4px solid red;
 }
+  
+
+#about-us-section {
+  padding-bottom: 0px;
+  border-radius: 0px;
+  order: 4px solid blue;
+}
+
+.about-us-container {
+  margin: 0;
+}
 
 
-
-/*======================================== Audio ========================================*/
 
 .heading {
   color: red;
-  padding: 10px;
-  font-size: 30px;
+  padding-bottom: 2px;
+  font-size: 25px;
   font-family: 'sonsieone';
   font-weight: bold;
   text-align: center;
-	animation: Color 6s linear infinite;
-  -webkit-animation: animation 4s ease-in-out infinite;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
 }
 
-@keyframes animation {
-  0% {
-    color: green;
-  }
-  
-  20% {
-    color: red;
-  }
-  
-  40% {
-    color: yellow;
-  }
-  
-  60% {
-    color: blue;
-  }
-  
-  80% {
-    color: magenta;
-  }
-  
-  100% {
-    color: gold;
-  }
-}
-
-@-moz-keyframes animation {
-  0% {
-    color: green;
-  }
-  
-  20% {
-    color: red;
-  }
-  
-  40% {
-    color: yellow;
-  }
-  
-  60% {
-    color: blue;
-  }
-  
-  80% {
-    color: magenta;
-  }
-  
-  100% {
-    color: gold;
-  }
-}
-
-@-webkit-keyframes animation {
+@keyframes text-animation {
   0% {
     color: green;
   }
