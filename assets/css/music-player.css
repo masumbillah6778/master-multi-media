@@ -1,0 +1,1414 @@
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
+
+:root {
+  --body-color: #E4E9F7;
+  --nav-color: #4070F4;
+  --side-nav: #010718;
+  --text-color: #FFF;
+  --search-bar: #F2F2F2;
+  --search-text: #010718;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+body {
+  background-color: var(--body-color);
+  width: 100%;
+  height: 100vh;
+  border: 4px solid red;
+}
+
+body.dark {
+  --body-color: #18191A;
+  --nav-color: #242526;
+  --side-nav: #242526;
+  --text-color: #CCC;
+  --search-bar: #242526;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.main-content nav {
+  background-color: #006400;
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  -index: 100;
+  border: 2px solid red;
+}
+
+body.dark .main-content nav {
+  background-color: #242526;
+}
+
+.main-content nav .nav-bar {
+  background-color: green;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body.dark .main-content nav .nav-bar {
+  background-color: red;
+}
+
+nav .nav-bar .sidebarOpen {
+  color: white;
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+nav .nav-bar .logo a {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'sonsieone';
+  text-decoration: none;
+}
+
+.menu .logo-toggle {
+  display: none;
+}
+
+.nav-bar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .nav-links li {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.nav-bar .nav-links li i {
+  color: yellow;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-links li a.active {
+  background-color: red;
+}
+
+body.dark .nav-links li a.active {
+  background-color: green;
+}
+
+.nav-links li a::before {
+  content: '';
+  background-color: yellow;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.nav-links li:hover a::before {
+  opacity: 1;
+}
+
+.nav-bar .darkLight-searchBox {
+  display: flex;
+  align-items: center;
+}
+
+.darkLight-searchBox .dark-light {
+  background-color: red;
+  width: 50px;
+  height: 25px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+body.dark .darkLight-searchBox .dark-light {
+  background-color: green;
+}
+
+.bx.bx-moon.moon::before {
+  color: yellow;
+  margin-left: -20px;
+}
+
+.bx.bx-sun.sun::before {
+  color: white;
+  margin-left: 20px;
+}
+
+.darkLight-searchBox .searchToggle {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.searchToggle i {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-light i {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-light i.sun {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dark-light.active i.sun {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+  color: #000;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchToggle i.cancel {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchToggle.active i.cancel {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.searchToggle.active i.search {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchBox {
+  position: relative;
+}
+
+.searchBox .search-field {
+  background-color: blue;
+  position: absolute;
+  bottom: -85px;
+  right: 5px;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-radius: 6px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+body.dark .searchBox .search-field {
+  background-color: white;
+}
+
+.searchToggle.active ~ .search-field {
+  bottom: -74px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-field::before {
+  background-color: red;
+  content: '';
+  position: absolute;
+  right: 14px;
+  top: -4px;
+  height: 12px;
+  width: 12px;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+body.dark .search-field::before {
+  background-color: green;
+}
+
+.search-field input {
+  color: var(--search-text);
+  background-color: var(--search-bar);
+  width: 100%;
+  height: 100%;
+  padding: 0 45px 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+body.dark .search-field input {
+  color: var(--text-color);
+}
+
+.search-field i{
+  position: absolute;
+  color: var(--nav-color);
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+body.dark .search-field i{
+  color: var(--text-color);
+}
+
+
+
+/*======================================= Main =======================================*/
+main {
+  background-color: hite;
+  width: 100%;
+  height: 600px;
+  padding: 10px;
+  border: 2px solid blue;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  border: 4px solid blue;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  border: 4px solid red;
+}
+  
+
+#about-us-section {
+  padding-bottom: 0px;
+  border-radius: 0px;
+  order: 4px solid blue;
+}
+
+.about-us-container {
+  margin: 0;
+}
+
+
+
+.heading {
+  color: red;
+  padding-bottom: 2px;
+  font-size: 25px;
+  font-family: 'sonsieone';
+  font-weight: bold;
+  text-align: center;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
+@-moz-keyframes animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
+@-webkit-keyframes animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
+ 
+
+/*======================================= Main Music Box =======================================*/
+.main-music-box {
+  width: 100%;
+  border: 2px solid red;
+}
+
+.music-box {
+  background-image: url(https://github.com/masumbillah6778/image/raw/main/tania-thumbnail.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: ;
+  margin: 0;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  border: 3px solid blue;
+}
+
+.wrapper i {
+  cursor: pointer;
+}
+
+.wrapper .top-bar,
+.progress-area .song-timer,
+.controls,
+.wrapper .music-list .music-list-header ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-bar i {
+  font-size: 30px;
+  color: white
+}
+
+.top-bar span {
+  color: yellow;
+  margin-left: -3px;
+  font-size: 20px;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+}
+
+.img-area {
+  width: 50%;
+  aspect-ratio: 16 / 9;
+  /*height: 256px;*/
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: block;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px var(--lightbshadow);
+}
+
+.img-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-area:hover {
+  text-decoration: none;
+}
+
+.hide {
+  display:none;
+}
+
+.img-area:hover img:first-child {
+  display:none;
+}
+
+.img-area:hover img:last-child {
+  display:inline-block;
+}
+
+
+
+
+
+.song-details {
+  text-align: center;
+  margin: 10px 0;
+  line-height: 30px;
+}
+
+.song-details p {
+  color: white;
+}
+
+.song-details .name {
+  color: white;
+  font-size: 20px;
+  font-family: 'solaiman-lipi';
+  font-weight: bold;
+}
+
+.song-details .artist {
+  color: yellow;
+  font-size: 15px;
+  font-family: 'solaiman-lipi';
+  opacity: 0.9;
+}
+
+
+/*======================================= Progress Area =======================================*/
+.progress-area {
+  background: blue;
+  height: 8px;
+  width: 100%;
+  border-radius: 50px;
+  border: 2px solid yellow;
+}
+
+.progress-area .progress-bar {
+  background: linear-gradient(90deg, green 0%, yellow 33%, red 100%);
+  height: inherit;
+  width: 0%;
+  height: 5px;
+  position: relative;
+  border-radius: inherit;
+  /*cursor: grabbing;*/
+  cursor: pointer;
+}
+
+.progress-bar::before {
+  content: "";
+  background-color: red;
+  height: 10px;
+  width: 10px;
+  margin-top: -8px;
+  top: 50%;
+  right: -5px;
+  z-index: 2;
+  opacity: ;
+  position: absolute;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+  border-radius: 0%;
+  border: 4px solid yellow;
+  animation: animation 5s linear infinite;
+}
+
+@keyframes animation {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.progress-area:hover .progress-bar::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.progress-area .song-timer {
+  margin-top: 10px;
+}
+
+.song-timer .current-time {
+  font-size: 20px;
+  color: yellow;
+  font-family: times;
+  font-weight: bold;
+}
+
+.song-timer .max-duration {
+  font-size: 20px;
+  color: white;
+  font-family: times;
+  font-weight: bold;
+}
+  
+
+/*======================================= Volume =======================================*/
+.volume-area {
+  background-color: lue;
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+}
+.volume-area i {
+  background: red;
+  color: yellow;
+  padding: 5px;
+}
+  
+.volume-area #display1 {
+  background: red;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
+}
+  
+.volume-area input[type="range"] {
+  width: 88%;
+  margin: 2px;
+  padding: initial;
+  -webkit-appearance: none;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+#slider1::-webkit-slider-runnable-track {
+  background-color: red;
+    height: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+#slider1::-webkit-slider-thumb {
+  background-color: yellow;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: -8px;
+  cursor: pointer;
+  border-radius: 0%;
+  border: 4px solid red;
+}
+
+#slider1::-webkit-slider-thumb:hover {
+  transform: scale(1.3);
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+#slider1[type=range]:focus::-webkit-slider-runnable-track {
+    background: magenta;
+}
+
+
+
+/*======================================= Control =======================================*/
+.controls {
+  margin: 20px 0 5px 0;
+  border-radius: 10px;
+  border: 2px solid cyan;
+}
+  
+.controls #repeat-plist {
+  background: blue;
+  color: yellow;
+  padding: 10px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px yellow;
+}
+  
+.controls #prev {
+  background: green;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px yellow;
+}
+
+.controls .play-pause {
+  background: linear-gradient(white 0%, white 100%);
+  height: 54px;
+  width: 54px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px var(--pink);
+}
+
+.play-pause::before {
+  position: absolute;
+  content: "";
+  height: 43px;
+  width: 43px;
+  border-radius: inherit;
+  background-color: red;
+}
+
+.play-pause i {
+  height: 43px;
+  width: 43px;
+  line-height: 43px;
+  text-align: center;
+  background: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+}
+  
+.controls #next {
+  background: green;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px yellow;
+}
+  
+.controls #more-music {
+  background: gold;
+  color: red;
+  padding: 10px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px red;
+}
+  
+
+
+
+
+
+
+
+
+/*======================================= Music List Header =======================================*/
+.music-list {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 15px 30px;
+  left: 0;
+  bottom: -55%;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  backdrop-filter: blur(10px);
+  z-index: 5;
+  border: 2px solid yellow;
+  border-radius: 25px;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.15s ease-out;
+}
+
+.music-list-header {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid yellow;
+}
+
+.music-list-header .row span {
+  color: yellow;
+  margin-left: 230px;
+  font-size: 30px;
+  font-family: times;
+  font-weight: bold;
+  align-items: center;
+}
+
+.list.material-icons {
+  background-color: blue;
+  color: white;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 0px 20px 20px 0px;
+  border-right: 2px solid yellow;
+}
+
+#close.material-icons {
+  background-color: red;
+  color: yellow;
+  font-size: 20px;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 20px 0px 0px 20px;
+  border-left: 2px solid yellow;
+}
+
+.music-list.show {
+  bottom: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.music-list ul {
+  margin: 10px 0;
+  height: 260px;
+  overflow-y: scroll;
+  border: 2px solid white;
+}
+
+.widget .post-body ul {
+  padding: 0;
+}
+
+.music-list ul::-webkit-scrollbar {
+  width: 0px;
+}
+
+.music-list ul li {
+  margin: 0px 10px;
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+  border-bottom: 4px solid red;
+}
+
+.music-list ul li .row span {
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi';
+  pointer-events: none;
+}
+
+.music-list ul li .row p {
+  color: yellow;
+  padding: 0px 10px 10px 10px;
+  font-family: 'solaiman-lipi';
+  opacity: 0.9;
+}
+
+.music-list ul li:before {
+  content: "";
+  font-family: fontawesome;
+}
+
+.music-list ul li:last-child {
+  border-bottom: 0px;
+}
+
+/*======================================= Active Song =======================================*/
+.music-list ul li.playing {
+  background-color: red;
+  color: green;
+  pointer-events: none;
+  position: relative;
+}
+
+.music-list ul li.playing .row span {
+  color: yellow;
+}
+
+.music-list ul li.playing .row p {
+  color: white;
+}
+
+.music-list ul li.playing .audio-duration {
+  background-color: white;
+  color: red;
+  margin: 30px 20px 0px 0px;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  right: 0;
+  position: absolute;
+  border: 2px solid blue;
+}
+
+
+
+	
+	
+
+/*======================================== Footer ========================================*/
+.footer {
+  background-color: red;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border: 2px solid green;
+}
+
+.footer marquee {
+  color: white;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: solaiman-lipi;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================= Mobile Screen =======================================*
+
+@media only screen and (max-width: 767px) {*/
+
+@media screen and (max-width: 768px) {
+  nav .nav-bar .sidebarOpen{
+    display: block;
+  }
+  
+  .menu {
+    background-color: var(--side-nav);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 100;
+    transition: all 0.4s ease;
+  }
+
+  nav .nav-bar .logo a {
+    color: white;
+    font-size: 14px;
+  }
+
+  nav.active .menu{
+    left: -0%;
+  }
+
+  nav.active .nav-bar .navLogo a{
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .menu .logo-toggle{
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-toggle .siderbarClose{
+    color: var(--text-color);
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .nav-bar .nav-links{
+    padding-top: 30px;
+    display: block;
+    flex-direction: column;
+  }
+
+  .nav-links li a{
+    display: block;
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+
+
+
+  main {
+    padding: 0px;
+  }
+  
+  .container {
+    margin: 0px;
+    border: 0px solid blue;
+  }
+  
+  .content {
+    margin: 0px;
+    border: 0px solid red;
+  }
+  
+  .main-music-box {
+    width: 100%;
+    border: 2px solid magenta;
+  }
+	
+  .wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: auto;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    border: 0px solid orange;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px var(--lightbshadow);
+  }
+
+  .wrapper i {
+    cursor: pointer;
+  }
+
+  .top-bar i {
+    font-size: 26px;
+    color: white
+  }
+
+  .top-bar i:first-child {
+    margin-left: 5px;
+  }
+
+  .top-bar span {
+    color: yellow;
+    margin-left: -3px;
+    font-size: 15px;
+    font-family: solaiman-lipi;
+    font-weight: bold;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .img-area {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 15px;
+  }
+
+  .img-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .song-details {
+    margin: 10px 0;
+    line-height: 25px;
+  }
+
+  .song-details .name {
+    color: white;
+    font-size: 20px;
+    font-family: 'solaiman-lipi';
+    font-weight: bold;
+  }
+
+  .song-details .artist {
+    color: yellow;
+    font-size: 15px;
+    font-family: 'solaiman-lipi';
+    opacity: 0.9;
+  }
+
+  /*=========== progress-area ==========*/
+  .progress-area {
+    height: 8px;
+    width: 100%;
+    border-radius: 50px;
+    background: #f0f0f0;
+    cursor: pointer;
+  }
+
+  .progress-area .progress-bar {
+    height: 5px;
+    position: relative;
+    border-radius: inherit;
+    background: linear-gradient(90deg, green 0%, red 100%);
+    /*cursor: grabbing;*/
+    cursor: pointer;
+  }
+
+  .progress-bar::before {
+    content: "";
+    background-color: red;
+    height: 10px;
+    width: 10px;
+    margin-top: -10px;
+    border-radius: 0%;
+  }
+
+  .progress-area:hover .progress-bar::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .progress-area .song-timer {
+    margin-top: 5px;
+  }
+
+  .song-timer .current-time {
+    font-size: 15px;
+    color: yellow;
+    font-family: times;
+    font-weight: bold;
+  }
+
+  .song-timer .max-duration {
+    font-size: 15px;
+    color: white;
+    font-family: times;
+    font-weight: bold;
+  }
+    
+  .song-timer span {
+    font-size: 10px;
+    color: var(--lightblack);
+  }
+
+
+
+  .volume-area {
+    margin: 30px 0px;
+  }
+
+  .volume-area i {
+    font-size: 10px;
+  }
+
+  .volume-area input[type="range"] {
+      width: 230px;
+    }
+
+  .volume-area #display1 {
+    font-size: 10px;
+  }
+
+  /*========== Control ==========*/
+  .controls {
+    margin: 5px 0px;
+    padding: 2px 5px;
+    border: 2px solid yellow;
+  }
+
+  .controls #repeat-plist {
+    background: blue;
+    color: yellow;
+    padding: 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px yellow;
+  }
+    
+  .controls #prev {
+    background: green;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px yellow;
+  }
+
+  .controls .play-pause {
+    background: linear-gradient(white 0%, white 100%);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px var(--pink);
+  }
+
+  .play-pause::before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: inherit;
+    background-color: red;
+  }
+
+  .play-pause i {
+    height: 43px;
+    width: 43px;
+    line-height: 43px;
+    text-align: center;
+    background: inherit;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+  }
+
+  .controls #next {
+    background: green;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px yellow;
+  }
+    
+  .controls #more-music {
+    background: gold;
+    color: red;
+    padding: 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px red;
+  }
+
+  /*======== Music List Header =======*/
+  .music-list {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -55%;
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: blur(10px);
+    z-index: 5;
+    padding: 15px;
+    border: 2px solid yellow;
+    border-radius: 15px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease-out;
+  }
+
+  .music-list-header {
+    background-color: teal;
+  }
+
+  .music-list-header .row span {
+    color: white;
+    margin-left: 80px;
+    font-size: 20px;
+    font-family: times;
+    font-weight: bold;
+    align-items: center;
+  }
+
+  .music-list ul {
+    margin: 10px 0;
+    max-height: 260px;
+    overflow: auto;
+  }
+
+  .music-list ul::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .music-list ul li {
+    color: yellow;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    border-bottom: 1px solid yellow;
+  }
+
+  .music-list ul li:last-child {
+    border-bottom: 0px;
+  }
+
+  /*=================== Active Song ==============================*/
+  .music-list ul li.playing {
+      background-color: green;
+      pointer-events: none;
+      position: relative;
+  }
+
+  .music-list ul li .row span {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px green, 0 0 2px blue, 0 0 2px red;
+  }
+
+  .music-list ul li .row p {
+    color: yellow;
+    font-size: 10px;
+    opacity: 1;
+  }
+
+  .music-list ul li.playing .audio-duration {
+    background-color: yellow;
+    width: 30px;
+    color: red;
+    margin: 12px 10px 0px 0px;
+    border-radius: 50px;
+    border: 2px solid blue;
+  }
+
+
+
+
+
+
+  /*======================================== Footer ========================================*/
+  .footer {
+    background-color: blue;
+    width: 100%;
+    height: 40px;
+    border: 2px solid green;
+  }
+
+  .footer marquee {
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: solaiman-lipi;
+    cursor: pointer;
+  }
+}
+
+
