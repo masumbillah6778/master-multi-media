@@ -1202,7 +1202,7 @@ input[type=range]:focus {
 
 
   .volume-area {
-    margin-top: 20px;
+    margin: 40px 0px;
   }
 
   .volume-area i {
@@ -1389,4 +1389,5 @@ input[type=range]:focus {
     border: 2px solid blue;
   }
 }
+
 
