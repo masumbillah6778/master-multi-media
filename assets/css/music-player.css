@@ -43,7 +43,7 @@ body.dark {
   position: sticky;
   top: 0;
   left: 0;
-  -index: 100;
+  z-index: 1;
   border: 2px solid red;
 }
 
