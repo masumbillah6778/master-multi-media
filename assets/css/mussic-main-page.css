@@ -400,7 +400,7 @@ main .container .content .main-slide-box {
 	width: auto;
 	margin: 0px ;
 	overflow-y: scroll;
-	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
 main .container .content .main-slide-box .slide-box {
@@ -415,7 +415,7 @@ main .container .content .main-slide-box .slide-box .slide {
 	padding: 10px;
 	transition: transform .5s;
 	border-radius: 10px;
-	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
 main .container .content .main-slide-box .slide-box .slide:hover {
