@@ -36,7 +36,7 @@ body.dark {
   width: 100%;
 }
 
-nav {
+.main-content nav {
   background-color: #006400;
   width: 100%;
   height: 70px;
@@ -47,11 +47,11 @@ nav {
   border: 2px solid red;
 }
 
-body.dark nav {
+body.dark .main-content nav {
   background-color: #242526;
 }
 
-nav .nav-bar {
+.main-content nav .nav-bar {
   background-color: green;
   width: 100%;
   height: 100%;
@@ -64,7 +64,7 @@ nav .nav-bar {
   justify-content: space-between;
 }
 
-body.dark nav .nav-bar {
+body.dark .main-content nav .nav-bar {
   background-color: red;
 }
 
@@ -330,6 +330,13 @@ body.dark .search-field i{
 
 
 
+
+
+
+
+
+
+
 /*======================================= Main =======================================*/
 main {
   background-color: hite;
@@ -339,32 +346,19 @@ main {
   border: 2px solid blue;
 }
 
-.container {
+main .container {
   width: 100%;
   height: 100%;
   border: 4px solid blue;
 }
 
-.content {
+main .container .content {
   width: 100%;
   height: 100%;
   border: 4px solid red;
 }
-  
 
-#about-us-section {
-  padding-bottom: 0px;
-  border-radius: 0px;
-  order: 4px solid blue;
-}
-
-.about-us-container {
-  margin: 0;
-}
-
-
-
-.heading {
+main .container .content .heading {
   color: red;
   padding-bottom: 2px;
   font-size: 25px;
@@ -401,20 +395,20 @@ main {
   }
 }
 
-.main-slide-box {
+main .container .content .main-slide-box {
 	width: auto;
   margin: 0px 10px;
   overflow-y: scroll;
 	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
-.main-slide-box .slide-box {
+main .container .content .main-slide-box .slide-box {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	row-gap: 10px;
 }
 
-.main-slide-box .slide-box .slide {
+main .container .content .main-slide-box .slide-box .slide {
   width: auto;
 	margin: 10px;
 	padding: 10px;
@@ -423,30 +417,30 @@ main {
 	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
-.main-slide-box .slide-box .slide:hover {
+main .container .content .main-slide-box .slide-box .slide:hover {
   transform: rotate(360deg);
 }
 
-.main-slide-box .slide-box .slide .box {
+main .container .content .main-slide-box .slide-box .slide .box {
   display: grid;
   place-items: center;
 }
 
-.main-slide-box .slide-box .slide .box .cover-image {
+main .container .content .main-slide-box .slide-box .slide .box .cover-image {
 	width: auto;
 }
 
-.main-slide-box .slide-box .slide .box .cover-image img {
+main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
 	width: 100%;
 }
 
-.main-slide-box .slide-box .slide .box .aritst-name {
+main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
 	background-color: red;
   width: 100%;
   text-align: center;
 }
 
-.main-slide-box .slide-box .slide .box .aritst-name a {
+main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
 	color: yellow;
   padding: 10px 0px;
   font-size: 20px;
@@ -462,67 +456,40 @@ main {
 
 
 /*======================================== FOOTER ========================================*/
-
-footer {
-    background-color: #333;
-    color: #fff;
-    width: 100%;
-    height: 10vh;
-    padding: 0px 0;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-}
-
-footer p {
-    color: yellow;
-    font-size: 40px;
-    font-family: 'love-letters';
-}
-
-footer img {
-    width: 30px;
-    height: 30px;
-}
-
-.dark-mode footer {
-    background-color: red;
-    border-top: 2px solid #fff;
-}
-
-
-
-
-
-
-
-
-
-
-
+/*======================================= Footer =======================================*/
 .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   height: 100px;
-   
-   
+  background-color: red;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border: 2px solid green;
 }
 
-.footer {
-    background-color: red;
-    color: white;
-    width: 100%;
-    height: 70px;
-    padding: 30px 0px;
-    text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: 100;
-    border: 2px solid green;
+.footer marquee {
+  color: white;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: solaiman-lipi;
+  cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -537,11 +504,11 @@ footer img {
 @media only screen and (max-width: 767px) {*/
 
 @media screen and (max-width: 768px) {
-  nav .nav-bar .sidebarOpen{
+  .main-content nav .nav-bar .sidebarOpen {
     display: block;
   }
   
-  .menu {
+  .main-content nav .nav-bar .menu {
     background-color: var(--side-nav);
     width: 100%;
     height: 100%;
@@ -553,21 +520,21 @@ footer img {
     transition: all 0.4s ease;
   }
 
-  nav .nav-bar .logo a {
+  .main-content nav .nav-bar .logo a {
     font-size: 14px;
     color: white;
   }
 
-  nav.active .menu{
+  .main-content nav.active .menu{
     left: -0%;
   }
 
-  nav.active .nav-bar .navLogo a{
+  .main-content nav.active .nav-bar .navLogo a{
     opacity: 0;
     transition: all 0.3s ease;
   }
 
-  .menu .logo-toggle{
+  .main-content nav .nav-bar .menu .logo-toggle{
     width: 100%;
     display: block;
     display: flex;
@@ -581,153 +548,91 @@ footer img {
     cursor: pointer;
   }
 
-  .nav-bar .nav-links{
+  .main-content nav .nav-bar .nav-links{
     padding-top: 30px;
     display: block;
     flex-direction: column;
   }
 
-  .nav-links li a{
+  .main-content nav .nav-bar .nav-links li a {
     display: block;
     margin-top: 20px;
   }
 
 
+  
 
 
 
-  .container {
+
+
+  /*======================================= Main =======================================*/
+  main {
+    padding: 0px;
+  }
+
+  main .container {
     width: 100%;
     height: 100%;
-    border: 4px solid blue;
+    border: 0px solid blue;
   }
 
-  .slide p {
-    padding: 0 20px;
-  }
-  .nav-btn {
-    display: none;
-  }
-
-.header {
-    background-color: red;
-    width: 100%;
-    height: 10vh;
-    padding: 10px 20px;
-    display: flex;
-    top: 0;
-    position: sticky;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 0px 20px 0px rgba(132, 144, 255, 0.2);
-    z-index: 9;
-  }
-
-  .dark-mode .header {
-    background-color: green;
-    border-top: 2px solid #fff;
-  }
-
-  .header a {
-    color: white;
-  }
-    
-  .header a img {
-    background-color: blue;
-    width: 50px;
-    height: 50px;
-    margin-top: 15px;
-    padding: 0px;
-    border: 4px solid white;
-  }
-
-  .brand-logo-name {
-    color: gold;
-    padding-top: -20px;
-    font-size: 40px;
-  }
-
-  .icon {
-    color: #fff;
-    font-size: 24px;
-    display: flex;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 999;
-    cursor: pointer;
-    flex-direction: row-reverse;
-  }
-    
-  .about-us-container {
-    padding: 0 5px;
-
-  }
-    
-  .audio-heading {
-    color: gold;
-    font-size: 20px;
-  }
-    
-  .vdieo-heading {
-    color: gold;
-    font-size: 20px;
-  }
-    
-  .imges-heading {
-    color: gold;
-    font-size: 20px;
-  }
-
-  .navbar-lists {
-    background-color: #3beb2b;
-    width: 100%;
-    padding-top: 10px;
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    z-index: 998;
-  }
-
-  .navbar-lists.responsive {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar-lists.responsive li {
-    margin: 10px 0;
-  }
-
-  .navbar-link {
-    padding: 10px 20px;
-  }
-
-  .navbar-link i {
-    display: none;
-  }
-
-	.heading {
+	main .container .heading {
     font-size: 15px;
-    padding: 10px 0px;
+    padding: 0px;
+    border-bottom: 4px solid black;
   }
 
-  .main-slide-box {
-	  margin: 0px;
-	  box-shadow: 0px -10px 10px -10px green;
+  main .container .content {
+    border: 0px solid blue;
   }
-  
-  .main-slide-box .slide-box {
+
+  main .container .content .main-slide-box {
+    margin: 0px;
+  }
+
+  main .container .content .main-slide-box .slide-box {
     width: auto;
     height: 500px;
     grid-template-columns: repeat(1, 1fr);
     overflow-y: scroll;
   }
+
+  main .container .content .main-slide-box .slide-box .slide {
+    border: ;
+  }
+
+  main .container .content .main-slide-box .slide-box .slide .box {
+    padding: 0 20px;
+  }
     
-  .main-slide-box .slide-box .box .cover-image img {
+  main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
 		width: 300px;
     margin: 0 auto;
     display: block;
+  }
+
+
+
+
+
+
+
+
+  /*======================================= Footer =======================================*/
+  .footer {
+    background-color: blue;
+    width: 100%;
+    height: 40px;
+    border: 2px solid green;
+  }
+
+  .footer marquee {
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: solaiman-lipi;
+    cursor: pointer;
   }
 }
