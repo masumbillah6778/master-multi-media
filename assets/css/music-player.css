@@ -339,38 +339,26 @@ main {
   border: 2px solid blue;
 }
 
-.container {
+main .container {
   width: 100%;
   height: 100%;
   border: 4px solid blue;
 }
 
-.content {
+main .container .content {
   width: 100%;
   height: 100%;
   border: 4px solid red;
 }
-  
 
-#about-us-section {
-  padding-bottom: 0px;
-  border-radius: 0px;
-  order: 4px solid blue;
-}
-
-.about-us-container {
-  margin: 0;
-}
-
-
-
-.heading {
+main .container .content .heading {
   color: red;
-  padding-bottom: 2px;
+  padding-bottom: 5px;
   font-size: 25px;
   font-family: 'sonsieone';
   font-weight: bold;
   text-align: center;
+  border-bottom: 4px solid red;
   animation: Color 6s linear infinite;
   -webkit-animation: text-animation 4s ease-in-out infinite;
 }
@@ -401,67 +389,16 @@ main {
   }
 }
 
-@-moz-keyframes animation {
-  0% {
-    color: green;
-  }
-  
-  20% {
-    color: red;
-  }
-  
-  40% {
-    color: yellow;
-  }
-  
-  60% {
-    color: blue;
-  }
-  
-  80% {
-    color: magenta;
-  }
-  
-  100% {
-    color: gold;
-  }
-}
 
-@-webkit-keyframes animation {
-  0% {
-    color: green;
-  }
-  
-  20% {
-    color: red;
-  }
-  
-  40% {
-    color: yellow;
-  }
-  
-  60% {
-    color: blue;
-  }
-  
-  80% {
-    color: magenta;
-  }
-  
-  100% {
-    color: gold;
-  }
-}
 
- 
 
 /*======================================= Main Music Box =======================================*/
-.main-music-box {
+main .container .content .main-music-box {
   width: 100%;
   border: 2px solid red;
 }
 
-.music-box {
+main .container .content .main-music-box .music-box {
   background-image: url(https://github.com/masumbillah6778/image/raw/main/tania-thumbnail.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -473,7 +410,15 @@ main {
   justify-content: center;
 }
 
-.wrapper {
+main .container .content .main-music-box .music-box .headering {
+  border: 2px solid ellow;
+}
+
+main .container .content .main-music-box .music-box .headering #header-title {
+  border: 2px solid ed;
+}
+
+main .container .content .main-music-box .music-box .wrapper {
   background-color: rgba(0, 0, 0, 0.6);
   width: 50%;
   margin: 10px;
@@ -485,25 +430,25 @@ main {
   border: 3px solid blue;
 }
 
-.wrapper i {
+main .container .content .main-music-box .music-box .wrapper i {
   cursor: pointer;
 }
 
-.wrapper .top-bar,
+main .container .content .main-music-box .music-box .wrapper .top-bar,
 .progress-area .song-timer,
 .controls,
-.wrapper .music-list .music-list-header ul li {
+main .container .content .main-music-box .music-box .wrapper .music-list .music-list-header ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.top-bar i {
+main .container .content .main-music-box .music-box .top-bar i {
   font-size: 30px;
   color: white
 }
 
-.top-bar span {
+main .container .content .main-music-box .music-box .top-bar span {
   color: yellow;
   margin-left: -3px;
   font-size: 20px;
@@ -511,7 +456,7 @@ main {
   font-weight: bold;
 }
 
-.img-area {
+main .container .content .main-music-box .music-box .img-area {
   width: 50%;
   aspect-ratio: 16 / 9;
   /*height: 256px;*/
@@ -525,25 +470,25 @@ main {
   box-shadow: 0px 6px 12px var(--lightbshadow);
 }
 
-.img-area img {
+main .container .content .main-music-box .music-box .img-area img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.img-area:hover {
+main .container .content .main-music-box .music-box .img-area:hover {
   text-decoration: none;
 }
 
-.hide {
+main .container .content .main-music-box .music-box .hide {
   display:none;
 }
 
-.img-area:hover img:first-child {
+main .container .content .main-music-box .music-box .img-area:hover img:first-child {
   display:none;
 }
 
-.img-area:hover img:last-child {
+main .container .content .main-music-box .music-box .img-area:hover img:last-child {
   display:inline-block;
 }
 
@@ -551,24 +496,24 @@ main {
 
 
 
-.song-details {
+main .container .content .main-music-box .music-box .song-details {
   text-align: center;
   margin: 10px 0;
   line-height: 30px;
 }
 
-.song-details p {
+main .container .content .main-music-box .music-box .song-details p {
   color: white;
 }
 
-.song-details .name {
+main .container .content .main-music-box .music-box .song-details .name {
   color: white;
   font-size: 20px;
   font-family: 'solaiman-lipi';
   font-weight: bold;
 }
 
-.song-details .artist {
+main .container .content .main-music-box .music-box .song-details .artist {
   color: yellow;
   font-size: 15px;
   font-family: 'solaiman-lipi';
@@ -577,7 +522,7 @@ main {
 
 
 /*======================================= Progress Area =======================================*/
-.progress-area {
+main .container .content .main-music-box .music-box .progress-area {
   background: blue;
   height: 8px;
   width: 100%;
@@ -585,7 +530,7 @@ main {
   border: 2px solid yellow;
 }
 
-.progress-area .progress-bar {
+main .container .content .main-music-box .music-box .progress-area .progress-bar {
   background: linear-gradient(90deg, green 0%, yellow 33%, red 100%);
   height: inherit;
   width: 0%;
@@ -596,7 +541,7 @@ main {
   cursor: pointer;
 }
 
-.progress-bar::before {
+main .container .content .main-music-box .music-box .progress-bar::before {
   content: "";
   background-color: red;
   height: 10px;
@@ -625,23 +570,23 @@ main {
   }
 }
 
-.progress-area:hover .progress-bar::before {
+main .container .content .main-music-box .music-box .progress-area:hover .progress-bar::before {
   opacity: 1;
   pointer-events: auto;
 }
 
-.progress-area .song-timer {
+main .container .content .main-music-box .music-box .progress-area .song-timer {
   margin-top: 10px;
 }
 
-.song-timer .current-time {
+main .container .content .main-music-box .music-box .song-timer .current-time {
   font-size: 20px;
   color: yellow;
   font-family: times;
   font-weight: bold;
 }
 
-.song-timer .max-duration {
+main .container .content .main-music-box .music-box .song-timer .max-duration {
   font-size: 20px;
   color: white;
   font-family: times;
@@ -650,19 +595,20 @@ main {
   
 
 /*======================================= Volume =======================================*/
-.volume-area {
+main .container .content .main-music-box .music-box .volume-area {
   background-color: lue;
   color: white;
   margin-top: 40px;
   text-align: center;
 }
-.volume-area i {
+
+main .container .content .main-music-box .music-box .volume-area i {
   background: red;
   color: yellow;
   padding: 5px;
 }
   
-.volume-area #display1 {
+main .container .content .main-music-box .music-box .volume-area #display1 {
   background: red;
   color: white;
   padding: 5px;
@@ -671,7 +617,7 @@ main {
   font-weight: bold;
 }
   
-.volume-area input[type="range"] {
+main .container .content .main-music-box .music-box .volume-area input[type="range"] {
   width: 88%;
   margin: 2px;
   padding: initial;
@@ -681,14 +627,14 @@ main {
   border: 2px solid white;
 }
 
-#slider1::-webkit-slider-runnable-track {
+main .container .content .main-music-box .music-box #slider1::-webkit-slider-runnable-track {
   background-color: red;
-    height: 5px;
-    border: none;
-    border-radius: 3px;
+  height: 5px;
+  border: none;
+  border-radius: 3px;
 }
 
-#slider1::-webkit-slider-thumb {
+main .container .content .main-music-box .music-box #slider1::-webkit-slider-thumb {
   background-color: yellow;
   -webkit-appearance: none;
   width: 20px;
@@ -699,28 +645,28 @@ main {
   border: 4px solid red;
 }
 
-#slider1::-webkit-slider-thumb:hover {
+main .container .content .main-music-box .music-box #slider1::-webkit-slider-thumb:hover {
   transform: scale(1.3);
 }
 
-input[type=range]:focus {
-    outline: none;
+main .container .content .main-music-box .music-box input[type=range]:focus {
+  outline: none;
 }
 
-#slider1[type=range]:focus::-webkit-slider-runnable-track {
-    background: magenta;
+main .container .content .main-music-box .music-box #slider1[type=range]:focus::-webkit-slider-runnable-track {
+  background: magenta;
 }
 
 
 
 /*======================================= Control =======================================*/
-.controls {
+main .container .content .main-music-box .music-box .controls {
   margin: 20px 0 5px 0;
   border-radius: 10px;
   border: 2px solid cyan;
 }
   
-.controls #repeat-plist {
+main .container .content .main-music-box .music-box .controls #repeat-plist {
   background: blue;
   color: yellow;
   padding: 10px;
@@ -732,7 +678,7 @@ input[type=range]:focus {
   box-shadow: 0px 0px 5px yellow;
 }
   
-.controls #prev {
+main .container .content .main-music-box .music-box .controls #prev {
   background: green;
   color: white;
   padding: 10px;
@@ -744,7 +690,7 @@ input[type=range]:focus {
   box-shadow: 0px 0px 5px yellow;
 }
 
-.controls .play-pause {
+main .container .content .main-music-box .music-box .controls .play-pause {
   background: linear-gradient(white 0%, white 100%);
   height: 54px;
   width: 54px;
@@ -756,7 +702,7 @@ input[type=range]:focus {
   box-shadow: 0px 0px 5px var(--pink);
 }
 
-.play-pause::before {
+main .container .content .main-music-box .music-box .play-pause::before {
   position: absolute;
   content: "";
   height: 43px;
@@ -765,7 +711,7 @@ input[type=range]:focus {
   background-color: red;
 }
 
-.play-pause i {
+main .container .content .main-music-box .music-box .play-pause i {
   height: 43px;
   width: 43px;
   line-height: 43px;
@@ -777,7 +723,7 @@ input[type=range]:focus {
   position: absolute;
 }
   
-.controls #next {
+main .container .content .main-music-box .music-box .controls #next {
   background: green;
   color: white;
   padding: 10px;
@@ -789,7 +735,7 @@ input[type=range]:focus {
   box-shadow: 0px 0px 5px yellow;
 }
   
-.controls #more-music {
+main .container .content .main-music-box .music-box .controls #more-music {
   background: gold;
   color: red;
   padding: 10px;
@@ -1058,22 +1004,22 @@ input[type=range]:focus {
     padding: 0px;
   }
   
-  .container {
+  main .container {
     margin: 0px;
     border: 0px solid blue;
   }
   
-  .content {
+  main .container .content {
     margin: 0px;
     border: 0px solid red;
   }
   
-  .main-music-box {
+  main .container .content .main-music-box {
     width: 100%;
     border: 2px solid magenta;
   }
 	
-  .wrapper {
+  main .container .content .main-music-box .music-box .wrapper {
     background-color: rgba(0, 0, 0, 0.6);
     width: auto;
     margin: 0;
@@ -1085,20 +1031,20 @@ input[type=range]:focus {
     box-shadow: 0px 6px 15px var(--lightbshadow);
   }
 
-  .wrapper i {
+  main .container .content .main-music-box .music-box .wrapper i {
     cursor: pointer;
   }
 
-  .top-bar i {
+  main .container .content .main-music-box .music-box .top-bar i {
     font-size: 26px;
     color: white
   }
 
-  .top-bar i:first-child {
+  main .container .content .main-music-box .music-box .top-bar i:first-child {
     margin-left: 5px;
   }
 
-  .top-bar span {
+  main .container .content .main-music-box .music-box .top-bar span {
     color: yellow;
     margin-left: -3px;
     font-size: 15px;
@@ -1106,11 +1052,11 @@ input[type=range]:focus {
     font-weight: bold;
   }
 
-  .heading {
+  main .container .content .main-music-box .music-box .heading {
     font-size: 20px;
   }
 
-  .img-area {
+  main .container .content .main-music-box .music-box .img-area {
     width: 350px;
     height: 350px;
     overflow: hidden;
@@ -1118,25 +1064,25 @@ input[type=range]:focus {
     border-radius: 15px;
   }
 
-  .img-area img {
+  main .container .content .main-music-box .music-box .img-area img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .song-details {
+  main .container .content .main-music-box .music-box .song-details {
     margin: 10px 0;
     line-height: 25px;
   }
 
-  .song-details .name {
+  main .container .content .main-music-box .music-box .song-details .name {
     color: white;
     font-size: 20px;
     font-family: 'solaiman-lipi';
     font-weight: bold;
   }
 
-  .song-details .artist {
+  main .container .content .main-music-box .music-box .song-details .artist {
     color: yellow;
     font-size: 15px;
     font-family: 'solaiman-lipi';
@@ -1144,7 +1090,7 @@ input[type=range]:focus {
   }
 
   /*=========== progress-area ==========*/
-  .progress-area {
+  main .container .content .main-music-box .music-box .progress-area {
     height: 8px;
     width: 100%;
     border-radius: 50px;
@@ -1152,7 +1098,7 @@ input[type=range]:focus {
     cursor: pointer;
   }
 
-  .progress-area .progress-bar {
+  main .container .content .main-music-box .music-box .progress-area .progress-bar {
     height: 5px;
     position: relative;
     border-radius: inherit;
@@ -1161,7 +1107,7 @@ input[type=range]:focus {
     cursor: pointer;
   }
 
-  .progress-bar::before {
+  main .container .content .main-music-box .music-box .progress-bar::before {
     content: "";
     background-color: red;
     height: 10px;
@@ -1170,49 +1116,49 @@ input[type=range]:focus {
     border-radius: 0%;
   }
 
-  .progress-area:hover .progress-bar::before {
+  main .container .content .main-music-box .music-box .progress-area:hover .progress-bar::before {
     opacity: 1;
     pointer-events: auto;
   }
 
-  .progress-area .song-timer {
+  main .container .content .main-music-box .music-box .progress-area .song-timer {
     margin-top: 5px;
   }
 
-  .song-timer .current-time {
+  main .container .content .main-music-box .music-box .song-timer .current-time {
     font-size: 15px;
     color: yellow;
     font-family: times;
     font-weight: bold;
   }
 
-  .song-timer .max-duration {
+  main .container .content .main-music-box .music-box .song-timer .max-duration {
     font-size: 15px;
     color: white;
     font-family: times;
     font-weight: bold;
   }
     
-  .song-timer span {
+  main .container .content .main-music-box .music-box .song-timer span {
     font-size: 10px;
     color: var(--lightblack);
   }
 
 
 
-  .volume-area {
+  main .container .content .main-music-box .music-box .volume-area {
     margin: 30px 0px;
   }
 
-  .volume-area i {
+  main .container .content .main-music-box .music-box .volume-area i {
     font-size: 10px;
   }
 
-  .volume-area input[type="range"] {
+  main .container .content .main-music-box .music-box .volume-area input[type="range"] {
       width: 230px;
     }
 
-  .volume-area #display1 {
+  main .container .content .main-music-box .music-box .volume-area #display1 {
     font-size: 10px;
   }
 
@@ -1410,5 +1356,4 @@ input[type=range]:focus {
     cursor: pointer;
   }
 }
-
 
