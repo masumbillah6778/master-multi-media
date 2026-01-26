@@ -398,8 +398,8 @@ main .container .content .heading {
 
 main .container .content .main-slide-box {
 	width: auto;
-	margin: 0px ;
-	overflow-y: scroll;
+  margin: 0px;
+  overflow-y: scroll;
 	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
@@ -438,7 +438,9 @@ main .container .content .main-slide-box .slide-box .slide .box .cover-image img
 main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
 	background-color: red;
   width: 100%;
+  padding: 5px 0px;
   text-align: center;
+  border-radius: 0px 0px 10px 10px;
 }
 
 main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
@@ -456,8 +458,7 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
 
 
 
-/*======================================== FOOTER ========================================*/
-/*======================================= Footer =======================================*/
+/*======================================== Footer ========================================*/
 .footer {
   background-color: red;
   width: 100%;
@@ -604,7 +605,7 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
   }
 
   main .container .content .main-slide-box .slide-box .slide .box {
-    padding: 0 20px;
+    padding: 0px;
   }
     
   main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
@@ -613,6 +614,9 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
     display: block;
   }
 
+  main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
+    margin-top: 10px;
+  }
 
 
 
@@ -620,7 +624,8 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
 
 
 
-  /*======================================= Footer =======================================*/
+
+  /*======================================== Footer ========================================*/
   .footer {
     background-color: blue;
     width: 100%;
