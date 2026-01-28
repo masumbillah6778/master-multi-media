@@ -595,7 +595,7 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
 
   main .container .content .main-slide-box .slide-box {
     width: auto;
-    height: 500px;
+    height: 500p;
     grid-template-columns: repeat(1, 1fr);
     overflow-y: scroll;
   }
