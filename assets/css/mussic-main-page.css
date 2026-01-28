@@ -579,9 +579,9 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
     border: 0px solid blue;
   }
 
-	main .container .heading {
+	main .container .content .heading {
     font-size: 15px;
-    padding: 0px;
+    padding: 5px;
     border-bottom: 4px solid black;
   }
 
