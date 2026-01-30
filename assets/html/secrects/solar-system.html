@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web Multi Player html">
+    <meta name="title" content="Multi Player">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css">
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css">
+    <link rel="icon" type="image/x-icon" href="https://masumbillah6778.github.io/images/music-icon1.png">
+    <title> 3D Solar System </title>
+    <link rel="stylesheet" href="/assets/css/solar-system.css" />
+  </head>
+  <body>
+    <div class="main-content">
+      <nav>
+        <div class="nav-bar" id="elemen">
+          
+          <i class='bx bx-menu sidebarOpen' ></i>
+          <span class="logo navLogo"><a href="#"> Masum Billah </a></span>
+          <div class="menu">
+            <div class="logo-toggle">
+              <span class="logo"><a href="#"> Masum Billah </a></span>
+              <i class='bx bx-x siderbarClose'></i>
+            </div>
+            
+            <ul class="nav-links">
+              <li><a href="#" class="active"> <i class="fa-solid fa-music"></i> Audio </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/"> <i class="fa-solid fa-video"></i> Video </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/"> <i class="fas fa-image"></i> Image </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/books/book.html"> <i class="fa-solid fa-book"></i> Book </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/calendar/calendar-main-page.html"> <i class="fa-solid fa-calendar"></i> Calendar </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/"> <i class="fa-solid fa-key"></i> </a></li>
+            </ul>
+          </div>
+          
+          <div class="darkLight-searchBox">
+            <div class="dark-light">
+              <i class='bx bx-moon moon'></i>
+              <i class='bx bx-sun sun'></i>
+            </div>
+            
+            <div class="searchBox">
+              <div class="searchToggle">
+                <i class='bx bx-x cancel'></i>
+                <i class='bx bx-search search'></i>
+              </div>
+              
+              <div class="search-field">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <main>
+        <div class="container">
+          <section class="content">
+            <body class="opening hide-UI view-2D zoom-large data-close controls-close">
+
+              <div id="navbar">
+                <a href="https://twitter.com/JulianGarnier" target="_blank"> @JulianGarnier </a>
+              </div>
+              
+              <div id="controls">
+                <label class="set-view">
+                  <input type="checkbox">
+                </label>
+                <label class="set-zoom">
+                  <input type="checkbox">
+                </label>
+                <label>
+                  <input type="radio" class="set-speed" name="scale" checked>
+                  <span>Speed</span>
+                </label>
+                <label>
+                  <input type="radio" class="set-size" name="scale">
+                  <span>Size</span>
+                </label>
+                <label>
+                  <input type="radio" class="set-distance" name="scale">
+                  <span>Distance</span>
+                </label>
+              </div>
+
+              <div id="universe" class="scale-stretched">
+                <div id="galaxy">
+                  <div id="solar-system" class="earth">
+                    <div id="mercury" class="orbit">
+                      <div class="pos">
+                        <div class="planet">
+                          <dl class="infos">
+                            <dt>Mercury</dt>
+                            <dd><span></span></dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="venus" class="orbit">
+                      <div class="pos">
+                        <div class="planet">
+                          <dl class="infos">
+                            <dt>Venus</dt>
+                            <dd><span></span></dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="earth" class="orbit">
+                      <div class="pos">
+                        <div class="orbit">
+                          <div class="pos">
+                            <div class="moon"></div>
+                          </div>
+                        </div>
+                        <div class="planet">
+                          <dl class="infos">
+                            <dt>Earth</dt>
+                            <dd><span></span></dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="mars" class="orbit">
+                      <div class="pos">
+                        <div class="planet">
+                          <dl class="infos">
+                            <dt>Mars</dt>
+                            <dd><span></span></dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="jupiter" class="orbit">
+                      <div class="pos">
+                        <div class="planet">
+                          <dl class="infos">
+                            <dt>Jupiter</dt>
+                            <dd><span></span></dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="saturn" class="orbit">
+                      <div class="pos">
+                        <div class="planet">
+                          <div class="ring"></div>
+                          <dl class="infos">
+                            <dt>Saturn</dt>
+                            <dd><span></span></dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="uranus" class="orbit">
+                      <div class="pos">
+                        <div class="planet">
+                          <dl class="infos">
+                            <dt>Uranus</dt>
+                            <dd><span></span></dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="neptune" class="orbit">
+                      <div class="pos">
+                        <div class="planet">
+                          <dl class="infos">
+                            <dt>Neptune</dt>
+                            <dd><span></span></dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="sun">
+                      <dl class="infos">
+                        <dt>Sun</dt>
+                        <dd><span></span></dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <script type="text/javascript">
+              if (typeof jQuery == 'undefined') { 
+                document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+              }
+              </script>
+            </body>
+          </section>
+        </div>
+      </main>
+
+
+
+
+
+
+
+
+      <audio id="audioID">
+        <source src="https://css-tricks.com/examples/SoundOnHover/audio/beep.mp3" type="audio/mpeg">
+      </audio>
+
+      <div class="footer">
+        <marquee behavior="scroll" gap="0" truespeed="" direction="left" scrollamount="2" scrolldelay="50" onmouseover="this.stop();" onmouseout="this.start();">
+          বিঃ দ্রঃ- আপনি যদি আঠারো বছরের কম বয়সী না হয়ে থাকেন, তাহলে দয়াকরে এই অ্যাপস থেকে বেরিয়ে যান।
+        </marquee>
+      </div>
+    </div>
+
+    <script src="https://masumbillah6778.github.io/multi-player/assets/js/hover-auto-play.js"></script>
+    <script src="/assets/js/3d-solar-system-main.js"></script>
+    <script src="/assets/js/3d-solar-system-jquery.min.js"></script>
+    <script src="/assets/js/3d-solar-system.js"></script>
+    <script src="https://masumbillah6778.github.io/js/toggle-dark-light.js"></script>
+
+  </body>
+</html>
