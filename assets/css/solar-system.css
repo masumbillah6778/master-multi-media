@@ -403,8 +403,13 @@ main .container .content .solar-system {
 }
 
 main .container .content .solar-system a {
+  color: white;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+body.dark main .container .content .solar-system a {
   color: #18191A;
-	margin-left: 40px;
 }
 
 main .container .content .solar-system ol {
@@ -418,7 +423,7 @@ main .container .content .solar-system ol {
 main .container .content .solar-system li {
   width: var(--d, 2cqi);
   height: 500px;
-  color: yellow;
+  color: red;
   aspect-ratio: 1 / 1;
   border: 1px dashed;
   border-radius: 50%;
@@ -442,6 +447,10 @@ main .container .content .solar-system li {
   to {
     offset-distance: 100%;
   }
+}
+
+body.dark main .container .content .solar-system li {
+  color: yellow;
 }
 
 main .container .content .solar-system .sun {
