@@ -1,1 +1,627 @@
-#
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
+
+:root {
+  --body-color: #E4E9F7;
+  --nav-color: #4070F4;
+  --side-nav: #010718;
+  --text-color: #FFF;
+  --search-bar: #F2F2F2;
+  --search-text: #010718;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+body {
+  background-color: var(--body-color);
+  width: 100%;
+  height: 100vh;
+  border: 4px solid red;
+}
+
+body.dark {
+  --body-color: #18191A;
+  --nav-color: #242526;
+  --side-nav: #242526;
+  --text-color: #CCC;
+  --search-bar: #242526;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.main-content nav {
+  background-color: #006400;
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  -index: 100;
+  border: 2px solid red;
+}
+
+body.dark .main-content nav {
+  background-color: #242526;
+}
+
+.main-content nav .nav-bar {
+  background-color: green;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body.dark .main-content nav .nav-bar {
+  background-color: red;
+}
+
+nav .nav-bar .sidebarOpen {
+  color: white;
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+nav .nav-bar .logo a {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'sonsieone';
+  text-decoration: none;
+}
+
+.menu .logo-toggle {
+  display: none;
+}
+
+.nav-bar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .nav-links li {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.nav-bar .nav-links li i {
+  color: yellow;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-links li a.active {
+  background-color: red;
+}
+
+body.dark .nav-links li a.active {
+  background-color: green;
+}
+
+.nav-links li a::before {
+  content: '';
+  background-color: yellow;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.nav-links li:hover a::before {
+  opacity: 1;
+}
+
+.nav-bar .darkLight-searchBox {
+  display: flex;
+  align-items: center;
+}
+
+.darkLight-searchBox .dark-light {
+  background-color: red;
+  width: 50px;
+  height: 25px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+body.dark .darkLight-searchBox .dark-light {
+  background-color: green;
+}
+
+.bx.bx-moon.moon::before {
+  color: yellow;
+  margin-left: -20px;
+}
+
+.bx.bx-sun.sun::before {
+  color: white;
+  margin-left: 20px;
+}
+
+.darkLight-searchBox .searchToggle {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.searchToggle i {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-light i {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-light i.sun {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dark-light.active i.sun {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+  color: #000;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchToggle i.cancel {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchToggle.active i.cancel {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.searchToggle.active i.search {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchBox {
+  position: relative;
+}
+
+.searchBox .search-field {
+  background-color: blue;
+  position: absolute;
+  bottom: -85px;
+  right: 5px;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-radius: 6px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+body.dark .searchBox .search-field {
+  background-color: white;
+}
+
+.searchToggle.active ~ .search-field {
+  bottom: -74px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-field::before {
+  background-color: red;
+  content: '';
+  position: absolute;
+  right: 14px;
+  top: -4px;
+  height: 12px;
+  width: 12px;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+body.dark .search-field::before {
+  background-color: green;
+}
+
+.search-field input {
+  color: var(--search-text);
+  background-color: var(--search-bar);
+  width: 100%;
+  height: 100%;
+  padding: 0 45px 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+body.dark .search-field input {
+  color: var(--text-color);
+}
+
+.search-field i{
+  position: absolute;
+  color: var(--nav-color);
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+body.dark .search-field i{
+  color: var(--text-color);
+}
+
+
+
+
+
+
+
+
+
+
+/*======================================= Main =======================================*/
+main {
+  background-color: hite;
+  width: 100%;
+  height: 600px;
+  padding: 10px;
+  border: 2px solid blue;
+}
+
+main .container {
+  width: 100%;
+  height: 100%;
+  border: 4px solid blue;
+}
+
+main .container .content {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border: 4px solid red;
+}
+
+main .container .content .heading {
+  color: red;
+  padding: 10px 0px;
+  font-size: 25px;
+  font-family: 'sonsieone';
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 4px solid red;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
+main .container .content .main-slide-box {
+	width: auto;
+  margin: 0px;
+  overflow-y: scroll;
+	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+
+
+
+
+
+/*======================================== IMAGES GALLERY ========================================*/
+
+.main-box {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*======================================== IMAGES GALLERY ========================================*/
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+  
+.card {
+  background: ;
+  color: ;
+  width: auto;
+  height: auto;
+  margin: 5px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 9 / 16.7;
+  background: ;
+  display: block;
+  padding-top: 70%;
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+/*======================================== Footer ========================================*/
+.footer {
+  background-color: red;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border: 2px solid green;
+}
+
+.footer marquee {
+  color: white;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: solaiman-lipi;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================= Mobile Screen =======================================*
+
+@media only screen and (max-width: 767px) {*/
+
+@media screen and (max-width: 768px) {
+  nav .nav-bar .sidebarOpen{
+    display: block;
+  }
+  
+  .menu {
+    background-color: var(--side-nav);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 100;
+    transition: all 0.4s ease;
+  }
+
+  nav .nav-bar .logo a {
+    color: white;
+    font-size: 14px;
+  }
+
+  nav.active .menu{
+    left: -0%;
+  }
+
+  nav.active .nav-bar .navLogo a{
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .menu .logo-toggle{
+    width: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-toggle .siderbarClose{
+    color: var(--text-color);
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .nav-bar .nav-links{
+    padding-top: 30px;
+    display: block;
+    flex-direction: column;
+  }
+
+  .nav-links li a{
+    display: block;
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+
+
+
+  main {
+    height: 578px;
+    padding: 0px;
+    border: 2px solid magenta;
+  }
+  
+  main .container {
+    margin: 0px;
+    border: 0px solid blue;
+  }
+  
+  main .container .content {
+    width: 100%;
+    margin: 0px;
+    border: 0px solid red;
+  }
+
+  main .container .content .heading {
+    font-size: 15px;
+    padding: 5px;
+    border-bottom: 4px solid black;
+  }
+
+  main .container .content .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+	
+
+
+
+
+
+
+
+  /*======================================== Footer ========================================*/
+  .footer {
+    background-color: blue;
+    width: 100%;
+    height: 40px;
+    border: 2px solid green;
+  }
+
+  .footer marquee {
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: solaiman-lipi;
+    cursor: pointer;
+  }
+}
