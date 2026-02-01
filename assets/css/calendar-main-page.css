@@ -310,16 +310,48 @@ main {
   border: 2px solid blue;
 }
 
-.container {
+main .container {
   width: 100%;
   height: 100%;
   border: 4px solid red;
 }
 
-.content {
-  width: 100%;
-  height: 100%;
-  border: 4px solid red;
+main .container .content .heading {
+  color: red;
+  padding: 10px 0px;
+  font-size: 25px;
+  font-family: 'sonsieone';
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 4px solid red;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
 }
 
 .calendar-main-page {
@@ -574,4 +606,5 @@ main {
     border: 4px solid red;
   }
 }
+
 
