@@ -355,7 +355,6 @@ main .container {
 main .container .content {
   width: 100%;
   height: 100%;
-  margin: 0 auto;
   border: 4px solid red;
 }
 
@@ -404,62 +403,54 @@ main .container .content .main-slide-box {
 	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
-
-
-
-
-
-/*======================================== IMAGES GALLERY ========================================*/
-
-.main-box {
-  margin: 10px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-  justify-content: center;
-  align-items: center;
+main .container .content .main-slide-box .slide-box {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	row-gap: 10px;
 }
 
-
-/*======================================== IMAGES GALLERY ========================================*/
-
-.main {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
-  
-.card {
-  background: ;
-  color: ;
+main .container .content .main-slide-box .slide-box .slide {
   width: auto;
-  height: auto;
-  margin: 5px;
-  border-radius: 2px;
-  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+	margin: 10px;
+	padding: 10px;
+	transition: transform .5s;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
-.card-image {
+main .container .content .main-slide-box .slide-box .slide:hover {
+  transform: rotate(360deg);
+}
+
+main .container .content .main-slide-box .slide-box .slide .box {
+  display: grid;
+  place-items: center;
+}
+
+main .container .content .main-slide-box .slide-box .slide .box .cover-image {
+	width: auto;
+}
+
+main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
+	width: 100%;
+}
+
+main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
+	background-color: red;
   width: 100%;
-  aspect-ratio: 9 / 16.7;
-  background: ;
-  display: block;
-  padding-top: 70%;
-  position: relative;
+  padding: 5px 0px;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
 }
 
-.card-image img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
+main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
+	color: yellow;
+  padding: 10px 0px;
+  font-size: 20px;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+  text-decoration: none;
 }
-
 
 
 
@@ -503,16 +494,23 @@ main .container .content .main-slide-box {
 
 
 
+
+
+
+
+
+
+
 /*======================================= Mobile Screen =======================================*
 
 @media only screen and (max-width: 767px) {*/
 
 @media screen and (max-width: 768px) {
-  nav .nav-bar .sidebarOpen{
+  .main-content nav .nav-bar .sidebarOpen {
     display: block;
   }
   
-  .menu {
+  .main-content nav .nav-bar .menu {
     background-color: var(--side-nav);
     width: 100%;
     height: 100%;
@@ -524,21 +522,21 @@ main .container .content .main-slide-box {
     transition: all 0.4s ease;
   }
 
-  nav .nav-bar .logo a {
-    color: white;
+  .main-content nav .nav-bar .logo a {
     font-size: 14px;
+    color: white;
   }
 
-  nav.active .menu{
+  .main-content nav.active .menu{
     left: -0%;
   }
 
-  nav.active .nav-bar .navLogo a{
+  .main-content nav.active .nav-bar .navLogo a{
     opacity: 0;
     transition: all 0.3s ease;
   }
 
-  .menu .logo-toggle{
+  .main-content nav .nav-bar .menu .logo-toggle{
     width: 100%;
     display: block;
     display: flex;
@@ -552,55 +550,74 @@ main .container .content .main-slide-box {
     cursor: pointer;
   }
 
-  .nav-bar .nav-links{
+  .main-content nav .nav-bar .nav-links{
     padding-top: 30px;
     display: block;
     flex-direction: column;
   }
 
-  .nav-links li a{
+  .main-content nav .nav-bar .nav-links li a {
     display: block;
     margin-top: 20px;
   }
 
 
-
-
-
-
-
-
-
-  main {
-    height: 578px;
-    padding: 0px;
-    border: 2px solid magenta;
-  }
   
+
+
+
+
+
+  /*======================================= Main =======================================*/
+  main {
+    padding: 0px;
+  }
+
   main .container {
-    margin: 0px;
+    width: 100%;
+    height: 100%;
     border: 0px solid blue;
   }
-  
-  main .container .content {
-    width: 100%;
-    margin: 0px;
-    border: 0px solid red;
-  }
 
-  main .container .content .heading {
+	main .container .content .heading {
     font-size: 15px;
     padding: 5px;
     border-bottom: 4px solid black;
   }
 
-  main .container .content .main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+  main .container .content {
+    border: 0px solid blue;
   }
 
-	
+  main .container .content .main-slide-box {
+    margin: 0px;
+  }
+
+  main .container .content .main-slide-box .slide-box {
+    width: auto;
+    height: 500px;
+    grid-template-columns: repeat(1, 1fr);
+    overflow-y: scroll;
+  }
+
+  main .container .content .main-slide-box .slide-box .slide {
+    border: ;
+  }
+
+  main .container .content .main-slide-box .slide-box .slide .box {
+    padding: 0px;
+  }
+    
+  main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
+		width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
+    margin-top: 10px;
+  }
+
 
 
 
