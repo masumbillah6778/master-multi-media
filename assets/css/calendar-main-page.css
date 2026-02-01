@@ -369,6 +369,7 @@ main .container .content .heading {
 }
 
 .flip-card-box {
+  width: 100%;
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -612,6 +613,7 @@ main .container .content .heading {
     border: 4px solid red;
   }
 }
+
 
 
 
