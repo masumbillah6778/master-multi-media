@@ -397,10 +397,11 @@ main .container .content .heading {
 }
 
 main .container .content .main-slide-box {
-	width: auto;
+  width: auto;
+  height: 500px;
   margin: 0px;
   overflow-y: scroll;
-	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
 main .container .content .main-slide-box .slide-box {
