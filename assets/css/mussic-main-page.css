@@ -543,7 +543,7 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
     align-items: center;
     justify-content: space-between;
   }
-
+।
   .logo-toggle .siderbarClose{
     color: var(--text-color);
     font-size: 24px;
@@ -570,7 +570,7 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
 
   /*======================================= Main =======================================*/
   main {
-	height: 650px;
+	height: 700px;
     padding: 0px;
   }
 
