@@ -316,7 +316,7 @@ body.dark .search-field input {
   color: var(--text-color);
 }
 
-.search-field i{
+.search-field i {
   position: absolute;
   color: var(--nav-color);
   right: 15px;
@@ -324,7 +324,7 @@ body.dark .search-field input {
   cursor: pointer;
 }
 
-body.dark .search-field i{
+body.dark .search-field i {
   color: var(--text-color);
 }
 
@@ -395,6 +395,13 @@ main .container .content .heading {
     color: gold;
   }
 }
+
+
+
+
+
+
+/*======================================= Main Slide Box =======================================*/
 
 main .container .content .main-slide-box {
 	width: auto;
@@ -532,12 +539,12 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
     left: -0%;
   }
 
-  .main-content nav.active .nav-bar .navLogo a{
+  .main-content nav.active .nav-bar .navLogo a {
     opacity: 0;
     transition: all 0.3s ease;
   }
 
-  .main-content nav .nav-bar .menu .logo-toggle{
+  .main-content nav .nav-bar .menu .logo-toggle {
     width: 100%;
     display: block;
     display: flex;
@@ -551,7 +558,7 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
     cursor: pointer;
   }
 
-  .main-content nav .nav-bar .nav-links{
+  .main-content nav .nav-bar .nav-links {
     padding-top: 30px;
     display: block;
     flex-direction: column;
@@ -590,6 +597,12 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
   main .container .content {
     border: 0px solid blue;
   }
+
+
+
+
+
+  /*======================================= Main Slide Box =======================================*/
 
   main .container .content .main-slide-box {
     margin: 0px;
