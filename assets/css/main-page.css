@@ -573,13 +573,16 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
   }
 
   .main-content nav .nav-bar .menu .logo-toggle {
+    background-color: #4070F4;
     width: 100%;
+    padding: 10px;
     display: block;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 0px 10px 0px 10px;
   }
-।
+	
   .logo-toggle .siderbarClose{
     color: var(--text-color);
     font-size: 24px;
