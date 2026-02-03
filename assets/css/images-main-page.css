@@ -594,10 +594,8 @@ main .container .content .main-slide-box {
     border-bottom: 4px solid black;
   }
 
-  main .container .content .main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+  main .container .content .main-slide-box .slide-box {
+    grid-template-columns: repeat(3, 1fr);
   }
 
 	
