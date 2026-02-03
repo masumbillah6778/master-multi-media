@@ -446,14 +446,13 @@ main .container .content .main-slide-box .slide-box .slide .box .cover-image img
 main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
 	background-color: #2980b9;
   width: 100%;
-  padding: 5px 0px;
+  padding: 10px 0px;
   text-align: center;
   border-radius: 0px 0px 10px 10px;
 }
 
 main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
 	color: yellow;
-  padding: 10px 0px;
   font-size: 20px;
   font-family: solaiman-lipi;
   font-weight: bold;
