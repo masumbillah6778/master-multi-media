@@ -444,7 +444,7 @@ main .container .content .main-slide-box .slide-box .slide .box .cover-image img
 }
 
 main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
-	background-color: red;
+	background-color: #2980b9;
   width: 100%;
   padding: 5px 0px;
   text-align: center;
@@ -470,19 +470,19 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
   }
   25% {
     color: red;
-    transform: scale(2);
+    transform: scale(1);
     opacity: 1;
     text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
   }
   50% {
     color: yellow;
-    transform: scale(2);
+    transform: scale(1);
     opacity: 1;
     text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
   }
   100% {
     color: green;
-    transform: scale(1);
+    transform: scale(0.5);
     opacity: 1;
     text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
   }
