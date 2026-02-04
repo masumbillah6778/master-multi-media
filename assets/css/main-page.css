@@ -405,7 +405,7 @@ main .container .content .heading {
 
 main .container .content .main-slide-box {
 	width: auto;
-  height: 590px;
+  height: 625px;
   margin: 0px;
 	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
@@ -416,6 +416,7 @@ main .container .content .main-slide-box .slide-box {
 	grid-template-columns: repeat(6, 1fr);
 	row-gap: 10px;
   overflow-y: scroll;
+	border: 2px solid green;
 }
 
 main .container .content .main-slide-box .slide-box .slide {
