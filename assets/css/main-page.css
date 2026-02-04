@@ -548,7 +548,7 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
   }
   
   .main-content nav .nav-bar .menu {
-    background-color: var(--side-nav);
+    background-color: purple;
     width: 100%;
     height: 100%;
     padding: 20px;
