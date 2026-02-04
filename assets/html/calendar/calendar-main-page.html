@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +16,9 @@
     <link rel="stylesheet" href="https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css">
     <link rel="stylesheet" href="https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css">
     <link rel="stylesheet" href="https://masumbillah6778.github.io/css/custom-scrollbar.css">
-    <link rel="icon" type="image/x-icon" href="https://masumbillah6778.github.io/images/calendar-logo.png">
+    <link rel="icon" type="image/x-icon" href="https://masumbillah6778.github.io/images/music-icon1.png">
     <title> Calendar </title>
-    <link rel="stylesheet" href="https://masumbillah6778.github.io/master-multi-media/assets/css/calendar-main-page.css" />
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/master-multi-media/assets/css/main-page.css" />
   </head>
   <body>
     <div class="main-content">
@@ -23,19 +26,19 @@
         <div class="nav-bar" id="elemen">
           
           <i class='bx bx-menu sidebarOpen' ></i>
-          <span class="logo navLogo"><a href="#"> Masum Billah </a></span>
+          <span class="logo navLogo"><a href="https://masumbillah6778.github.io/master-multi-media/index.html"> Masum Billah </a></span>
           <div class="menu">
             <div class="logo-toggle">
-              <span class="logo"><a href="#"> Masum Billah </a></span>
+              <span class="logo"><a href="https://masumbillah6778.github.io/master-multi-media/index.html"> Masum Billah </a></span>
               <i class='bx bx-x siderbarClose'></i>
             </div>
             
             <ul class="nav-links">
-              <li><a href="https://masumbillah6778.github.io/master-multi-media/index.html"> <i class="fa-solid fa-music"></i> Audio </a></li>
+              <li><a href="#" class="active"></i> Audio </a></li>
               <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/videos/video-player-main-page.html"> <i class="fa-solid fa-video"></i> Video </a></li>
               <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/imges/imges-main-page.html"> <i class="fas fa-image"></i> Image </a></li>
               <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/books/book-main-page.html"> <i class="fa-solid fa-book"></i> Book </a></li>
-              <li><a href="#" class="active"> <i class="fa-solid fa-calendar"></i> Calendar </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/calendar/calendar-main-page.html"> <i class="fa-solid fa-calendar"></i> Calendar </a></li>
               <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/solar-system/solar-system.html"> <i class="fa-solid fa-earth-americas"></i> </a></li>
             </ul>
           </div>
@@ -64,114 +67,93 @@
       <main>
         <div class="container">
           <section class="content">
-            <div class="heading"> Calendar </div>
+            <div class="heading"> Calendar Main Page </div>
 
-            <div class="main-slide-box" id="scrollbar">
-              <div class="slide-box">
-                <div class="calendar">
-                  <div class="cover-photo">
-                    <img src="https://masumbillah6778.github.io/images/calendar-logo.png" alt="Avatar">
+            
+            <div class="main-slide-box">
+              <div class="slide-box" id="scrollbar">
+                <div class="slide" onmouseenter="playAudio()">
+                  <div class="box">
+                    <div class="cover-image"> <img src="https://masumbillah6778.github.io/images/music-cover-photo/akash-mahmud2.png"> </div>
+                    <div class="aritst-name"> <a href="https://masumbillah6778.github.io/master-multi-media/assets/html/music/html/akash-mahmud-music-player.html" target="_blank"> ১. আকাশ মাহমুদ </a> </div>
                   </div>
-                  <div class="year">
-                    <a href="#" target="_blank"> 2025 </a> 
+                </div>
+                
+                <div class="slide" onmouseenter="playAudio()">
+                  <div class="box">
+                    <div class="cover-image"> <img src="https://masumbillah6778.github.io/images/music-cover-photo/zubeen-garg.png"> </div>
+                    <div class="aritst-name"> <a href="https://masumbillah6778.github.io/multi-player/assets/html/zubeen-garg.html" target="_blank"> ২. জুবিন গার্গ </a> </div>
+                  </div>
+                </div>
+                
+                <div class="slide" onmouseenter="playAudio()">
+                  <div class="box">
+                    <div class="cover-image"> <img src="https://masumbillah6778.github.io/images/music-cover-photo/bangladesh-map.png"> </div>
+                    <div class="aritst-name"> <a href="/assets/html/deser-gaan.html" target="_blank"> ৩. দেশের গান  </a> </div>
+                  </div>
+                </div>
+                
+                <div class="slide" onmouseenter="playAudio()">
+                  <div class="box">
+                    <div class="cover-image"> <img src="https://masumbillah6778.github.io/images/music-cover-photo/lalon.png"> </div>
+                    <div class="aritst-name"> <a href="/assets/html/lalon-giti.html" target="_blank"> ৪. লালন গীতি  </a> </div>
+                  </div>
+                </div>
+                
+                <div class="slide" onmouseenter="playAudio()">
+                  <div class="box">
+                    <div class="cover-image"> <img src="https://masumbillah6778.github.io/images/lalon.png"> </div>
+                    <div class="aritst-name"> <a href="#" target="_blank"> ৫. মিক্সিং গান  </a> </div>
                   </div>
                 </div>
 
-                <div class="calendar">
-                  <div class="cover-photo">
-                    <img src="https://masumbillah6778.github.io/images/calendar-logo.png" alt="Avatar">
-                  </div>
-                  <div class="year">
-                    <a href="#" target="_blank"> 2026 </a> 
+                <div class="slide" onmouseenter="playAudio()">
+                  <div class="box">
+                    <div class="cover-image"> <img src="https://masumbillah6778.github.io/images/lalon.png"> </div>
+                    <div class="aritst-name"> <a href="#" target="_blank"> ৬. ডিজে গান  </a> </div>
                   </div>
                 </div>
 
-                <div class="calendar">
-                  <div class="cover-photo">
-                    <img src="https://masumbillah6778.github.io/images/calendar-logo.png" alt="Avatar">
-                  </div>
-                  <div class="year">
-                    <a href="#" target="_blank"> 2027 </a> 
+                <div class="slide" onmouseenter="playAudio()">
+                  <div class="box">
+                    <div class="cover-image"> <img src="https://masumbillah6778.github.io/images/lalon.png"> </div>
+                    <div class="aritst-name"> <a href="#" target="_blank"> ৭. গজল  </a> </div>
                   </div>
                 </div>
-
-                <div class="calendar">
-                  <div class="cover-photo">
-                    <img src="https://masumbillah6778.github.io/images/calendar-logo.png" alt="Avatar">
-                  </div>
-                  <div class="year">
-                    <a href="#" target="_blank"> 2028 </a> 
+                    
+                <div class="slide" onmouseenter="playAudio()">
+                  <div class="box">
+                    <div class="cover-image"> <img src="https://masumbillah6778.github.io/images/lalon.png"> </div>
+                    <div class="aritst-name"> <a href="#" target="_blank"> ৮. পুরুলিয়া গান  </a> </div>
                   </div>
                 </div>
-
-                <div class="calendar">
-                  <div class="cover-photo">
-                    <img src="https://masumbillah6778.github.io/images/calendar-logo.png" alt="Avatar">
-                  </div>
-                  <div class="year">
-                    <a href="#" target="_blank"> 2029 </a> 
-                  </div>
-                </div>
-
-                <div class="calendar">
-                  <div class="cover-photo">
-                    <img src="https://masumbillah6778.github.io/images/calendar-logo.png" alt="Avatar">
-                  </div>
-                  <div class="year">
-                    <a href="#" target="_blank"> 2030 </a> 
-                  </div>
-                </div>
-
-                <div class="calendar">
-                  <div class="cover-photo">
-                    <img src="https://masumbillah6778.github.io/images/calendar-logo.png" alt="Avatar">
-                  </div>
-                  <div class="year">
-                    <a href="#" target="_blank"> 2031 </a> 
-                  </div>
-                </div>
-
-                <div class="calendar">
-                  <div class="cover-photo">
-                    <img src="https://masumbillah6778.github.io/images/calendar-logo.png" alt="Avatar">
-                  </div>
-                  <div class="year">
-                    <a href="#" target="_blank"> 2032 </a> 
-                  </div>
-                </div>
-
-                
-                
-                
-                
-                  
-                
-                
-                
-                
-                
               </div>
+
             </div>
           </section>
-        
         </div>
       </main>
-      
-      
+
+
+
+
+
+
+
+
+      <audio id="audioID">
+        <source src="https://css-tricks.com/examples/SoundOnHover/audio/beep.mp3" type="audio/mpeg">
+      </audio>
+
       <div class="footer">
-        <p>Footer</p>
+        <marquee behavior="scroll" gap="0" truespeed="" direction="left" scrollamount="2" scrolldelay="50" onmouseover="this.stop();" onmouseout="this.start();">
+          সর্বকালের সেরা গায়কদের সেরা গানের তালিকা। ব্যক্তিগত পছন্দের ওপর নির্ভর।
+        </marquee>
       </div>
     </div>
-    
+
+    <script src="https://masumbillah6778.github.io/multi-player/assets/js/hover-auto-play.js"></script>
     <script src="https://masumbillah6778.github.io/js/toggle-dark-light.js"></script>
-    
+
   </body>
 </html>
-
-
-
-
-
-
-
-
