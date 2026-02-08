@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web Multi Player html">
+    <meta name="title" content="Multi Player">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css">
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css">
+    <link rel="icon" type="image/x-icon" href="https://masumbillah6778.github.io/images/music-icon1.png">
+    <title> Music </title>
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/master-multi-media/assets/css/music-player.css" />
+  </head>
+  <body>
+    <div class="main-content">
+      <nav>
+        <div class="nav-bar" id="elemen">
+          
+          <i class='bx bx-menu sidebarOpen' ></i>
+          <span class="logo navLogo"><a href="#"> Masum Billah </a></span>
+          <div class="menu">
+            <div class="logo-toggle">
+              <span class="logo"><a href="#"> Masum Billah </a></span>
+              <i class='bx bx-x siderbarClose'></i>
+            </div>
+            
+            <ul class="nav-links">
+              <li><a href="#" class="active"> <i class="fa-solid fa-music"></i> Audio </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/"> <i class="fa-solid fa-video"></i> Video </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/"> <i class="fas fa-image"></i> Image </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/books/book.html"> <i class="fa-solid fa-book"></i> Book </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/calendar/calendar-main-page.html"> <i class="fa-solid fa-calendar"></i> Calendar </a></li>
+            </ul>
+          </div>
+          
+          <div class="darkLight-searchBox">
+            <div class="dark-light">
+              <i class='bx bx-moon moon'></i>
+              <i class='bx bx-sun sun'></i>
+            </div>
+            
+            <div class="searchBox">
+              <div class="searchToggle">
+                <i class='bx bx-x cancel'></i>
+                <i class='bx bx-search search'></i>
+              </div>
+              
+              <div class="search-field">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+      <!--======================== Music Container ===============================-->
+      <main>
+        <div class="container">
+          <section class="content">
+            <div class="heading"> Best Singer Best Song </div>
+            <div class="main-music-box">
+              <div class="music-box">
+                <div class="headering">
+                  <div id="header-title"></div>
+                </div>
+
+                <div class="wrapper">
+                  <div class="top-bar">
+                    <i class="fa-solid fa-music"></i>
+                    <span> আকাশ মাহমুদের বাছাই করা গান </span>
+                    <a href="https://github.com/Shivam-Katare/Melodio" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                  
+                  <!--======================== Thumbnail image ===============================-->
+                  <div class="img-area">
+                    <img src="" alt="">
+                    <img src="https://masumbillah6778.github.io/images/gif/music.gif" class="hide" />
+                  </div>
+                  <div class="song-details">
+                    <p class="name"></p>
+                    <p class="artist"></p>
+                  </div>
+                  
+                  <!--======================== Timer ===============================-->
+                  <div class="progress-area">
+                    <div class="progress-bar">
+                      <audio id="mainaudio" src=""></audio>
+                    </div>
+                    <div class="song-timer">
+                      <span class="current-time">0:00</span>
+                      <span class="max-duration">0:00</span>
+                    </div>
+                  </div>
+                  
+                  <!--====================== Volume ======================-->
+                  <div class="volume-area">
+                    <label>
+                      <i class="fa-solid fa-volume-high"></i>
+                      <input type="range" id="slider1" min="0" max="100" value="50">
+                      <span id="display1">...</span>
+                    </label>
+                  </div>
+                  
+                  <!--======================== controls ===============================-->
+                  <div class="controls">
+                    <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                    <i id="prev" class="material-icons">skip_previous</i>
+                    <div class="play-pause">
+                      <i class="material-icons play">play_arrow</i>
+                    </div>
+                    <i id="next" class="material-icons">skip_next</i>
+                    <i id="more-music" class="material-icons">queue_music</i>
+                  </div>
+                  
+                  <!--======================== Music-List ===============================-->
+                  <div class="music-list">
+                    <div class="music-list-header">
+                      <div class="row">
+                        <i class= "list material-icons">queue_music</i>
+                        <span>Music list</span>
+                      </div>
+                      <i id="close" class="material-icons">close</i>
+                    </div>
+                    <ul>
+                      <!-- here li list are coming from js -->
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+
+
+
+
+
+
+
+      <audio id="audioID">
+        <source src="https://css-tricks.com/examples/SoundOnHover/audio/beep.mp3" type="audio/mpeg">
+      </audio>
+
+      <div class="footer">
+        <marquee behavior="scroll" gap="0" truespeed="" direction="left" scrollamount="2" scrolldelay="50" onmouseover="this.stop();" onmouseout="this.start();">
+          সর্বকালের সেরা গায়কদের সেরা গানের তালিকা। ব্যক্তিগত পছন্দের ওপর নির্ভর।
+        </marquee>
+      </div>
+    </div>
+
+    <script src="https://masumbillah6778.github.io/multi-player/assets/js/hover-auto-play.js"></script>
+    <script src="https://masumbillah6778.github.io/js/toggle-dark-light.js"></script>
+    <script src="https://masumbillah6778.github.io/master-multi-media/assets/js/artists-music-list/akash-mahmud-music-list.js"> </script>
+    <script src="https://masumbillah6778.github.io/multi-player/assets/js/music-player.js"></script>
+    <script src="https://masumbillah6778.github.io/multi-player/assets/js/script.js"></script>
+
+  </body>
+</html>
