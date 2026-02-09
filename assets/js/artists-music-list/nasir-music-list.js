@@ -3,7 +3,7 @@ let allMusic = [
     name: "১. ৬৪ জেলা নিয়ে গান",
     artist: "নাসির / নদী অ্যালবাম",
     img: "https://masumbillah6778.github.io/images/thumbnail/nasir.jpg",
-    src: "https://github.com/masumbillah6778bd/nasir/nodi/raw/main/kodal-daia-mati-khura.mp3",
+    src: "https://masumbillah6778bd.github.io/nasir/nodi/kodal-daia-mati-khura.mp3",
   },
   {
     name: "১. ৬৪ জেলা নিয়ে গান",
