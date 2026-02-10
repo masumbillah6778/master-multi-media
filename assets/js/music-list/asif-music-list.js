@@ -59,4 +59,16 @@ let allMusic = [
     img: "https://masumbillah6778.github.io/images/thumbnail/asif.jpg",
     src: "https://masumbillah6778bd.github.io/asif/o-priya-tumi-kothay/nishthur-tumi.mp3",
   },
+  {
+    name: "১১. পাথরে লেখা নাম",
+    artist: "আসিফ / ও প্রিয়া তুমি কোথায়",
+    img: "https://masumbillah6778.github.io/images/thumbnail/asif.jpg",
+    src: "https://masumbillah6778bd.github.io/asif/o-priya-tumi-kothay/pathore-lekha-naam.mp3",
+  },
+  {
+    name: "১২. ভালোবাসি আমি তোমাকে",
+    artist: "আসিফ / ও প্রিয়া তুমি কোথায়",
+    img: "https://masumbillah6778.github.io/images/thumbnail/asif.jpg",
+    src: "https://masumbillah6778bd.github.io/asif/o-priya-tumi-kothay/valobashi-ami.mp3",
+  },
 ];
