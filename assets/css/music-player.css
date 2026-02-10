@@ -1334,8 +1334,9 @@ main .container .content .main-music-box .music-box .controls #more-music {
   .music-list ul li.playing .audio-duration {
     background-color: yellow;
     width: 30px;
+	height: 30px;
     color: red;
-    margin: 12px 10px 0px 0px;
+    margin: 12px 15px 0px 0px;
     border-radius: 50px;
     border: 2px solid blue;
   }
