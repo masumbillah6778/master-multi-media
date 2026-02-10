@@ -585,6 +585,11 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
     border-radius: 0px 10px 0px 10px;
   }
 	
+  .main-content nav .nav-bar .menu .logo-toggle .logo {
+	font-size: 40px;
+    font-family: 'love-letters';
+    letter-spacing: 2px;}
+	
   .logo-toggle .siderbarClose{
     color: var(--text-color);
     font-size: 24px;
