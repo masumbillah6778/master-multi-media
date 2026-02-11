@@ -407,89 +407,345 @@ main .container .content .main-slide-box {
 	width: auto;
   height: 500px;
   margin: 0px;
-	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
 main .container .content .main-slide-box .slide-box {
   height: 500px;
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	row-gap: 10px;
-  overflow-y: scroll;
-	border: 2px solid green;
+	order: 2px solid green;
 }
 
-main .container .content .main-slide-box .slide-box .slide {
-  width: auto;
-	margin: 10px;
-	padding: 10px;
-	transition: transform .5s;
-	border-radius: 10px;
-	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+.book-content {
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, hsl(187 20% 88%) 30%, hsl(149 20% 94%) 100%);
+  color: hsl(180 68% 5%);
+  height: 100vh;
+  margin: 0;
+  display: lex;
+  perspective: 1000px;
+  overflow: hidden;
+  border: 2px solid red;
 }
 
-main .container .content .main-slide-box .slide-box .slide:hover {
-  transform: rotate(360deg);
+.full-book {
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 400px;
+  height: 500px;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  transition: translate 1s;
+  translate: calc(min(var(--c), 1) * 50%) 0%;
+  rotate: 1 0 0 30deg;
 }
 
-main .container .content .main-slide-box .slide-box .slide .box {
-  display: grid;
-  place-items: center;
+.full-book {
+  counter-reset: page -1;
+  & a {
+    color: inherit;
+  }
 }
 
-main .container .content .main-slide-box .slide-box .slide .box .cover-image {
-	width: auto;
-}
-
-main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
-	width: 100%;
-}
-
-main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
-	background-color: #2980b9;
+.book-page {
   width: 100%;
-  padding: 10px 0px;
-  text-align: center;
-  border-radius: 0px 0px 10px 10px;
+  --thickness: 4;
+  flex: none;
+  display: flex;
+  pointer-events: all;
+  user-select: none;
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transition:
+    transform 1s,
+    rotate 1s ease-in calc((min(var(--i), var(--c)) - max(var(--i), var(--c))) * 50ms);
+  translate: calc(var(--i) * -100%) 0px 0px;
+  transform: translateZ( calc((var(--c) - var(--i) - 0.5) * calc(var(--thickness) * .23cqmin)));
+  rotate: 0 1 0 calc(clamp(0, var(--c) - var(--i), 1) * -180deg);
+  box-shadow: 0em .5em 1em -.2em #00000020;
 }
 
-main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
-	color: yellow;
+
+
+/*============================== COVER PAGE ==============================*/
+
+.front-side.cover h3,
+.back-side.cover h3 {
+  background-color: red;
+  color: yellow;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Times";
+  text-align: center;
+}
+
+.front-side.cover p,
+.back-side.cover p {
+  background-color: gree;
+  color: yellow;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Times";
+  position: fixed;
+  bottom: 0;
+}
+
+.back-side.cover p {
+  column-count: 2;
+}
+
+
+
+
+/*============================== PAGE DETAILS ==============================*/
+
+.front-side,
+.back-side {
+  position: relative;
+  flex: none;
+  width: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  /* Fix backface visibility Firefox: */
+  translate: 0px;
+}
+
+.front-side {
+  background-color: red;
+}
+
+.back-side {
+  background-color: green;
+  translate: -100% 0;
+  rotate: 0 1 0 180deg;
+}
+  
+.book-page .front-side titel {
+  background-color: olive;
+  color: gold;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "times";
+  font-weight: bold;
+  display: block;
+}
+
+.book-page .back-side titel {
+  background-color: olive;
+  color: gold;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "times";
+  font-weight: bold;
+  display: block;
+}
+
+.front-side.cover {
+  background: radial-gradient(circle farthest-corner at 80% 20%, hsl(150 80% 20% / .3) 0%, hsl(170 60% 10% / .1) 100%),
+    hsl(231, 32%, 29%) url("https://masumbillah6778.github.io/images/music-thumbnail-10.jpg") 50% / cover;
+  color: hsl(200 30% 98%);
+}
+
+.back-side.cover {
+  background: radial-gradient(circle farthest-corner at 80% 20%, hsl(150 80% 20% / .3) 0%, hsl(170 60% 10% / .1) 100%),
+    hsl(231, 32%, 29%) url("https://masumbillah6778.github.io/images/music-thumbnail-10.jpg") 50% / cover;
+  color: hsl(200 30% 98%);
+}
+
+
+
+
+
+
+
+
+
+
+/*============================== PAGE DETAILS ==============================*/
+
+.cover-photo {
+  background: url("https://masumbillah6778.github.io/images/bg/love-bg.jpg");
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  border-radius: 5px 5px 0 0;
+}
+
+.profile {
+  background-color: blue;
+  width: 150px;
+  position: absolute;
+  bottom: -50px;
+  left: 130px;
+  border-radius: 50%;
+  border: 2px solid gold;
+}
+
+h3.profile-name {
+  color: white;
+  margin-top: 60px;
+  font-size: 35px;
+  font-family: solaiman-lipi;
+  text-align: center;
+}
+
+p.about {
+  color: yellow;
+  margin-top: 0px;
   font-size: 20px;
   font-family: solaiman-lipi;
-  font-weight: bold;
-  text-decoration: none;
-  display: block;
-  animation: 4s animation ease infinite;
+  text-align: center;
+  line-height: 30px;
 }
 
-@keyframes animation {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-  }
-  25% {
-    color: red;
-    transform: scale(1);
-    opacity: 1;
-    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
-  }
-  50% {
-    color: yellow;
-    transform: scale(1);
-    opacity: 1;
-    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+p.about img {
+  width: 20px;
+  -webkit-animation-name: spinner;
+  animation-name: spinner;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes spinner {
+  83.33% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    color: green;
-    transform: scale(0.5);
-    opacity: 1;
-    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  83.33% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 
+
+
+
+
+/*============================== ICON ==============================*/
+
+.icons {
+  background-color: cyan;
+  width: 100%;
+  margin: 0 auto 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  bottom: 30px;
+  position: fixed;
+  border-radius: 20px;
+  border: 2px solid;
+}
+
+.icons i {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;
+  transition: 0.2s;
+}
+  
+.icons a:nth-child(1) {
+  background-color: ellow;
+  color: red;
+}
+  
+.icons a:nth-child(2) {
+  background-color: ellow;
+  color: green;
+}
+  
+.icons a:nth-child(3) {
+  background-color: ellow;
+  color: gold;
+}
+  
+.icons a:nth-child(4) {
+  background-color: ellow;
+  color: blue;
+}
+  
+.icons a:nth-child(5) {
+  background-color: ellow;
+  color: brown;
+}
+
+.icons a:nth-child(6) {
+  background-color: ellow;
+  color: lime;
+}
+
+.icons a:nth-child(7) {
+  background-color: ellow;
+  color: teal;
+}
+
+.icons a:hover {
+  color: magenta;
+  transform: scale(1.5); 
+  transition: 0.3s;
+  text-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+
+
+
+
+/*============================== PAGE NUMBR ==============================*/
+
+.front-side.cover::after,
+.back-side.cover::after {
+  background-color: transparent;
+  color: transparent;
+}
+
+.front-side::after,
+.back-side::after {
+  position: absolute;
+  counter-increment: page;
+  content: counter(page) ".";
+  font-size: 20px;
+  font-family: "times";
+  font-weight: bold;
+  font-style: italic;
+}
+
+.front-side::after {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  right: 0px;
+  bottom: 0px;
+  border: 1px solid;
+  border-radius: 20px 0px 0px 0px;
+}
+
+.back-side::after {
+  background-color: red;
+  color: yellow;
+  padding: 5px;
+  left: 0px;
+  bottom: 0px;
+  border: 1px solid;
+  border-radius: 0px 20px 0px 0px;
+}
 
 
 
@@ -647,25 +903,91 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
     grid-template-columns: repeat(1, 1fr);
     overflow-y: scroll;
   }
-
-  main .container .content .main-slide-box .slide-box .slide {
-    border: ;
+  
+  .book-content {
+    display: flex;
+  }
+  
+  .full-book {
+    background-color: live;
+    width: 180px;
+    height: 300px;
   }
 
-  main .container .content .main-slide-box .slide-box .slide .box {
+
+  /*============================== COVER PAGE ==============================*/
+  .front-side.cover h3,
+  .back-side.cover h3 {
+    background-color: red;
+    color: yellow;
+    padding: 5px;
+    font-size: 15px;
+  }
+  
+  
+  /*============================== PAGE DETAILS ==============================*/
+  .front-side.cover h3
+  .back-side.cover h3 {
+    background-color: red;
+    color: yellow;
+    font-size: 15px;
+  }
+
+  .book-page .front-side titel {
+    background-color: blue;
+  }
+  
+  .book-page .back-side titel {
+    background-color: blue;
+  }
+  
+  .cover-photo {
+    height: 80px;
+  }
+  
+  .profile {
+    width: 80px;
+    bottom: -40px;
+    left: 50px;
+  }
+  
+  h3.profile-name {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  
+  p.about {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  p.about img {
+    width: 10px;
+  }
+
+
+  /*============================== ICON ==============================*/
+
+  .icons {
+    background-color: black;
+    margin: 0px;
+    padding: 5px 10px;
+  }
+  
+  .icons i {
     padding: 0px;
+    font-size: 10px;
   }
-    
-  main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
-		width: 300px;
-    margin: 0 auto;
-    display: block;
+  
+  
+  
+  
+  /*============================== PAGE NUMBR ==============================*/
+  .front-side::after,
+  .back-side::after {
+    padding: 5px;
+    font-size: 10px;
   }
-
-  main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
-    margin-top: 10px;
-  }
-
 
 
 
