@@ -420,36 +420,40 @@ main .container .content .main-slide-box .slide-box {
 
 
 
-main .container .content .main-slide-box .slide-box .container {
-  max-width: 100%;
-  margin: auto;
+main .container .content .main-slide-box .slide-box .video-container {
+	max-width: 100%;
+	margin: auto;
   display: grid;
   grid-template-columns: 1.8fr 1.2fr;
-  gap: 10px;
+	gap: 10px;
   text-transform: capitalize;
 }
 	
-main .container .content .main-slide-box .slide-box .container .main-video-container {
+main .container .content .main-slide-box .slide-box .video-container .main-video-container {
 	background-color: Blue;
 	width: 100%;
 	height: ;
-	border-radius: 5px;
+	border-radius: 0px;
 	box-shadow: 0 5px 15px rgba(0,0,0,.1);
 	padding:15px;
 }
 
-main .container .content .main-slide-box .slide-box .container .main-video-container .main-video {
+main .container .content .main-slide-box .slide-box .video-container .main-video-container .main-video {
 	margin-bottom: 7px;
 	border-radius: 5px;
 	width: 100%;
+	height: 400px;
 }
 	
-main .container .content .main-slide-box .slide-box .container .main-video-container .main-vid-title {
-	font-size: 20px;
+main .container .content .main-slide-box .slide-box .video-container .main-video-container .main-vid-title {
+  background-color: red;
 	color:White;
+  padding: 10px;
+	font-size: 20px;
+  font-family: 'sonsieone';
 }
 	
-main .container .content .main-slide-box .slide-box .container .video-list-container {
+main .container .content .main-slide-box .slide-box .video-container .video-list-container {
 	background-color: Yellow;
 	width: 100%;
 	height: 485px;
@@ -488,7 +492,7 @@ main .container .content .main-slide-box .slide-box .container .video-list-conta
   
   
   
-main .container .content .main-slide-box .slide-box .container .video-list-container .list {
+main .container .content .main-slide-box .slide-box .video-container .video-list-container .list {
 	background-color: Green;
 	display: flex;
 	align-items: center;
@@ -499,31 +503,31 @@ main .container .content .main-slide-box .slide-box .container .video-list-conta
 	margin-bottom: 10px;
 }
 	
-main .container .content .main-slide-box .slide-box .container .video-list-container .list:last-child {
+main .container .content .main-slide-box .slide-box .video-container .video-list-container .list:last-child {
 	margin-bottom: 0;
 }
 	
-main .container .content .main-slide-box .slide-box .container .video-list-container .list.active {
+main .container .content .main-slide-box .slide-box .video-container .video-list-container .list.active {
 	background-color: Red;
 }
 
-main .container .content .main-slide-box .slide-box .container .video-list-container .list.active .list-title {
+main .container .content .main-slide-box .slide-box .video-container .video-list-container .list.active .list-title {
 	color:White;
 }
 	
-main .container .content .main-slide-box .slide-box .container .video-list-container .list .list-video {
+main .container .content .main-slide-box .slide-box .video-container .video-list-container .list .list-video {
 	width: 100px;
 	border-radius: 5px;
 }
 	
-main .container .content .main-slide-box .slide-box .container .video-list-container .list .list-title {
+main .container .content .main-slide-box .slide-box .video-container .video-list-container .list .list-title {
 	font-size: 17px;
 	color:Yellow;
 }
 
 
 
-main .container .content .main-slide-box .slide-box .container .list video .list-video {
+main .container .content .main-slide-box .slide-box .video-container .list video .list-video {
   border: 1px solid #075e54;
   border-radius: 0px 20px 0px 20px;
   box-shadow: 0 0 2px 1px #075e54;
@@ -690,14 +694,15 @@ main .container .content .main-slide-box .slide-box .container .list video .list
     grid-template-columns: repeat(1, 1fr);
     overflow-y: scroll;
   }
+
 	
-  main .container .content .main-slide-box .slide-box .container {
-	max-width: 100%;
-	margin: auto;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	gap:20px;
+  main .container .content .main-slide-box .slide-box .video-container {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap:20px;
   }
 
 
