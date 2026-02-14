@@ -683,7 +683,7 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
   /*======================================== Footer ========================================*/
   .footer {
     background-color: blue;
-    width: 100%;
+    width: 98%;
     height: 40px;
     border: 2px solid green;
   }
