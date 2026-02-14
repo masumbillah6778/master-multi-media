@@ -661,7 +661,7 @@ main .container .content .main-music-box .music-box #slider1[type=range]:focus::
 
 /*======================================= Control =======================================*/
 main .container .content .main-music-box .music-box .controls {
-  margin: 20px 0 5px 0;
+  margin: 17px 0 5px 0;
   border-radius: 10px;
   border: 2px solid cyan;
 }
@@ -1003,7 +1003,7 @@ main .container .content .main-music-box .music-box .controls #more-music {
 
 
   main {
-	height: 672px;
+	height: 673px;
     padding: 0px;
 	border: 2px solid gold;
   }
