@@ -411,7 +411,7 @@ main .container .content .main-slide-box {
 }
 
 main .container .content .main-slide-box .slide-box {
-  height: 500px;
+  height: 450px;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	row-gap: 10px;
