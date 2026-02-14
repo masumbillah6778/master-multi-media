@@ -1003,7 +1003,7 @@ main .container .content .main-music-box .music-box .controls #more-music {
 
 
   main {
-	width: 670px;
+	height: 670px;
     padding: 0px;
 	border: 2px solid gold;
   }
