@@ -668,6 +668,10 @@ main .container .content .main-slide-box .slide-box table tbody tr:nth-of-type(o
     overflow-y: scroll;
   }
 
+  main .container .content .main-slide-box .slide-box .table-box {
+    height: 550px;
+  }
+
   main .container .content .main-slide-box .slide-box .mb-3 input {
     background-color: #4070F4;
     color: white;
