@@ -411,8 +411,6 @@ main .container .content .main-slide-box {
 }
 
 main .container .content .main-slide-box .slide-box {
-  height: 504px;
-  overflow-y: scroll;
 	order: 2px solid green;
 }
 
@@ -453,6 +451,12 @@ main .container .content .main-slide-box .slide-box .table-searchable td[data-se
   background-color: lightcoral;
 }
 
+main .container .content .main-slide-box .slide-box .table-box {
+  height: 465px;
+  overflow-y: scroll;
+  border: 2px solid red;
+}
+
 main .container .content .main-slide-box .slide-box table {
   width: 100%;
   counter-reset: serial-number;
@@ -460,7 +464,7 @@ main .container .content .main-slide-box .slide-box table {
 
 main .container .content .main-slide-box .slide-box table thead {
   background-color: teal;
-  top: 42px;
+  top: 2px;
   position: sticky;
 }
 
@@ -473,11 +477,13 @@ main .container .content .main-slide-box .slide-box table thead tr th {
 }
 
 main .container .content .main-slide-box .slide-box table tbody {
-  height: 504px;
+  height: 4px;
+  top: 2px;
   overflow-y: scroll;
 }
 
 main .container .content .main-slide-box .slide-box table tbody tr {
+  height: 30px;
   counter-increment: row;
 }
 
@@ -495,7 +501,7 @@ main .container .content .main-slide-box .slide-box table tbody tr td:first-chil
 }
 
 main .container .content .main-slide-box .slide-box table tbody tr:nth-of-type(odd) {
- background-color: #eee;
+ background-color: gray;
 }
 
 
@@ -659,26 +665,14 @@ main .container .content .main-slide-box .slide-box table tbody tr:nth-of-type(o
   main .container .content .main-slide-box .slide-box {
     width: auto;
     height: 640px;
-    grid-template-columns: repeat(1, 1fr);
     overflow-y: scroll;
   }
 
-  main .container .content .main-slide-box .slide-box .slide {
-    border: ;
-  }
-
-  main .container .content .main-slide-box .slide-box .slide .box {
-    padding: 0px;
-  }
-    
-  main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
-		width: 300px;
-    margin: 0 auto;
-    display: block;
-  }
-
-  main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
-    margin-top: 10px;
+  main .container .content .main-slide-box .slide-box .mb-3 input {
+    background-color: #4070F4;
+    color: white;
+    width: 72%;
+    height: 30px;
   }
 
 
