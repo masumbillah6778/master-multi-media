@@ -500,6 +500,10 @@ main .container .content .main-slide-box .slide-box table tbody tr td {
   border: 1px solid green;
 }
 
+body.dark main .container .content .main-slide-box .slide-box table tbody tr td {
+  color: white;
+}
+
 main .container .content .main-slide-box .slide-box table tbody tr td:first-child:before {
   counter-increment: serial-number;
   content: counter(row, bengali) '. ';
@@ -510,7 +514,17 @@ main .container .content .main-slide-box .slide-box table tbody tr td:nth-child(
   color: green;
 }
 
+body.dark main .container .content .main-slide-box .slide-box table tbody tr td:nth-child(6n+5) {
+  background-color: Cya;
+  color: green;
+}
+
 main .container .content .main-slide-box .slide-box table tbody tr td:nth-child(6n+6) {
+  background-color: Cya;
+  color: red;
+}
+
+body.dark main .container .content .main-slide-box .slide-box table tbody tr td:nth-child(6n+6) {
   background-color: Cya;
   color: red;
 }
