@@ -1,0 +1,1341 @@
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
+
+:root {
+  --body-color: #E4E9F7;
+  --nav-color: #4070F4;
+  --side-nav: #010718;
+  --text-color: #FFF;
+  --search-bar: #F2F2F2;
+  --search-text: #010718;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+body {
+  background-color: var(--body-color);
+  width: 100%;
+  height: 100vh;
+  border: 4px solid red;
+}
+
+body.dark {
+  --body-color: #18191A;
+  --nav-color: #242526;
+  --side-nav: #242526;
+  --text-color: #CCC;
+  --search-bar: #242526;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.main-content nav {
+  background-color: #006400;
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  -index: 100;
+  border: 2px solid red;
+}
+
+body.dark .main-content nav {
+  background-color: #242526;
+}
+
+.main-content nav .nav-bar {
+  background-color: green;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body.dark .main-content nav .nav-bar {
+  background-color: red;
+}
+
+nav .nav-bar .sidebarOpen {
+  color: white;
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+nav .nav-bar .logo a {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'sonsieone';
+  text-decoration: none;
+}
+
+.menu .logo-toggle {
+  display: none;
+}
+
+.nav-bar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .nav-links li {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.nav-bar .nav-links li i {
+  color: yellow;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-links li a.active {
+  background-color: red;
+}
+
+body.dark .nav-links li a.active {
+  background-color: green;
+}
+
+.nav-links li a::before {
+  content: '';
+  background-color: yellow;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.nav-links li:hover a::before {
+  opacity: 1;
+}
+
+.nav-bar .darkLight-searchBox {
+  display: flex;
+  align-items: center;
+}
+
+.darkLight-searchBox .dark-light {
+  background-color: red;
+  width: 50px;
+  height: 25px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+body.dark .darkLight-searchBox .dark-light {
+  background-color: green;
+}
+
+.bx.bx-moon.moon::before {
+  color: yellow;
+  margin-left: -20px;
+}
+
+.bx.bx-sun.sun::before {
+  color: white;
+  margin-left: 20px;
+}
+
+.darkLight-searchBox .searchToggle {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.searchToggle i {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-light i {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-light i.sun {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dark-light.active i.sun {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+  color: #000;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchToggle i.cancel {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchToggle.active i.cancel {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.searchToggle.active i.search {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchBox {
+  position: relative;
+}
+
+.searchBox .search-field {
+  background-color: blue;
+  position: absolute;
+  bottom: -85px;
+  right: 5px;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-radius: 6px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+body.dark .searchBox .search-field {
+  background-color: white;
+}
+
+.searchToggle.active ~ .search-field {
+  bottom: -74px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-field::before {
+  background-color: red;
+  content: '';
+  position: absolute;
+  right: 14px;
+  top: -4px;
+  height: 12px;
+  width: 12px;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+body.dark .search-field::before {
+  background-color: green;
+}
+
+.search-field input {
+  color: var(--search-text);
+  background-color: var(--search-bar);
+  width: 100%;
+  height: 100%;
+  padding: 0 45px 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+body.dark .search-field input {
+  color: var(--text-color);
+}
+
+.search-field i {
+  position: absolute;
+  color: var(--nav-color);
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+body.dark .search-field i {
+  color: var(--text-color);
+}
+
+
+
+
+
+
+
+
+
+
+/*======================================= Main =======================================*/
+main {
+  background-color: hite;
+  width: 100%;
+  height: 600px;
+  padding: 10px;
+  border: 2px solid blue;
+}
+
+main .container {
+  width: 100%;
+  height: 100%;
+  border: 4px solid blue;
+}
+
+main .container .content {
+  width: 100%;
+  height: 100%;
+  border: 4px solid red;
+}
+
+main .container .content .heading {
+  color: red;
+  padding: 10px 0px;
+  font-size: 25px;
+  font-family: 'sonsieone';
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 4px solid red;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
+
+
+
+
+
+/*======================================= Main Slide Box =======================================*/
+
+main .container .content .main-slide-box {
+	width: auto;
+  height: 500px;
+  margin: 0px;
+	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+main .container .content .main-slide-box .slide-box {
+	order: 2px solid green;
+}
+
+
+
+
+
+/*======================================= Calendar-box =======================================*/
+.calendar-box {
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  width: auto;
+  height: 495px;
+  margin: 5px;
+  user-select: none;
+  border-radius: 10px;
+  border: 5px solid;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --angle: 0deg;
+  border-image: linear-gradient(var(--angle), red, green, blue, yellow) 1;
+  animation: 5s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+      --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+.wrapper {
+  margin: 10px;
+}
+
+
+
+/*======================================= Next Prev Buttons =======================================*/
+
+.buttons {
+  background-color: yellow;
+  width: 100%;
+  height: 40px;
+  margin: 0px;
+  padding: 5px 0px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid blue;
+}
+
+#prev-month {
+  background-color: green;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#next-month {
+  background-color: red;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+  right: 0;
+  border: none;
+  cursor: pointer;
+}
+
+h2#calendar-years {
+  color: blue;
+  font-size: 30px;
+  margin: 0px;
+  padding: 5px;
+  font-family: 'solaiman-lipi';
+  animation: bannerAnimation 4s ease-in-out infinite;
+}
+
+@keyframes bannerAnimation {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+
+
+
+/*======================================= Slider =======================================*/
+.slider {
+  width: 100%;
+  height: 430px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid white;
+}
+
+.slider.slider-one {
+  margin: 0;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  margin: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: cente;
+}
+
+/*======================================= Calendar Body =======================================*/
+
+.calendar-body {
+  background-color: pink;
+  background-mage: linear-gradient(to bottom left, yellow 50%, green 50%);
+  background-mage: linear-gradient(45deg, red, yellow, green);
+  width: 100%;
+  height: 420px;
+  border: 2px solid red;
+}
+
+
+/*======================================= Calendar Box h2 =======================================*/
+
+.calendar-body h2 {
+  background-color: #565656;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	color: transparent;
+  margin: 0;
+  padding: 0px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi';
+  text-align: center;
+	text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+  text-shado: 2px 2px 3px rgba(255,255,255,0.1);
+  text-shado: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shado: -1px -1px 1px #fff, 1px 1px 1px #000;
+  text-shado: -1px -1px 1px #fff, 1px 1px 2px #111;
+}
+
+
+.calendar-week {
+  padding: 0px;
+  font-size: 20px;
+  list-style: none;
+  display: grid;
+  column-gap: 4px;
+  row-gap: 20px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 8px 0;
+}
+
+.calendar-week .day {
+  background-color: green;
+  color: yellow;
+  width: 100p;
+  height: 50px;
+  margin: 1px;
+  padding: 5px 5px 0px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi';
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.calendar-date {
+  margin-top: 5px;
+  padding: 0px;
+  list-style: none;
+  display: grid;
+  column-gap: 2px;
+  row-gap: 3px;
+  grid-template-columns: repeat(7, 1fr); 
+  grid-gap: 8p 0;
+}
+
+.ay:first-child {
+  grid-column-start: 4; 
+}
+
+.calendar-date .day {
+  color: red;
+  margin: 0;
+  padding: 6px 0px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid;
+}
+  
+.calendar-date .day::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+}
+
+/*div.day[data-selected="start"]::before {
+  background-color: red;
+  border-radius: 10px 0px 0px 10px;
+}
+
+div[data-selected] ~ .day::before {
+  background-color: blue;
+}
+
+div.day[data-selected="start"] ~ .day:not([data-selected="end"])::before {
+  opacity: 0.4;
+}
+
+div.day[data-selected="end"]::before {
+  background-color: green;
+  border-radius: 0px 10px 10px 0px;
+}
+
+div.day[data-selected="end"] ~ .day::before {
+  background-color: transparent;
+}
+
+div.day[data-selected],
+div.day[data-selected] ~ .day {
+  color: white;
+}
+
+div.day[data-selected="end"] ~ .day {
+  color: green;
+}
+
+
+
+/*=================================== Mixer ===================================*/
+
+.calendar-date .day:nth-child(7n+6) {
+  background: red;
+  color: Yellow;
+}
+  
+.calendar-date .day:nth-child(7n+7) {
+  background: red;
+  color: Yellow;
+}
+
+.calendar-days .day.hollyday {
+  background-color: red;
+}
+
+.calendar-date .day.blank {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  padding-top: -20px;
+  border: 1px solid black;
+}
+
+.calendar-date .day.active {
+  background-color: yellow;
+  border: 2px solid blue;
+}
+
+
+
+
+
+
+/*=================================== Note ===================================*/
+.day.circle {
+  border: 2px solid orange;
+}
+
+.day.circle.orange.fb:hover {
+  background-image: url('https://github.com/masumbillah6778/image/raw/main/master-calendar-fb.jpg');
+  background-size: cover;
+  background-position: center;
+   transition: background 0.5s, transform 0.5s, opacity 0.5s ease-in;
+  animation: none;
+}
+
+.day.circle.orange number {
+  background-color: orange;
+  color: white;
+  width: 30px;
+  height: 30px;
+  padding-top: 10px;
+  font-size: 10px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  z-index: 1;
+  border-radius: 50px;
+}
+
+.day.circle.orange a {
+  color: blue;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  animation: 2s animation ease infinite;
+}
+
+@keyframes animation {
+  0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: red;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+
+
+
+
+/*=================================== PopUp Container ===================================*/
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.3);
+  z-index: 2;
+}
+  
+.popup-link {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+
+
+
+
+
+
+/*=================================== PopUp Content ===================================*/
+  
+.popup-content {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  border: 5px solid;
+  --angle: 0deg;
+  border-image: linear-gradient(var(--angle), red, green, blue, yellow) 1;
+  animation: 5s rotate linear infinite;
+}
+
+
+
+
+
+
+
+.popup-container h3 {
+  background-color: blue;
+  color: white;
+  width: 94.5%;
+  height: 50px;
+  margin: 0px 0px 5px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "solaiman-lipi";
+  font-weight: bold;
+  border-radius: 10px 0px 0px 0px;
+}
+  
+.popup-content p {
+  background-color: yellow;
+  color: red;
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  padding: 10px;
+  font-size: 17px;
+  font-family: "solaiman-lipi";
+  text-align: left;
+  line-height: 20px;
+  overflow-y: scroll;
+  border: 1px solid;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.popup-content p::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.popup-content p::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+}
+
+.popup-content p::-webkit-scrollbar-thumb {
+	background-color: red;	
+	background-image: -webkit-linear-gradient(45deg,
+	                      rgba(0, 0, 0, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(0, 0, 0, .2) 50%,
+											  rgba(0, 0, 0, .2) 75%,
+											  transparent 75%,
+											  transparent);
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+.day.circle.orange .popup-content a {
+  width: 45px;
+  height: 45px;
+  border-radius: 0px 10px 0px 0px;
+  animation: none;
+}
+  
+.day.circle.orange .popup-content a.close {
+  background-color: green;
+  color: yellow;
+  width: 5%;
+  height: 50px;
+  padding-top: 6px;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  float: right;
+  border-radius: 0px 10px 0px 0px;
+}
+
+.day.circle.orange .popup-content a.close:hover {
+  background-color: red;
+  color: white;
+  width: 5%;
+  height: 50px;
+}
+  
+.popup-content span:hover,
+.popup-content span:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-container:target {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+  
+  
+/*=================================== PopUp Style ===================================*/
+  
+.popup-style-1 {
+  transform: rotate(180deg);
+}
+
+.popup-style-1:target {
+  transform: rotate(0deg);
+}
+
+
+
+/*=================================== Ribbon ===================================*/
+.ribbon-box {
+	background-color: red;
+  width: 100%;
+  margin: 0 10px;
+	border: 1px solid #CCC;
+	padding: 40px 25px;
+	position: relative;
+	border-radius: 3px;
+  margin: 30px auto;
+}
+
+.ribbon-box.ribbon {
+  width: 10%;
+  overflow: hidden;
+}
+
+.ribbon-text {
+  background: #EA4335;
+  color: #FFF;
+  height: 60px;
+  width: 60px;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  left: -1px;
+  bottom: -1px;
+  flex-direction: row;
+  border-radius: 0 100% 0 0;
+  border: 1px dashed #FFF;
+  box-shadow: 0 0 0 3px #EA4335;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================== Footer ========================================*/
+.footer {
+  background-color: red;
+  width: 100%;
+  height: 70px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border: 2px solid green;
+}
+
+.footer marquee {
+  color: white;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: solaiman-lipi;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================= Mobile Screen =======================================*
+
+@media only screen and (max-width: 767px) {*/
+
+@media screen and (max-width: 768px) {
+  .main-content nav .nav-bar .sidebarOpen {
+    display: block;
+  }
+  
+  .main-content nav .nav-bar .menu {
+    background-color: purple;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 100;
+    transition: all 0.4s ease;
+  }
+
+  .main-content nav .nav-bar .logo a {
+    font-size: 14px;
+    color: white;
+  }
+
+  .main-content nav.active .menu{
+    left: -0%;
+  }
+
+  .main-content nav.active .nav-bar .navLogo a {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .main-content nav .nav-bar .menu .logo-toggle {
+    background-color: #4070F4;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 10px 0px 10px;
+  }
+	
+  .main-content nav .nav-bar .menu .logo-toggle .logo {
+	font-size: 40px;
+    font-family: 'love-letters';
+    letter-spacing: 2px;}
+	
+  .logo-toggle .siderbarClose{
+    color: var(--text-color);
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .main-content nav .nav-bar .nav-links {
+    padding-top: 30px;
+    display: block;
+    flex-direction: column;
+  }
+
+  .main-content nav .nav-bar .nav-links li a {
+    display: block;
+    margin-top: 20px;
+  }
+
+
+  
+
+
+
+
+
+  /*======================================= Main =======================================*/
+  main {
+	height: 673px;
+    padding: 0px;
+  }
+
+  main .container {
+    width: 100%;
+    height: 100%;
+    border: 0px solid blue;
+  }
+
+	main .container .content .heading {
+    font-size: 15px;
+    padding: 5px;
+    border-bottom: 4px solid black;
+  }
+
+  main .container .content {
+    border: 0px solid blue;
+  }
+
+
+
+
+
+  /*======================================= Main Slide Box =======================================*/
+
+  main .container .content .main-slide-box {
+    margin: 0px;
+  }
+
+  main .container .content .main-slide-box .slide-box {
+    width: auto;
+    height: 640px;
+    overflow-y: scroll;
+  }
+
+  main .container .content .main-slide-box .slide-box .table-box {
+    height: 550px;
+  }
+
+  *,
+  *::before,
+  *::after {
+    margin: 1px;
+	box-sizing: border-box;
+  }
+  
+  .calendar-box {
+    background: #FFF;
+    width: 100%;
+    height: 780px;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+
+  .slider.slider-one {
+    margin: ;
+  }
+
+  #prev-month {
+    background-color: green;
+    color: white;
+    font-size: 7px;
+    padding: 10px 5px;
+  }
+
+  #next-month {
+    background-color: red;
+    color: white;
+    font-size: 7px;
+    padding: 10px 5px;
+  }
+
+  h2#calendar-years {
+    color: blue;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .calendar-body h2 {
+    color: red;
+    font-size: 20px;
+  }
+  
+  .calendar-week .day {
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .calendar-date {
+	row-gap: 10px;
+  }
+  
+  .calendar-date .day {
+    color: red;
+    height: 35px;
+    font-size: 12px;
+  }
+  
+  .day.circle {
+    border: 2px solid black;
+  }
+
+  .day.circle.orange number {
+    background-color: black;
+    color: white;
+    width: 15px;
+    height: 15px;
+    padding-top: 5px;
+    font-size: 5px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    border-radius: 50px;
+  }
+
+  .popup-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .popup-content a {
+    background-color: pink;
+    color: blue;
+  }
+  
+  .popup-container h3 {
+    width: 79%;
+    font-size: 15px;
+  }
+  
+  .day.circle.orange .popup-content a.close {
+    background-color: green;
+    color: white;
+    width: 20%;
+    height: 50px;
+  }
+
+  .day.circle.orange .popup-content a.close:hover {
+    background-color: red;
+    color: white;
+    width: 20%;
+    height: 50px;
+  }
+  
+  .popup-container p {
+    font-size: 10px;
+    word-break: break-all;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+
+  .popup-container p:hover {
+    scrollbar-color: blue transparent;
+  }
+
+  .popup-container p::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .popup-container p:not(:hover)::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  .popup-container p::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 50px;
+    transition: background 0.3s;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .box {
+	  padding: 5px 2px;
+	  background: #FFF;
+	  max-width: 400px;
+	  position: relative;
+	  border-radius: 3px;
+    margin: 0px auto;
+}
+  
+  .half-circle-ribbon {
+    background: #EA4335;
+    color: #FFF;
+    height: 10px;
+    width: 10px;
+    font-size: 5px;
+    position: absolute;
+    bottom: 0;
+  }
+
+
+
+
+
+
+
+
+  /*======================================== Footer ========================================*/
+  .footer {
+    background-color: blue;
+    width: 98%;
+    height: 40px;
+    border: 2px solid green;
+  }
+
+  .footer marquee {
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: solaiman-lipi;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
