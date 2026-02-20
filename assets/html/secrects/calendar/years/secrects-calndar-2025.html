@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web Multi Player html">
+    <meta name="title" content="Multi Player">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css">
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css">
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/css/custom-scrollbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="icon" type="image/x-icon" href="https://masumbillah6778.github.io/images/music-icon1.png">
+    <title> Secrects Calndar </title>
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/master-multi-media/assets/css/table-search-filter-and-highlight.ss" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main-content">
+      <nav>
+        <div class="nav-bar" id="elemen">
+          
+          <i class='bx bx-menu sidebarOpen' ></i>
+          <span class="logo navLogo"><a href="#"> Masum Billah </a></span>
+          <div class="menu">
+            <div class="logo-toggle">
+              <span class="logo"><a href="#"> M² Player </a></span>
+              <i class='bx bx-x siderbarClose'></i>
+            </div>
+            
+            <ul class="nav-links">
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/secrects/music/secrects-music-main-page.html"><i class="fa-solid fa-music"></i> Audio </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/secrects/videos/secrects-video-main-page.html"> <i class="fa-solid fa-video"></i> Video </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/secrects/imges/secrects-imges-main-page.html"> <i class="fas fa-image"></i> Image </a></li>
+              <li><a href="#" class="active"> <i class="fa-solid fa-book"></i> Book </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/secrects/calendar/secrects-calendar-main-page.html"> <i class="fa-solid fa-calendar"></i> Calendar </a></li>
+            </ul>
+          </div>
+          
+          <div class="darkLight-searchBox">
+            <div class="dark-light">
+              <i class='bx bx-moon moon'></i>
+              <i class='bx bx-sun sun'></i>
+            </div>
+            
+            <div class="searchBox">
+              <div class="searchToggle">
+                <i class='bx bx-x cancel'></i>
+                <i class='bx bx-search search'></i>
+              </div>
+              
+              <div class="search-field">
+                <input type="text" id="searchBox" name="searchBox" class="form-control" placeholder="Search...">
+                <i class='bx bx-search'></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <main>
+        <div class="container">
+          <section class="content">
+            <div class="heading"> Secrects Calndar </div>
+
+            
+            <div class="main-slide-box" id="scrollbar">
+              <div class="slide-box">
+                
+                
+                <!-- ======================================= Next Prev Buttons ======================================= -->
+                <div class="calendar-box">
+                  <div class="wrapper">
+                    <div class="buttons">
+                      <button id="prev-month"><i class="fas fa-caret-left"></i> Prev </button>
+                        <h2 id="calendar-years"> ক্যালেন্ডার ২০২৫ <h2>
+                      <button id="next-month"> Next <i class="fas fa-caret-right"></i></button>
+                    </div>
+
+                    <!--======================================= Calendar Body =======================================-->
+                    <div class="slider slider-one">
+
+                      <!--======================================= জানুয়ারি ২০২৫ =======================================-->
+                      <div class="slide">
+                        <div class="calendar-body">
+                          <h2> জানুয়ারি ২০২৫ </h2>
+
+                          <div class="calendar-week">
+                            <div class="day"> রবি </div>
+                            <div class="day"> সোম </div>
+                            <div class="day"> মঙ্গল </div>
+                            <div class="day"> বুধ </div>
+                            <div class="day"> বৃহ </div>
+                            <div class="day hollyday"> শুক্র </div>
+                            <div class="day hollyday"> শনি </div>
+                          </div>
+
+                          <div class="calendar-date">
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day"><span> 1 </span></div>
+                            <div class="day"><span> 2 </span></div>
+                            <div class="day"><span> 3 </span></div>
+                            <div class="day"><span> 4 </span></div>
+                            <div class="day"><span> 5 </span></div>
+                            <div class="day"><span> 6 </span></div>
+                            <div class="day"><span> 7 </span></div>
+                            <div class="day"><span> 8 </span></div>
+                            <div class="day"><span> 9 </span></div>
+                            <div class="day"><span> 10 </span></div>
+                            <div class="day"><span> 11 </span></div>
+                            <div class="day"><span> 12 </span></div>
+                            <div class="day"><span> 13 </span></div>
+                            <div class="day"><span> 14 </span></div>
+                            <div class="day circle orange">
+                              <a href="#popup1"> <span> 15 </span> </a> <number> 1 </number>
+                                
+                                <div id="popup1" class="popup-container popup-style-1">
+                                  <div class="popup-content">
+                                    <a href="#" class="close">&times;</a>
+                                    <h3> ৬ - ৬ - ২০২৫ </h3>
+                                    <p> Lorem Ipsum is simply dummy text of the printing and </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="day"><span> 16 </span></div>
+                            <div class="day"><span> 17 </span></div>
+                            <div class="day"><span> 18 </span></div>
+                            <div class="day"><span> 19 </span></div>
+                            <div class="day"><span> 20 </span></div>
+                            <div class="day"><span> 21 </span></div>
+                            <div class="day"><span> 22 </span></div>
+                            <div class="day"><span> 23 </span></div>
+                            <div class="day"><span> 24 </span></div>
+                            <div class="day"><span> 25 </span></div>
+                            <div class="day"><span> 26 </span></div>
+                            <div class="day"><span> 27 </span></div>
+                            <div class="day"><span> 28 </span></div>
+                            <div class="day"><span> 29 </span></div>
+                            <div class="day"><span> 30 </span></div>
+                            <div class="day"><span> 31 </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <!--======================================= ফেব্রুয়ারি ২০২৫ =======================================-->
+                      <div class="slide">
+                        <div class="calendar-body">
+                          <h2> ফেব্রুয়ারি ২০২৫ </h2>
+
+                          <div class="calendar-week">
+                            <div class="day"> রবি </div>
+                            <div class="day"> সোম </div>
+                            <div class="day"> মঙ্গল </div>
+                            <div class="day"> বুধ </div>
+                            <div class="day"> বৃহ </div>
+                            <div class="day hollyday"> শুক্র </div>
+                            <div class="day hollyday"> শনি </div>
+                          </div>
+
+                          <div class="calendar-date">
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day"><span> 1 </span></div>
+                            <div class="day"><span> 2 </span></div>
+                            <div class="day"><span> 3 </span></div>
+                            <div class="day"><span> 4 </span></div>
+                            <div class="day"><span> 5 </span></div>
+                            <div class="day"><span> 6 </span></div>
+                            <div class="day"><span> 7 </span></div>
+                            <div class="day"><span> 8 </span></div>
+                            <div class="day"><span> 9 </span></div>
+                            <div class="day"><span> 10 </span></div>
+                            <div class="day"><span> 11 </span></div>
+                            <div class="day"><span> 12 </span></div>
+                            <div class="day"><span> 13 </span></div>
+                            <div class="day"><span> 14 </span></div>
+                            <div class="day"><span> 15 </span></div>
+                            <div class="day"><span> 16 </span></div>
+                            <div class="day"><span> 17 </span></div>
+                            <div class="day"><span> 18 </span></div>
+                            <div class="day"><span> 19 </span></div>
+                            <div class="day"><span> 20 </span></div>
+                            <div class="day"><span> 21 </span></div>
+                            <div class="day"><span> 22 </span></div>
+                            <div class="day"><span> 23 </span></div>
+                            <div class="day"><span> 24 </span></div>
+                            <div class="day"><span> 25 </span></div>
+                            <div class="day"><span> 26 </span></div>
+                            <div class="day"><span> 27 </span></div>
+                            <div class="day"><span> 28 </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+        
+                      <!--======================================= মার্চ ২০২৫ =======================================-->
+                      <div class="slide">
+                        <div class="calendar-body">
+                          <h2> মার্চ ২০২৫ </h2>
+
+                          <div class="calendar-week">
+                            <div class="day"> রবি </div>
+                            <div class="day"> সোম </div>
+                            <div class="day"> মঙ্গল </div>
+                            <div class="day"> বুধ </div>
+                            <div class="day"> বৃহ </div>
+                            <div class="day hollyday"> শুক্র </div>
+                            <div class="day hollyday"> শনি </div>
+                          </div>
+          
+                          <div class="calendar-date">
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day"><span> 1 </span></div>
+                            <div class="day"><span> 2 </span></div>
+                            <div class="day"><span> 3 </span></div>
+                            <div class="day"><span> 4 </span></div>
+                            <div class="day"><span> 5 </span></div>
+                            <div class="day"><span> 6 </span></div>
+                            <div class="day"><span> 7 </span></div>
+                            <div class="day"><span> 8 </span></div>
+                            <div class="day"><span> 9 </span></div>
+                            <div class="day"><span> 10 </span></div>
+                            <div class="day"><span> 11 </span></div>
+                            <div class="day"><span> 12 </span></div>
+                            <div class="day"><span> 13 </span></div>
+                            <div class="day"><span> 14 </span></div>
+                            <div class="day"><span> 15 </span></div>
+                            <div class="day"><span> 16 </span></div>
+                            <div class="day"><span> 17 </span></div>
+                            <div class="day"><span> 18 </span></div>
+                            <div class="day"><span> 19 </span></div>
+                            <div class="day"><span> 20 </span></div>
+                            <div class="day"><span> 21 </span></div>
+                            <div class="day"><span> 22 </span></div>
+                            <div class="day"><span> 23 </span></div>
+                            <div class="day"><span> 24 </span></div>
+                            <div class="day"><span> 25 </span></div>
+                            <div class="day"><span> 26 </span></div>
+                            <div class="day"><span> 27 </span></div>
+                            <div class="day"><span> 28 </span></div>
+                            <div class="day"><span> 29 </span></div>
+                            <div class="day"><span> 30 </span></div>
+                            <div class="day"><span> 31 </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+                      <!--======================================= এপ্রিল ২০২৫ =======================================-->
+                      <div class="slide">
+                        <div class="calendar-body">
+                          <h2> এপ্রিল ২০২৫ </h2>
+
+                          <div class="calendar-week">
+                            <div class="day"> রবি </div>
+                            <div class="day"> সোম </div>
+                            <div class="day"> মঙ্গল </div>
+                            <div class="day"> বুধ </div>
+                            <div class="day"> বৃহ </div>
+                            <div class="day hollyday"> শুক্র </div>
+                            <div class="day hollyday"> শনি </div>
+                          </div>
+
+                          <div class="calendar-date">
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day"><span> 1 </span></div>
+                            <div class="day"><span> 2 </span></div>
+                            <div class="day"><span> 3 </span></div>
+                            <div class="day"><span> 4 </span></div>
+                            <div class="day"><span> 5 </span></div>
+                            <div class="day"><span> 6 </span></div>
+                            <div class="day"><span> 7 </span></div>
+                            <div class="day"><span> 8 </span></div>
+                            <div class="day"><span> 9 </span></div>
+                            <div class="day"><span> 10 </span></div>
+                            <div class="day"><span> 11 </span></div>
+                            <div class="day"><span> 12 </span></div>
+                            <div class="day"><span> 13 </span></div>
+                            <div class="day"><span> 14 </span></div>
+                            <div class="day"><span> 15 </span></div>
+                            <div class="day"><span> 16 </span></div>
+                            <div class="day"><span> 17 </span></div>
+                            <div class="day"><span> 18 </span></div>
+                            <div class="day"><span> 19 </span></div>
+                            <div class="day"><span> 20 </span></div>
+                            <div class="day"><span> 21 </span></div>
+                            <div class="day"><span> 22 </span></div>
+                            <div class="day"><span> 23 </span></div>
+                            <div class="day"><span> 24 </span></div>
+                            <div class="day"><span> 25 </span></div>
+                            <div class="day"><span> 26 </span></div>
+                            <div class="day"><span> 27 </span></div>
+                            <div class="day"><span> 28 </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <!--======================================= মে ২০২৫ =======================================-->
+                      <div class="slide">
+                        <div class="calendar-body">
+                          <h2> মে ২০২৫ </h2>
+
+                          <div class="calendar-week">
+                            <div class="day"> রবি </div>
+                            <div class="day"> সোম </div>
+                            <div class="day"> মঙ্গল </div>
+                            <div class="day"> বুধ </div>
+                            <div class="day"> বৃহ </div>
+                            <div class="day hollyday"> শুক্র </div>
+                            <div class="day hollyday"> শনি </div>
+                          </div>
+
+                          <div class="calendar-date">
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day"><span> 1 </span></div>
+                            <div class="day"><span> 2 </span></div>
+                            <div class="day"><span> 3 </span></div>
+                            <div class="day"><span> 4 </span></div>
+                            <div class="day"><span> 5 </span></div>
+                            <div class="day"><span> 6 </span></div>
+                            <div class="day"><span> 7 </span></div>
+                            <div class="day"><span> 8 </span></div>
+                            <div class="day"><span> 9 </span></div>
+                            <div class="day"><span> 10 </span></div>
+                            <div class="day"><span> 11 </span></div>
+                            <div class="day"><span> 12 </span></div>
+                            <div class="day"><span> 13 </span></div>
+                            <div class="day"><span> 14 </span></div>
+                            <div class="day"><span> 15 </span></div>
+                            <div class="day"><span> 16 </span></div>
+                            <div class="day"><span> 17 </span></div>
+                            <div class="day"><span> 18 </span></div>
+                            <div class="day"><span> 19 </span></div>
+                            <div class="day"><span> 20 </span></div>
+                            <div class="day"><span> 21 </span></div>
+                            <div class="day"><span> 22 </span></div>
+                            <div class="day"><span> 23 </span></div>
+                            <div class="day"><span> 24 </span></div>
+                            <div class="day"><span> 25 </span></div>
+                            <div class="day"><span> 26 </span></div>
+                            <div class="day"><span> 27 </span></div>
+                            <div class="day"><span> 28 </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+        
+                      <!--======================================= জুন ২০২৫ =======================================-->
+                      <div class="slide">
+                        <div class="calendar-body">
+                          <h2> জুন ২০২৫ </h2>
+
+                          <div class="calendar-week">
+                            <div class="day"> রবি </div>
+                            <div class="day"> সোম </div>
+                            <div class="day"> মঙ্গল </div>
+                            <div class="day"> বুধ </div>
+                            <div class="day"> বৃহ </div>
+                            <div class="day hollyday"> শুক্র </div>
+                            <div class="day hollyday"> শনি </div>
+                          </div>
+                        
+                          <div class="calendar-date">
+                            <div class="day"><span> 1 </span></div>
+                            <div class="day"><span> 2 </span></div>
+                            <div class="day"><span> 3 </span></div>
+                            <div class="day"><span> 4 </span></div>
+                            <div class="day"><span> 5 </span></div>
+                            <div class="day circle orange">
+                              <a href="#popup1"> <span> 6 </span> </a> <number> 1 </number>
+                                
+                                <div id="popup2" class="popup-container popup-style-2">
+                                  <div class="popup-content">
+                                    <a href="#" class="close">&times;</a>
+                                    <h3> ৬ - ৬ - ২০২৫ </h3>
+                                    <p> ঈদুল আজহা  </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="day"><span> 7 </span></div>
+                            <div class="day"><span> 8 </span></div>
+                            <div class="day"><span> 9 </span></div>
+                            <div class="day"><span> 10 </span></div>
+                            <div class="day"><span> 11 </span></div>
+                            <div class="day"><span> 12 </span></div>
+                            <div class="day"><span> 13 </span></div>
+                            <div class="day"><span> 14 </span></div>
+                            <div class="day"><span> 15 </span></div>
+                            <div class="day"><span> 16 </span></div>
+                            <div class="day"><span> 17 </span></div>
+                            <div class="day"><span> 18 </span></div>
+                            <div class="day"><span> 19 </span></div>
+                            <div class="day"><span> 20 </span></div>
+                            <div class="day"><span> 21 </span></div>
+                            <div class="day"><span> 22 </span></div>
+                            <div class="day"><span> 23 </span></div>
+                            <div class="day"><span> 24 </span></div>
+                            <div class="day"><span> 25 </span></div>
+                            <div class="day"><span> 26 </span></div>
+                            <div class="day"><span> 27 </span></div>
+                            <div class="day"><span> 28 </span></div>
+                            <div class="day"><span> 29 </span></div>
+                            <div class="day"><span> 30 </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <!--======================================= জুলাই ২০২৫ =======================================-->
+                      <div class="slide">
+                        <div class="calendar-body">
+                          <h2> জুলাই ২০২৫ </h2>
+
+                          <div class="calendar-week">
+                            <div class="day"> রবি </div>
+                            <div class="day"> সোম </div>
+                            <div class="day"> মঙ্গল </div>
+                            <div class="day"> বুধ </div>
+                            <div class="day"> বৃহ </div>
+                            <div class="day hollyday"> শুক্র </div>
+                            <div class="day hollyday"> শনি </div>
+                          </div>
+
+                          <div class="calendar-date">
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day"><span> 1 </span></div>
+                            <div class="day"><span> 2 </span></div>
+                            <div class="day"><span> 3 </span></div>
+                            <div class="day"><span> 4 </span></div>
+                            <div class="day"><span> 5 </span></div>
+                            <div class="day"><span> 6 </span></div>
+                            <div class="day"><span> 7 </span></div>
+                            <div class="day"><span> 8 </span></div>
+                            <div class="day"><span> 9 </span></div>
+                            <div class="day"><span> 10 </span></div>
+                            <div class="day"><span> 11 </span></div>
+                            <div class="day"><span> 12 </span></div>
+                            <div class="day"><span> 13 </span></div>
+                            <div class="day"><span> 14 </span></div>
+                            <div class="day"><span> 15 </span></div>
+                            <div class="day"><span> 16 </span></div>
+                            <div class="day"><span> 17 </span></div>
+                            <div class="day"><span> 18 </span></div>
+                            <div class="day"><span> 19 </span></div>
+                            <div class="day"><span> 20 </span></div>
+                            <div class="day"><span> 21 </span></div>
+                            <div class="day"><span> 22 </span></div>
+                            <div class="day"><span> 23 </span></div>
+                            <div class="day"><span> 24 </span></div>
+                            <div class="day"><span> 25 </span></div>
+                            <div class="day"><span> 26 </span></div>
+                            <div class="day"><span> 27 </span></div>
+                            <div class="day"><span> 28 </span></div>
+                            <div class="day"><span> 29 </span></div>
+                            <div class="day"><span> 30 </span></div>
+                            <div class="day"><span> 31 </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+        
+                      <!--======================================= আগস্ট ২০২৫ =======================================-->
+                      <div class="slide">
+                        <div class="calendar-body">
+                          <h2> আগস্ট ২০২৫ </h2>
+                          
+                          <div class="calendar-week">
+                            <div class="day"> রবি </div>
+                            <div class="day"> সোম </div>
+                            <div class="day"> মঙ্গল </div>
+                            <div class="day"> বুধ </div>
+                            <div class="day"> বৃহ </div>
+                            <div class="day hollyday"> শুক্র </div>
+                            <div class="day hollyday"> শনি </div>
+                          </div>
+
+                          <div class="calendar-date">
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day circle orange fb">
+                              <a href="#popup2"> <span> 1 </span> </a> <number> 1 </number>
+                  
+                              <div id="popup3" class="popup-container popup-style-3">
+                                <div class="popup-content">
+                                  <a href="#" class="close">&times;</a>
+                                  <h3> ১ - ৮ - ২০২৫ </h3>
+                                  <p> লগ ইন আউট হয়েছিলো </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="day circle orange fb">
+                              <a href="#popup2"> <span> 2 </span> </a> <number> 1 </number>
+                                
+                                <div id="popup4" class="popup-container popup-style-4">
+                                  <div class="popup-content">
+                                    <a href="#" class="close">&times;</a>
+                                    <h3> ২ - ৮ - ২০২৫ </h3>
+                                    <p> লগ ইন আউট হয়েছিলো </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="day"><span> 3 </span></div>
+                            <div class="day circle orange fb">
+                              <a href="#popup2"> <span> 4 </span> </a> <number> 1 </number>
+                                
+                                <div id="popup5" class="popup-container popup-style-5">
+                                  <div class="popup-content">
+                                    <a href="#" class="close">&times;</a>
+                                    <h3> ৪ - ৮ - ২০২৫ </h3>
+                                    <p> লগ ইন আউট হয়েছিলো </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="day"><span> 5 </span></div>
+                            <div class="day"><span> 6 </span></div>
+                            <div class="day circle orange fb">
+                              <a href="#popup2"> <span> 7 </span> </a> <number> 1 </number>
+                                
+                                <div id="popup6" class="popup-container popup-style-6">
+                                  <div class="popup-content">
+                                    <a href="#" class="close">&times;</a>
+                                    <h3> ৭ - ৮ - ২০২৫ </h3>
+                                    <p> লগ ইন আউট হয়েছিলো </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="day"><span> 8 </span></div>
+                            <div class="day"><span> 9 </span></div>
+                            <div class="day"><span> 10 </span></div>
+                            <div class="day"><span> 11 </span></div>
+                            <div class="day"><span> 12 </span></div>
+                            <div class="day"><span> 13 </span></div>
+                            <div class="day"><span> 14 </span></div>
+                            <div class="day circle orange">
+                              <a href="#popup2"> <span> 15 </span> </a> <number> 1 </number>
+                                
+                                <div id="popup7" class="popup-container popup-style-7">
+                                  <div class="popup-content">
+                                    <a href="#" class="close">&times;</a>
+                                    <h3> ১৫ - ৮ - ২০২৫ </h3>
+                                    <p> ধরা খাই </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="day"><span> 16 </span></div>
+                            <div class="day"><span> 17 </span></div>
+                            <div class="day"><span> 18 </span></div>
+                            <div class="day"><span> 19 </span></div>
+                            <div class="day"><span> 20 </span></div>
+                            <div class="day circle orange">
+                              <a href="#popup3"> <span> 21 </span> </a> <number> 1 </number>
+                                
+                                <div id="popup8" class="popup-container popup-style-8">
+                                  <div class="popup-content">
+                                    <a href="#" class="close">&times;</a>
+                                    <h3> ২১ - ৮ - ২০২৫ </h3>
+                                    <p> কপালে আঘাত করি  </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="day"><span> 22 </span></div>
+                            <div class="day"><span> 23 </span></div>
+                            <div class="day"><span> 24 </span></div>
+                            <div class="day hollyday"><span> 25 </span></div>
+                            <div class="day"><span> 26 </span></div>
+                            <div class="day" data-selected="start"><span> 27 </span></div>
+                            <div class="day circle orange">
+                              <a href="#popup4"> <span> 28 </span> </a> <number> 1 </number>
+                                
+                                <div id="popup9" class="popup-container popup-style-9">
+                                  <div class="popup-content">
+                                    <a href="#" class="close">&times;</a>
+                                    <h3> ২৮ - ৮ - ২০২৫ </h3>
+                                    <p> নানার বাড়ি </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="day"><span> 29 </span></div>
+                            <div class="day"><span> 30 </span></div>
+                            <div class="day"><span> 31 </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <!--======================================= সেপ্টেম্বর ২০২৫ =======================================-->
+                      <div class="slide">
+                        <div class="calendar-body">
+                          <h2> সেপ্টেম্বর ২০২৫ </h2>
+
+                          <div class="calendar-week">
+                            <div class="day"> রবি </div>
+                            <div class="day"> সোম </div>
+                            <div class="day"> মঙ্গল </div>
+                            <div class="day"> বুধ </div>
+                            <div class="day"> বৃহ </div>
+                            <div class="day hollyday"> শুক্র </div>
+                            <div class="day hollyday"> শনি </div>
+                          </div>
+
+                          <div class="calendar-date">
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day" data-selected="start"><span> 1 </span></div>
+                            <div class="day"><span> 2 </span></div>
+                            <div class="day"><span> 3 </span></div>
+                            <div class="day circle orange">
+                              <a href="#popup5"> <span> 4 </span> </a> <number> 1 </number>
+                                
+                                <div id="popup10" class="popup-container popup-style-10">
+                                  <div class="popup-content">
+                                    <a href="#" class="close">&times;</a>
+                                    <h3> ০৪ - ৯ - ২০২৫ </h3>
+                                    <p> নানার বাড়ি থেকে ফেরে </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="day"><span> 5 </span></div>
+                            <div class="day"><span> 6 </span></div>
+                            <div class="day"><span> 7 </span></div>
+                            <div class="day circle orange">
+                              <a href="#popup5"> <span> 8 </span> </a> <number> 1 </number>
+                                
+                                <div id="popup11" class="popup-container popup-style-11">
+                                  <div class="popup-content">
+                                    <a href="#" class="close">&times;</a>
+                                    <h3> ০৮ - ৯ - ২০২৫ </h3>
+                                    <p> ছুটি যায় </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="day"><span> 9 </span></div>
+                            <div class="day"><span> 10 </span></div>
+                            <div class="day"><span> 11 </span></div>
+                            <div class="day"><span> 12 </span></div>
+                            <div class="day"><span> 13 </span></div>
+                            <div class="day"><span> 14 </span></div>
+                            <div class="day"><span> 15 </span></div>
+                            <div class="day"><span> 16 </span></div>
+                            <div class="day"><span> 17 </span></div>
+                            <div class="day" data-selected="end"><span> 18 </span></div>
+                            <div class="day circle orange">
+                              <a href="#popup5"> <span> 19 </span> </a> <number> 1 </number>
+                                
+                                <div id="popup12" class="popup-container popup-style-12">
+                                  <div class="popup-content">
+                                    <a href="#" class="close">&times;</a>
+                                    <h3> ১৯ - ৯ - ২০২৫ </h3>
+                                    <p> ছুটি শেষে মাসুম সাথে আসে </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="day"><span> 20 </span></div>
+                            <div class="day"><span> 21 </span></div>
+                            <div class="day"><span> 22 </span></div>
+                            <div class="day"><span> 23 </span></div>
+                            <div class="day"><span> 24 </span></div>
+                            <div class="day"><span> 25 </span></div>
+                            <div class="day"><span> 26 </span></div>
+                            <div class="day"><span> 27 </span></div>
+                            <div class="day"><span> 28 </span></div>
+                            <div class="day"><span> 29 </span></div>
+                            <div class="day"><span> 30 </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <!--======================================= অক্টোবর ২০২৫ =======================================-->
+                      <div class="slide">
+                        <div class="calendar-body">
+                          <h2> অক্টোবর ২০২৫ </h2>
+
+                          <div class="calendar-week">
+                            <div class="day"> রবি </div>
+                            <div class="day"> সোম </div>
+                            <div class="day"> মঙ্গল </div>
+                            <div class="day"> বুধ </div>
+                            <div class="day"> বৃহ </div>
+                            <div class="day hollyday"> শুক্র </div>
+                            <div class="day hollyday"> শনি </div>
+                          </div>
+
+                          <div class="calendar-date">
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day"><span> 1 </span></div>
+                            <div class="day"><span> 2 </span></div>
+                            <div class="day"><span> 3 </span></div>
+                            <div class="day"><span> 4 </span></div>
+                            <div class="day"><span> 5 </span></div>
+                            <div class="day"><span> 6 </span></div>
+                            <div class="day"><span> 7 </span></div>
+                            <div class="day"><span> 8 </span></div>
+                            <div class="day"><span> 9 </span></div>
+                            <div class="day"><span> 10 </span></div>
+                            <div class="day"><span> 11 </span></div>
+                            <div class="day"><span> 12 </span></div>
+                            <div class="day"><span> 13 </span></div>
+                            <div class="day"><span> 14 </span></div>
+                            <div class="day"><span> 15 </span></div>
+                            <div class="day"><span> 16 </span></div>
+                            <div class="day"><span> 17 </span></div>
+                            <div class="day"><span> 18 </span></div>
+                            <div class="day"><span> 19 </span></div>
+                            <div class="day"><span> 20 </span></div>
+                            <div class="day"><span> 21 </span></div>
+                            <div class="day"><span> 22 </span></div>
+                            <div class="day"><span> 23 </span></div>
+                            <div class="day"><span> 24 </span></div>
+                            <div class="day"><span> 25 </span></div>
+                            <div class="day"><span> 26 </span></div>
+                            <div class="day"><span> 27 </span></div>
+                            <div class="day"><span> 28 </span></div>
+                            <div class="day"><span> 29 </span></div>
+                            <div class="day"><span> 30 </span></div>
+                            <div class="day"><span> 31 </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <!--======================================= নভেম্বর ২০২৫ =======================================-->
+                      <div class="slide">
+                        <div class="calendar-body">
+                          <h2> নভেম্বর ২০২৫ </h2>
+
+                          <div class="calendar-week">
+                            <div class="day"> রবি </div>
+                            <div class="day"> সোম </div>
+                            <div class="day"> মঙ্গল </div>
+                            <div class="day"> বুধ </div>
+                            <div class="day"> বৃহ </div>
+                            <div class="day hollyday"> শুক্র </div>
+                            <div class="day hollyday"> শনি </div>
+                          </div>
+
+                          <div class="calendar-date">
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day"><span> 1 </span></div>
+                            <div class="day"><span> 2 </span></div>
+                            <div class="day"><span> 3 </span></div>
+                            <div class="day"><span> 4 </span></div>
+                            <div class="day"><span> 5 </span></div>
+                            <div class="day"><span> 6 </span></div>
+                            <div class="day"><span> 7 </span></div>
+                            <div class="day"><span> 8 </span></div>
+                            <div class="day"><span> 9 </span></div>
+                            <div class="day"><span> 10 </span></div>
+                            <div class="day"><span> 11 </span></div>
+                            <div class="day"><span> 12 </span></div>
+                            <div class="day"><span> 13 </span></div>
+                            <div class="day"><span> 14 </span></div>
+                            <div class="day"><span> 15 </span></div>
+                            <div class="day"><span> 16 </span></div>
+                            <div class="day"><span> 17 </span></div>
+                            <div class="day"><span> 18 </span></div>
+                            <div class="day"><span> 19 </span></div>
+                            <div class="day"><span> 20 </span></div>
+                            <div class="day"><span> 21 </span></div>
+                            <div class="day"><span> 22 </span></div>
+                            <div class="day"><span> 23 </span></div>
+                            <div class="day"><span> 24 </span></div>
+                            <div class="day"><span> 25 </span></div>
+                            <div class="day"><span> 26 </span></div>
+                            <div class="day"><span> 27 </span></div>
+                            <div class="day"><span> 28 </span></div>
+                            <div class="day"><span> 29 </span></div>
+                            <div class="day"><span> 30 </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <!--======================================= ডিসেম্বর ২০২৫ =======================================-->
+                      <div class="slide">
+                        <div class="calendar-body">
+                          <h2> ডিসেম্বর ২০২৫ </h2>
+                          
+                          <div class="calendar-week">
+                            <div class="day"> রবি </div>
+                            <div class="day"> সোম </div>
+                            <div class="day"> মঙ্গল </div>
+                            <div class="day"> বুধ </div>
+                            <div class="day"> বৃহ </div>
+                            <div class="day hollyday"> শুক্র </div>
+                            <div class="day hollyday"> শনি </div>
+                          </div>
+
+                          <div class="calendar-date">
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day"><span> 1 </span></div>
+                            <div class="day"><span> 2 </span></div>
+                            <div class="day"><span> 3 </span></div>
+                            <div class="day"><span> 4 </span></div>
+                            <div class="day"><span> 5 </span></div>
+                            <div class="day"><span> 6 </span></div>
+                            <div class="day"><span> 7 </span></div>
+                            <div class="day"><span> 8 </span></div>
+                            <div class="day"><span> 9 </span></div>
+                            <div class="day"><span> 10 </span></div>
+                            <div class="day"><span> 11 </span></div>
+                            <div class="day"><span> 12 </span></div>
+                            <div class="day"><span> 13 </span></div>
+                            <div class="day"><span> 14 </span></div>
+                            <div class="day"><span> 15 </span></div>
+                            <div class="day"><span> 16 </span></div>
+                            <div class="day"><span> 17 </span></div>
+                            <div class="day"><span> 18 </span></div>
+                            <div class="day"><span> 19 </span></div>
+                            <div class="day"><span> 20 </span></div>
+                            <div class="day"><span> 21 </span></div>
+                            <div class="day"><span> 22 </span></div>
+                            <div class="day"><span> 23 </span></div>
+                            <div class="day"><span> 24 </span></div>
+                            <div class="day"><span> 25 </span></div>
+                            <div class="day"><span> 26 </span></div>
+                            <div class="day"><span> 27 </span></div>
+                            <div class="day"><span> 28 </span></div>
+                            <div class="day"><span> 29 </span></div>
+                            <div class="day"><span> 30 </span></div>
+                            <div class="day"><span> 31 </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                            <div class="day blank"><span> ★ </span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+          </section>
+        </div>
+      </main>
+
+
+
+
+
+
+
+
+      <audio id="audioID">
+        <source src="https://css-tricks.com/examples/SoundOnHover/audio/beep.mp3" type="audio/mpeg">
+      </audio>
+
+      <div class="footer">
+        <marquee behavior="scroll" gap="0" truespeed="" direction="left" scrollamount="2" scrolldelay="50" onmouseover="this.stop();" onmouseout="this.start();">
+          সর্বকালের সেরা গায়কদের সেরা গানের তালিকা। ব্যক্তিগত পছন্দের ওপর নির্ভর।
+        </marquee>
+      </div>
+    </div>
+
+    <script src="https://masumbillah6778.github.io/multi-player/assets/js/hover-auto-play.js"></script>
+    <script src="https://masumbillah6778.github.io/js/toggle-dark-light.js"></script>
+    <script src="https://masumbillah6778.github.io/js/gsap.js"></script>
+    <script src="https://masumbillah6778.github.io/js/next-prev-buttons.js"></script>
+
+  </body>
+</html>
+
