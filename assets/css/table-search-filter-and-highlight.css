@@ -487,10 +487,15 @@ main .container .content .main-slide-box .slide-box table tbody tr {
   counter-increment: row;
 }
 
+main .container .content .main-slide-box .slide-box table tbody tr:nth-of-type(odd) {
+ background-color: gray;
+}
+
 main .container .content .main-slide-box .slide-box table tbody tr td {
   color: black;
   padding: 5px;
   font-size: ;
+  font-weight: bold;
   font-family: solaiman-lipi;
   border: 1px solid green;
 }
@@ -500,8 +505,14 @@ main .container .content .main-slide-box .slide-box table tbody tr td:first-chil
   content: counter(row, bengali) '. ';
 }
 
-main .container .content .main-slide-box .slide-box table tbody tr:nth-of-type(odd) {
- background-color: gray;
+main .container .content .main-slide-box .slide-box table tbody tr td:nth-child(6n+5) {
+  background-color: Cya;
+  color: green;
+}
+
+main .container .content .main-slide-box .slide-box table tbody tr td:nth-child(6n+6) {
+  background-color: Cya;
+  color: red;
 }
 
 
