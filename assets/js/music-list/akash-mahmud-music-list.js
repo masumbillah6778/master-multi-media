@@ -96,28 +96,28 @@ let allMusic = [
     src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/lajer-matha-khaila.mp3",
   },
   {
-    name: "১৭. মনের দল",
+    name: "১৭. মনের দখল",
     artist: "আকাশ মাহমুদ",
     img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
     src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/moner-dokhol.mp3",
   },
   {
-    name: "১৮. একলার সংসার",
+    name: "১৮. ঐ বুকে বানাইয়া তোমার ঘর",
     artist: "আকাশ মাহমুদ",
     img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
-    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/eklar-sonshar.mp3",
+    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/oi-boke-banaya-tomar.mp3",
   },
   {
-    name: "১৯. তোর সাথে মোর গোপন পিরিত",
+    name: "১৯. ওরে চিকন কালা",
     artist: "আকাশ মাহমুদ",
     img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
-    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/gopon-pirit.mp3",
+    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/ore-cikon-kala.mp3",
   },
   {
-    name: "২০. জাদু করিলা",
+    name: "২০. পিরিত ভিশন জালা",
     artist: "আকাশ মাহমুদ",
     img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
-    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/jadu-korila.mp3",
+    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/pirit-vison-jala.mp3",
   },
 ];
 
