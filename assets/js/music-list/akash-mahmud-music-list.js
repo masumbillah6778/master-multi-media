@@ -60,13 +60,13 @@ let allMusic = [
     src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/jadu-korila.mp3",
   },
   {
-    name: "১১. জারে কাই মন",
+    name: "১১. যারে চায় মন",
     artist: "আকাশ মাহমুদ",
     img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
     src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/jare-cai-mon.mp3",
   },
   {
-    name: "১২. গেলে আর",
+    name: "১২. যৌবন গেলে আর",
     artist: "আকাশ মাহমুদ",
     img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
     src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/joubon-gele-ar.mp3",
