@@ -119,6 +119,66 @@ let allMusic = [
     img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
     src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/pirit-vison-jala.mp3",
   },
+  {
+    name: "২১. পল্লী বালা",
+    artist: "আকাশ মাহমুদ",
+    img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
+    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/pollo-bala.mp3",
+  },
+  {
+    name: "২২. পরাণের বন্ধু",
+    artist: "আকাশ মাহমুদ",
+    img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
+    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/poraner-bondhu.mp3",
+  },
+  {
+    name: "২৩. সেই জাদুটা আমারে শিখাও",
+    artist: "আকাশ মাহমুদ",
+    img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
+    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/sei-jadu-ta-amare.mp3",
+  },
+  {
+    name: "২৪. শক্ত কইরা ধর",
+    artist: "আকাশ মাহমুদ",
+    img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
+    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/sokto-koira-dhor.mp3",
+  },
+  {
+    name: "২৫. সোনা বন্ধু চান্দে",
+    artist: "আকাশ মাহমুদ",
+    img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
+    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/sons-bondhu-cande.mp3",
+  },
+  {
+    name: "২৬. সুন্দরী রে",
+    artist: "আকাশ মাহমুদ",
+    img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
+    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/sundori-re.mp3",
+  },
+  {
+    name: "২৭. ভালোবাসা নয়নের নেশা",
+    artist: "আকাশ মাহমুদ",
+    img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
+    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/valobasa-noyoner-nesa.mp3",
+  },
+  {
+    name: "২৮. ভালোবাসার ওলি",
+    artist: "আকাশ মাহমুদ",
+    img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
+    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/valovasar-oli.mp3",
+  },
+  {
+    name: "২৯. বন্ধু তোমার প্রেমে",
+    artist: "আকাশ মাহমুদ",
+    img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
+    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/bondhu-tomar-prema.mp3",
+  },
+  {
+    name: "৩০. গুরু সুভাব দাও আমার মনে",
+    artist: "আকাশ মাহমুদ",
+    img: "https://masumbillah6778.github.io/images/thumbnail/akash-mahmud.jpg",
+    src: "https://github.com/masumbillah6778bd/akash-mahmud/raw/main/guru-sovab-dau-amare.mp3",
+  },
 ];
 
 
