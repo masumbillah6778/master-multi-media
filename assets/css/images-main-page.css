@@ -316,7 +316,7 @@ body.dark .search-field input {
   color: var(--text-color);
 }
 
-.search-field i{
+.search-field i {
   position: absolute;
   color: var(--nav-color);
   right: 15px;
@@ -324,7 +324,7 @@ body.dark .search-field input {
   cursor: pointer;
 }
 
-body.dark .search-field i{
+body.dark .search-field i {
   color: var(--text-color);
 }
 
@@ -355,7 +355,6 @@ main .container {
 main .container .content {
   width: 100%;
   height: 100%;
-  margin: 0 auto;
   border: 4px solid red;
 }
 
@@ -397,68 +396,74 @@ main .container .content .heading {
   }
 }
 
+
+
+
+
+
+/*======================================= Main Slide Box =======================================*/
+
 main .container .content .main-slide-box {
 	width: auto;
+  height: 500px;
   margin: 0px;
-  overflow-y: scroll;
 	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
-
-
-
-
-
-/*======================================== IMAGES GALLERY ========================================*/
-
-.main-box {
-  margin: 10px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-  justify-content: center;
-  align-items: center;
+main .container .content .main-slide-box .main {
+  heigh: 450px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	row-gap: 10px;
+  overflow-y: scroll;
+	order: 2px solid green;
 }
 
-
-/*======================================== IMAGES GALLERY ========================================*/
-
-.main {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
-  
-.card {
+main .container .content .main-slide-box .main .card {
   background: ;
   color: ;
-  width: auto;
-  height: auto;
   margin: 5px;
   border-radius: 2px;
   box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
-.card-image {
-  width: 100%;
-  aspect-ratio: 9 / 16.7;
+main .container .content .main-slide-box .main .card .card-image {
   background: ;
   display: block;
   padding-top: 70%;
   position: relative;
+  width: 100%;
 }
 
-.card-image img {
-  width: 100%;
-  height: 100%;
+main .container .content .main-slide-box .main .card .card-image a {
+  background: yellow;
+  color: red;
+  font-weight: bold;
+}
+
+main .container .content .main-slide-box .main .card .card-image a:hover {
+  background: yellow;
+  color: white;
+  
+}
+
+main .container .content .main-slide-box .main .card .card-image img {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -472,6 +477,8 @@ main .container .content .main-slide-box {
   background-color: red;
   width: 100%;
   height: 70px;
+  margin-left: 4px;
+  margin-bottom: 4px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -503,17 +510,24 @@ main .container .content .main-slide-box {
 
 
 
+
+
+
+
+
+
+
 /*======================================= Mobile Screen =======================================*
 
 @media only screen and (max-width: 767px) {*/
 
 @media screen and (max-width: 768px) {
-  nav .nav-bar .sidebarOpen{
+  .main-content nav .nav-bar .sidebarOpen {
     display: block;
   }
   
-  .menu {
-    background-color: var(--side-nav);
+  .main-content nav .nav-bar .menu {
+    background-color: purple;
     width: 100%;
     height: 100%;
     padding: 20px;
@@ -524,81 +538,117 @@ main .container .content .main-slide-box {
     transition: all 0.4s ease;
   }
 
-  nav .nav-bar .logo a {
-    color: white;
+  .main-content nav .nav-bar .logo a {
     font-size: 14px;
+    color: white;
   }
 
-  nav.active .menu{
+  .main-content nav.active .menu{
     left: -0%;
   }
 
-  nav.active .nav-bar .navLogo a{
+  .main-content nav.active .nav-bar .navLogo a {
     opacity: 0;
     transition: all 0.3s ease;
   }
 
-  .menu .logo-toggle{
+  .main-content nav .nav-bar .menu .logo-toggle {
+    background-color: #4070F4;
     width: 100%;
+    padding: 10px;
     display: block;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 0px 10px 0px 10px;
   }
-
+	
+  .main-content nav .nav-bar .menu .logo-toggle .logo {
+	font-size: 40px;
+    font-family: 'love-letters';
+    letter-spacing: 2px;}
+	
   .logo-toggle .siderbarClose{
     color: var(--text-color);
     font-size: 24px;
     cursor: pointer;
   }
 
-  .nav-bar .nav-links{
+  .main-content nav .nav-bar .nav-links {
     padding-top: 30px;
     display: block;
     flex-direction: column;
   }
 
-  .nav-links li a{
+  .main-content nav .nav-bar .nav-links li a {
     display: block;
     margin-top: 20px;
   }
 
 
-
-
-
-
-
-
-
-  main {
-    height: 578px;
-    padding: 0px;
-    border: 2px solid magenta;
-  }
   
+
+
+
+
+
+  /*======================================= Main =======================================*/
+  main {
+	height: 673px;
+    padding: 0px;
+  }
+
   main .container {
-    margin: 0px;
+    width: 100%;
+    height: 100%;
     border: 0px solid blue;
   }
-  
-  main .container .content {
-    width: 100%;
-    margin: 0px;
-    border: 0px solid red;
-  }
 
-  main .container .content .heading {
+	main .container .content .heading {
     font-size: 15px;
     padding: 5px;
     border-bottom: 4px solid black;
   }
 
-  main .container .content .main-slide-box .slide-box {
-    grid-template-columns: repeat(3, 1fr);
+  main .container .content {
+    border: 0px solid blue;
   }
 
-	
+
+
+
+
+  /*======================================= Main Slide Box =======================================*/
+
+  main .container .content .main-slide-box {
+    margin: 0px;
+  }
+
+  main .container .content .main-slide-box .main {
+    width: auto;
+    height: 640px;
+    grid-template-columns: repeat(1, 1fr);
+    overflow-y: scroll;
+  }
+
+  main .container .content .main-slide-box .slide-box .slide {
+    border: ;
+  }
+
+  main .container .content .main-slide-box .slide-box .slide .box {
+    padding: 0px;
+  }
+    
+  main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
+		width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
+    margin-top: 10px;
+  }
+
 
 
 
@@ -609,7 +659,7 @@ main .container .content .main-slide-box {
   /*======================================== Footer ========================================*/
   .footer {
     background-color: blue;
-    width: 100%;
+    width: 98%;
     height: 40px;
     border: 2px solid green;
   }
