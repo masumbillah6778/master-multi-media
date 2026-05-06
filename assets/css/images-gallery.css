@@ -439,6 +439,7 @@ main .container .content .main-slide-box .main .card .card-image a {
   background: yellow;
   color: red;
   font-weight: bold;
+  text-align: center;
 }
 
 main .container .content .main-slide-box .main .card .card-image a:hover {
