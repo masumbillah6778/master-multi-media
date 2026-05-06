@@ -1,4 +1,4 @@
-const correctPassword = 'MasuM';
+const correctPassword = 'M@$uM';
   function checkPassword() {
     const inputPassword = document.getElementById('password').value;
     if (inputPassword === correctPassword) {
