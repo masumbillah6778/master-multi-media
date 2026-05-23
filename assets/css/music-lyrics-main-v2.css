@@ -805,6 +805,10 @@ main .container .content .main-slide-box {
   padding: 0px;
   border: 2px solid yellow;
 }
+
+	.content-box .content .lyrics {
+    height: 380px;
+  }
   
   .content-box .content .lyrics>div {
     color: teal;
@@ -819,7 +823,7 @@ main .container .content .main-slide-box {
   }
   
   .content-box .player {
-    margin-top: 100px;
+    margin-top: 10px;
   }
   
   .content-box .player .main-container table {
