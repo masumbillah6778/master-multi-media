@@ -443,7 +443,7 @@ main .container .content .main-slide-box {
   overflow: hidden;
   -webkit-box-flex: 1;
   flex-grow: 1;
-  z-index: 9;
+  z-index: ;
   border: 10px solid blue;
   border-radius: 20px;
 }
