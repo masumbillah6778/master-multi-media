@@ -421,7 +421,7 @@ main .container .content .main-slide-box {
   outline: none;
 }
 
-.content-box #overlay {
+/*.content-box #overlay {
   position: fixed;
   display: block;
   top: 0;
@@ -430,7 +430,7 @@ main .container .content .main-slide-box {
   bottom: 0;
   z-index: 2;
   cursor: pointe;
-}
+}*/
 
 .content-box .content {
   background-color: rgba(0, 0, 0, 0.6);
