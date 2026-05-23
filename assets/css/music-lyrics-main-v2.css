@@ -801,7 +801,7 @@ main .container .content .main-slide-box {
   max-width: 330px;
   heigh: calc(100% - 80px);
   height: 475px;
-  margin: 10px auto;
+  margin: 5px auto;
   padding: 0px;
   border: 2px solid yellow;
 }
