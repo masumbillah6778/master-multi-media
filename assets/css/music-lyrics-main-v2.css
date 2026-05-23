@@ -806,8 +806,8 @@ main .container .content .main-slide-box {
   border: 2px solid yellow;
 }
 
-	.content-box .content .lyrics {
-    height: 380px;
+  .content-box .content .lyrics {
+    height: 390px;
   }
   
   .content-box .content .lyrics>div {
