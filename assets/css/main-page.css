@@ -499,7 +499,7 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
 /*======================================= Disc =======================================*/
 
  .win10-disks {
-    margin-top: 28vh;
+    margin-top: 20px;
     display: flex;
         flex-wrap: wrap;
         padding: 0px 10px;
