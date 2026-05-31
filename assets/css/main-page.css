@@ -511,7 +511,7 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
         flex-shrink: 0;
         margin: 10px 8px 0 0;
         box-sizing: border-box;
-        width: 250px;
+        width: 300px;
         height: 57px;
         background: white;
         user-select: none;
@@ -546,8 +546,8 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
     }
     meter::-webkit-meter-bar {
         background-color: green;
-        width: 190px;
-        height: 15px;
+        width: 230px;
+        height: 20px;
         border: solid 1px #bcbcbc;
         border-radius: 0px;
     }
