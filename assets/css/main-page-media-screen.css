@@ -200,10 +200,10 @@
 
   main .container .content .main-slide-box .slide-box {
     width: auto;
-    height: 570px;
+    height: 585px;
     grid-template-columns: repeat(1, 1fr);
     overflow-y: scroll;
-    border: 2px solid pink;
+    border: 2px solid magenta;
   }
 
   main .container .content .main-slide-box .slide-box .slide {
