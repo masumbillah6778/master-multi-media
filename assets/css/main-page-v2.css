@@ -751,6 +751,7 @@ meter::-webkit-meter-suboptimum-value {
 
 .slidem div:nth-child(2) {
   color: blue;
+	font-family: 'times';
 }
 
 
