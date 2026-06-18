@@ -198,7 +198,7 @@
     margin: 0px;
   }
 
-  main .container .content .main-slide-box .slide-box {
+  main .container .content .main-slide-box #main-page-fr.slide-box {
     width: auto;
     height: 585px;
     grid-template-columns: repeat(1, 1fr);
