@@ -1,0 +1,770 @@
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
+
+:root {
+  --body-color: #E4E9F7;
+  --nav-color: #4070F4;
+  --side-nav: #010718;
+  --text-color: #FFF;
+  --search-bar: #F2F2F2;
+  --search-text: #010718;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+body {
+  background-color: var(--body-color);
+  width: 100%;
+  height: 100vh;
+  border: 4px solid red;
+}
+
+body.dark {
+  --body-color: #18191A;
+  --nav-color: #242526;
+  --side-nav: #242526;
+  --text-color: #CCC;
+  --search-bar: #242526;
+}
+
+.main-content {
+  width: 100%;
+  height: 98.9vh;
+  border: 2px solid black;
+}
+
+.main-content nav {
+  background-color: #006400;
+  width: 100%;
+  height: 6vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  -index: 100;
+  border: 2px solid red;
+}
+
+body.dark .main-content nav {
+  background-color: #242526;
+}
+
+.main-content nav .nav-bar {
+  background-color: green;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body.dark .main-content nav .nav-bar {
+  background-color: red;
+}
+
+nav .nav-bar .sidebarOpen {
+  color: white;
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+nav .nav-bar .logo a {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'sonsieone';
+  text-decoration: none;
+}
+
+.menu .logo-toggle {
+  display: none;
+}
+
+.nav-bar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .nav-links li {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.nav-bar .nav-links li i {
+  color: yellow;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-links li a.active {
+  background-color: red;
+}
+
+body.dark .nav-links li a.active {
+  background-color: green;
+}
+
+.nav-links li a::before {
+  content: '';
+  background-color: yellow;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.nav-links li:hover a::before {
+  opacity: 1;
+}
+
+.nav-bar .darkLight-searchBox {
+  display: flex;
+  align-items: center;
+}
+
+.darkLight-searchBox .dark-light {
+  background-color: red;
+  width: 50px;
+  height: 25px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+body.dark .darkLight-searchBox .dark-light {
+  background-color: green;
+}
+
+.bx.bx-moon.moon::before {
+  color: yellow;
+  margin-left: -20px;
+}
+
+.bx.bx-sun.sun::before {
+  color: white;
+  margin-left: 20px;
+}
+
+.darkLight-searchBox .searchToggle {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.searchToggle i {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-light i {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-light i.sun {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dark-light.active i.sun {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+  color: #000;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchToggle i.cancel {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchToggle.active i.cancel {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.searchToggle.active i.search {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchBox {
+  position: relative;
+}
+
+.searchBox .search-field {
+  background-color: blue;
+  position: absolute;
+  bottom: -85px;
+  right: 5px;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-radius: 6px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+body.dark .searchBox .search-field {
+  background-color: white;
+}
+
+.searchToggle.active ~ .search-field {
+  bottom: -74px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-field::before {
+  background-color: red;
+  content: '';
+  position: absolute;
+  right: 14px;
+  top: -4px;
+  height: 12px;
+  width: 12px;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+body.dark .search-field::before {
+  background-color: green;
+}
+
+.search-field input {
+  color: var(--search-text);
+  background-color: var(--search-bar);
+  width: 100%;
+  height: 100%;
+  padding: 0 45px 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+body.dark .search-field input {
+  color: var(--text-color);
+}
+
+.search-field i {
+  position: absolute;
+  color: var(--nav-color);
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+body.dark .search-field i {
+  color: var(--text-color);
+}
+
+
+
+
+
+
+
+
+
+
+/*======================================= Main =======================================*/
+main {
+  background-color: hite;
+  width: 100%;
+  height: 86.1vh;
+  padding: 10px;
+  border: 2px solid blue;
+}
+
+main .container {
+  width: 100%;
+  height: 100%;
+  border: 4px solid green;
+}
+
+main .container .content {
+  width: 100%;
+  height: 100%;
+  border: 4px solid red;
+}
+
+main .container .content .heading {
+  color: red;
+  padding: 10px 0px;
+  font-size: 25px;
+  font-family: 'sonsieone';
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 4px solid red;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
+
+
+
+
+
+/*======================================= Main Slide Box =======================================*/
+
+main .container .content .main-slide-box {
+	width: auto;
+  height: 500px;
+  margin: 0px;
+	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+main .container .content .main-slide-box .slide-box {
+  height: 70.9vh;
+  overflow-y: scroll;
+	border: 2px solid black;
+}
+
+main .container .content .main-slide-box #main-page-fr.slide-box {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	row-gap: 10px;
+	border: 2px solid blue;
+}
+
+main .container .content .main-slide-box .slide-box .slide {
+  width: auto;
+	margin: 10px;
+	padding: 10px;
+	transition: transform .5s;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+main .container .content .main-slide-box .slide-box .slide:hover {
+  transform: rotate(360deg);
+}
+
+main .container .content .main-slide-box .slide-box .slide .box {
+  display: grid;
+  place-items: center;
+}
+
+main .container .content .main-slide-box .slide-box .slide .box .cover-image {
+	width: auto;
+}
+
+main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
+	width: 100%;
+}
+
+main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
+	background-color: #2980b9;
+  width: 100%;
+  padding: 10px 0px;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+}
+
+main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
+	color: yellow;
+  font-size: 20px;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  animation: 4s animation ease infinite;
+}
+
+/*@keyframes animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: red;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: yellow;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: green;
+    transform: scale(0.5);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}*/
+
+
+
+
+
+
+
+
+/*======================================= All Table =======================================*/
+/*============== Disk ==============*/
+
+ .win10-disks {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.disk {
+  display: flex;
+  flex-shrink: 0;
+  margin: 10px 8px 0 0;
+  box-sizing: border-box;
+  width: 300px;
+  height: 57px;
+  background: white;
+  user-select: none;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+
+.disk:hover {
+  border: solid 1px #999;
+}
+
+.disk .icon {
+  margin: 0 2px 4px 1px;
+  align-self: flex-end;
+  width: 52px;
+  height: 40px;
+  pointer-events: none;
+}
+
+.disk p.title,
+.disk p.space {
+  margin: 0px;
+  font-size: 10px;
+  line-height: 1.65;
+  font-family: san-serif;
+}
+
+.disk .right {
+  display: flex;
+  flex-direction: column;
+}
+
+meter {
+  display: flex;
+  width: unset;
+  height: 15px;
+}
+
+meter::-webkit-meter-bar {
+  background-color: green;
+  width: 230px;
+  height: 20px;
+  border: solid 1px #bcbcbc;
+  border-radius: 0px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: #26a0da;
+}
+
+meter::-webkit-meter-suboptimum-value {
+  background: #da2626;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================= All Games =======================================*/
+/*============== TownShip Games ==============*/
+.township {
+  width: 100%;
+  height: auto;
+  order: 2px solid red;
+}
+
+.township h1 {
+  background-color: red;
+  color: white;
+  margin-top: 0px;
+  font-size: ;
+  font-family: solaiman-lipi;
+  text-align: center;
+}
+
+.township .table-box {
+  height: 650px;
+  verflow-y: scroll;
+}
+
+.township table {
+  background-color: pink;
+  width: 100%;
+  font-family: solaiman-lipi;
+  counter-reset: serial-number;
+}
+
+.township table tr {
+  counter-increment: row;
+}
+
+.township table tr:nth-child(even) {
+    background-color: gray;
+}
+
+.township table th {
+  background-color: magenta;
+  color: white;
+  padding: 5px;
+  top: 0;
+  position: sticky;
+}
+
+.township table td {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.township table td:first-child:before {
+  counter-increment: serial-number;
+  content: counter(row, bengali) '. ';
+}
+
+.township table td:nth-child(5n+2) {
+  background-color: gold;
+  color: red;
+  text-align: ight;
+}
+
+.township table td:nth-child(5n+3) {
+  background-color: green;
+  color: white;
+  text-align: ight;
+}
+
+ .township table td:nth-child(5n+4) {
+  background-color: red;
+  color: white;
+  text-align: ight;
+}
+
+/*.township table td:nth-child(5n+5) {
+  background-color: Cyan;
+  color: green;
+  text-align: right;
+}*/
+
+.township table td:last-child {
+  background-color: blue;
+  text-align: right;
+}
+
+
+
+
+
+
+#flip {
+  color:#999;
+  text-transform: uppercase;
+  font-weight:bold;
+  position:fixed;
+  display:block;
+}
+
+#word {
+  height:50px;
+  overflow:hidden;
+}
+
+#word > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#word div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#word div div {
+  background-color: red;
+}
+#word div:first-child div {
+  background-color: orange;
+}
+#word div:last-child div {
+  background-color: blue;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+
+
+
+
+
+.irotate {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.thisis {
+  display: inline-block;
+  ertical-align: middle;
+  height: 20px;
+}
+.slidem {
+  background-color: #da2626;
+  color: white;
+  padding: 0 10px;
+  overflow: hidden;
+  min-width: 100px;
+}
+
+
+
+
+/*======================================== Footer ========================================*/
+.footer {
+  background-color: red;
+  width: 100%;
+  height: 6vh;
+  margin: 0px;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  border: 2px solid green;
+}
+
+.footer marquee {
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: solaiman-lipi;
+  cursor: pointer;
+}
