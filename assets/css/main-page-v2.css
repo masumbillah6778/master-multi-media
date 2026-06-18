@@ -737,14 +737,21 @@ meter::-webkit-meter-suboptimum-value {
   ertical-align: middle;
   height: 20px;
 }
+
 .slidem {
-  background-color: #da2626;
-  color: white;
-  padding: 0 10px;
-  overflow: hidden;
-  min-width: 100px;
+	font-weight: bold;
+	overflow: hidden;
+	min-width: 100px;
+	z-index: 2;
+}
+	
+.slidem div:nth-child(1) {
+  color: red;
 }
 
+.slidem div:nth-child(2) {
+  color: blue;
+}
 
 
 
