@@ -206,6 +206,12 @@ main .container .content .main-slide-box #main-page-fr.slide-box {
     border: 2px solid magenta;
 }
 
+main .container .content .main-slide-box #main-page-fr.slide-box {
+    width: auto;
+    height: 635px;
+	border: 2px solid red;
+}
+
 main .container .content .main-slide-box .slide-box .slide {
   width: auto;
 	margin: 10px;
