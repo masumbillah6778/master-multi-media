@@ -206,7 +206,7 @@ main .container .content .main-slide-box #main-page-fr.slide-box {
     border: 2px solid magenta;
 }
 
-main .container .content .main-slide-box #main-page-fr.slide-box {
+main .container .content .main-slide-box .slide-box {
     width: auto;
     height: 635px;
 	border: 2px solid red;
