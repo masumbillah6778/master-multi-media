@@ -7,6 +7,6 @@ function passcheck(){
         return false;
     }
     if (document.getElementById('pass1').value == Password) {
-        window.open("https://masumbillah6778.github.io/master-multi-media/assets/html/secrects/page-marquee.html", "_blank");
+        window.open("https://masumbillah6778.github.io/rab-8-phone-book-headquarters/", "_blank");
     }
 }
