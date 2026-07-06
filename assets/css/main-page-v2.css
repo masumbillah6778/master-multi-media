@@ -578,9 +578,142 @@ meter::-webkit-meter-suboptimum-value {
 
 
 
+/*======================================= BOOK =======================================*/
+/*============== calculater ==============*/
 
 
+.calculator {
+	background-color: white;
+	width: 70%;
+	height: 400px;
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
 
+.calculator-box {
+	background-color: gray;
+	width: 100%;
+	padding: 5px;
+	margin: 0;
+	overflow: hidden;
+	display: block;
+	float: none;
+}
+
+.calculator-box .enter {
+	background-color: green;
+	width: 100%;
+	padding: 5px;
+	margin: 0;
+	display: block;
+	float: none;
+}
+
+.calculator-box .enter h1 {
+	color: white;
+	text-align: center;
+	font-family: solaiman-lipi;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	word-spacing: 2.7px;
+    border-bottom: 5px solid red;
+}
+
+.calculator-box .block {
+	width: 33.33%;
+	padding: 5px;
+	margin: 10px auto;
+	display: inline-block;
+	float: left;
+}
+
+.calculator-box .block:nth-child(2) {
+  background-color: green;
+}
+
+.calculator-box .block:nth-child(3) {
+  background-color: red;
+}
+
+.calculator-box .block:nth-child(4) {
+  background-color: blue;
+}
+
+.calculator-box .block .title {
+	color: yellow;
+	font-size: 30px;
+	text-align: center;
+	font-family: solaiman-lipi;
+	font-weight: bold;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	word-spacing: 2.7px;
+}
+
+.calculator-box input[type=text] {
+	background-color: white;
+    color: red;
+	width: 265px;
+	margin: auto;
+	padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+	outline: none;
+    border-radius: 2px;
+	border: 2px solid blue;
+}
+
+.calculator-box input[type=text]:focus {
+	background-color: #a7af7c;
+	color: blue;
+	border: 2px solid blue;
+}
+
+.calculator-box input::placeholder {
+    color: red;
+	font-family: solaiman-lipi;
+    opacity: .2;
+}
+
+.calculator-box input[type=button] {
+	background-color: orange;
+	color: red;
+	width: 100%;
+	margin: auto;
+	padding: 5px;
+	font-size: 30px;
+    font-weight: bold;
+    font-family: solaiman-lipi;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+.calculator-box input[type=button]:hover {
+	background-color: blue;
+    color: white;
+}
+
+.calculator-box input[type=button]:active {
+	background-color: red;
+}
+
+.calculator #age {
+	color: green;
+	margin: 50px auto;
+	padding: 10px;
+	font-size: 30px;
+	font-weight: bold;
+    font-family: solaiman-lipi;
+	line-height: 0.5;
+	word-spacing: 2.7px;
+	display: block;
+	overflow: hidden;
+}
 
 
 
