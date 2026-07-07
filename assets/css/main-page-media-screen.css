@@ -336,6 +336,39 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
 
 
 
+/*======================================= calculator =======================================*/
+  
+  .calculator {
+    background-color: white;
+    width: 90%;
+    height: 525px;
+  }
+  
+  .block {
+    box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+  }
+
+  }
+  .calculator-box input[type=text] {
+    background-color: white;
+    color: red;
+    width: 80px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .calculator #age {
+    color: red;
+    margin: 50px auto;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+
+
+
+
+
   /*======================================== Footer ========================================*/
   .main-content .footer {
     background-color: blue;
