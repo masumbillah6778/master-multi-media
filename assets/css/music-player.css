@@ -1067,8 +1067,8 @@ main .container .content .main-music-box .music-box .controls #more-music {
   }
 
   main .container .content .main-music-box .music-box .img-area {
-    width: 350px;
-    height: 350px;
+    width: 340px;
+    height: 340px;
     overflow: hidden;
     margin-top: 10px;
     border-radius: 15px;
