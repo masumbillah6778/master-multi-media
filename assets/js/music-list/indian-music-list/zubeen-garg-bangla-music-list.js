@@ -3,7 +3,7 @@ let allMusic = [
     name: "১. আমি টাকার এক মেসিন",
     artist: "আকাশ মাহমুদ",
     img: "https://masumbillah6778.github.io/images/thumbnail/rahat-fateh-ali-khan.jpg",
-    src: "https://masumbillah6778bp.github.io/music/pakistan/rahat-fateh-ali-khan/zaroori-tha.mp3",
+    src: "https://masumbillah6778bd.github.io/indian-music/zubeen-garg/bangla-song/aaina-mon-bhanga.mp3",
   },
   {
     name: "২. আমি টাকার এক মেসিন",
