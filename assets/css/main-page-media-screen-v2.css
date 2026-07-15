@@ -230,6 +230,7 @@ main .container .content .main-slide-box .slide-box .slide .box {
   display: flex;
   position: relative;
   place-items: center;
+  z-index: -1;
 }
 
 main .container .content .main-slide-box .slide-box .slide .box .cover-image {
