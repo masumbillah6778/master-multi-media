@@ -559,6 +559,161 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
     }
 
 
+
+
+
+/*============================= Player Details =============================*/
+
+.content-box .player {
+  background: linear-gradient(135deg, Red 0, Green 49%, Yellow 49%, Blue 100%);
+  margin: 0px 0px;
+  border: 2px solid red;
+}
+
+.content-box .player .main-container table {
+  width: 100%;
+  background-color: yello;
+  border: 2px solid magenta;
+}
+
+.content-box .player .main-container table td.images {
+  background-color: gree;
+  idth: 200%;
+  overflow: hidden;
+  grid-area: content-1;
+  border-radius: 0px;
+  border: 2px solid red;
+}
+
+.content-box .player .main-container table td.images img {
+  width: 100px;
+  border: 2px solid Yellow;
+}
+
+.content-box .player .main-container table td.images img:hover {
+  border: 2px solid Yellow;
+  border-radius: 50%;
+  animation:rotating 3s linear infinite
+}
+  
+@keyframes rotating {
+  from {
+    transform:rotate(0deg)
+  }
+  to {
+    transform:rotate(360deg)
+  }
+}
+
+.content-box .player .main-container table td.name {
+  overflow: hidden;
+  border: 2px solid green;
+}
+
+.content-box .player .main-container table td.name a {
+  width: max-content;
+  color: White;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi', times;
+  text-decoration: none;
+  display: flex;
+  animation: AutoScroll 10s linear infinite;
+  text-shadow: 1px 1px 2px Black;
+}
+
+@keyframes AutoScroll {
+  from {transform: translateX(0)}
+  to {transform: translateX(-100%)}
+}
+
+.content-box .player .main-container table td.artist {
+  background-color: yello;
+  color: Cyan;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: 'shokun-tola', times;
+  grid-area: content-2;
+  text-shadow: 1px 1px 2px Black;
+  border: 2px solid yellow;
+}
+
+
+
+
+
+/*========= Player Controls =========*/
+.content-box .player .main-container table td.player {
+  border: 2px solid blue;
+}
+  
+.content-box .player .main-container table td.player video {
+  background-color: red;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border-radius: 0px;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-panel {
+  background: red;
+  width: 100%;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-play-button {
+  background-color: Yellow;
+  border-radius: 50%;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-play-button:hover {
+  background-color: cyan;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-current-time-display {
+  color: White;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-time-remaining-display {
+  color: Yellow;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
+}
+    
+.content-box .player .main-container table td.player video::-webkit-media-controls-timeline {
+  background-color: Blue;
+  margin: 10px;
+  border-radius: ;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-volume-slider {
+  background-color: green;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-mute-button {
+  background-color: Yellow;
+  border-radius: 50%;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-mute-button:hover {
+  background-color: cyan;
+}
+
+  
+
+
+
+
+
+
 /*======================================== Footer ========================================*/
 .footer {
   background-color: red;
