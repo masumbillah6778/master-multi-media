@@ -417,7 +417,7 @@ main .container .content .main-slide-box .slide-box .content-box .lyrics-content
     border-radius: 20px;
   }
 
-.content-box .content .lyrics {
+main .container .content .main-slide-box .slide-box .content-box .lyrics {
   height: 280px;
   padding: 10px 0;
   margin: 0 20px;
@@ -427,7 +427,7 @@ main .container .content .main-slide-box .slide-box .content-box .lyrics-content
   position: relative;
 }
 
-.content-box .content .lyrics>div {
+main .container .content .main-slide-box .slide-box .content-box .lyrics>div {
   color: pink;
   position: relative;
   font-size: 30px;
@@ -438,7 +438,7 @@ main .container .content .main-slide-box .slide-box .content-box .lyrics-content
   transition: all 0.25s;
 }
 
-.content-box .content .lyrics>div.highlighted {
+main .container .content .main-slide-box .slide-box .content-box .lyrics>div.highlighted {
   color: yellow;
   font-weight: bold;
   font-size: 30px;
