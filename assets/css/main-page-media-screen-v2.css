@@ -371,78 +371,53 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
 
   /*======================================= Music Lyrics =======================================*/
   .content-box {
-  background-image: url("https://masumbillah6778.github.io/images/a4.jpg");
-  background-repeat: no-repeat;
-  background-size: over;
-  background-size: 100% 330px;
-  display: flex;
-  flex-direction: column;
-  outline: none;
-}
-
-/*.content-box #overlay {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  cursor: pointe;
-}*/
-
-.content-box .content {
-  background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("https://masumbillah6778.github.io/images/a4.jpg");
+    background-repeat: no-repeat;
+    background-size: over;
+    background-size: 100% 500px;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+  }
+  
+  .content-box .content {
   width: 100%;
-  max-width: 630px;
-  height: calc(100% - 80px);
-  heigh: 300px;
-  margin: 10px auto;
-  padding: 10px;
-  overflow: hidden;
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-  z-index: ;
-  border: 10px solid blue;
-  border-radius: 20px;
+  max-width: 330px;
+  heigh: calc(100% - 80px);
+  height: 475px;
+  margin: 5px auto;
+  padding: 0px;
+  border: 2px solid yellow;
 }
 
-main .container .content .main-slide-box .slide-box .content-box .lyrics-content {
-    border: 9px;
-    border-style: groove;
-    border-left-color: yellow;
-    border-top-color: blue;
-    border-right-color: red;
-    border-bottom-color: green;
-    border-radius: 20px;
+  .content-box .content .lyrics {
+    height: 400px;
+  }
+  
+  .content-box .content .lyrics>div {
+    color: teal;
+    font-size: 20px;
+    line-height: 50px;
+  }
+  
+  .content-box .content .lyrics>div.highlighted {
+    color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .content-box .player {
+    margin-top: 10px;
+  }
+  
+  .content-box .player .main-container table {
+      width: 80%;
+      border: 1px solid blac;
+      order-collapse: collapse;
   }
 
-main .container .content .main-slide-box .slide-box .content-box .lyrics {
-  height: 280px;
-  padding: 10px 0;
-  margin: 0 20px;
-  text-align: center;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-  position: relative;
-}
 
-main .container .content .main-slide-box .slide-box .content-box .lyrics>div {
-  color: pink;
-  position: relative;
-  font-size: 30px;
-  ont-weight: bold;
-  font-family: 'solaiman-lipi', times;
-  line-height: 80px;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
 
-main .container .content .main-slide-box .slide-box .content-box .lyrics>div.highlighted {
-  color: yellow;
-  font-weight: bold;
-  font-size: 30px;
-}
 
 
   /*======================================== Footer ========================================*/
