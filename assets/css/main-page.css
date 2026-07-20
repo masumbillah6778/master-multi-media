@@ -911,6 +911,133 @@ main .container .content .solar-system .neptune {
 
 
 
+
+
+
+
+
+/*======================================== 1st Protected File ========================================*/
+
+main .container .content .main-slide-box .first-protected-file {
+  background-image: url('https://masumbillah6778.github.io/images/stone-bg.jpg');
+  background-size: cover;
+  width: 650px;
+  height: 390px;
+  margin-top: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 50px;
+  border: 2px solid yellow;
+}
+
+main .container .content .main-slide-box .first-protected-file h1 {
+  color: yellow;
+  padding-left: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: solaiman-lipi;
+  text-align: center;
+  text-shadow: #000;
+}
+
+main .container .content .main-slide-box .first-protected-file .password-head {
+  color: blue;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'shokun-tola';
+  text-align: center;
+}
+  
+main .container .content .main-slide-box .first-protected-file .text-input {
+  background-color: tomato;
+  color: yellow;
+  width: 95.7%;
+  height: 60px;
+  margin: 70px 10px 10px 10px;
+  padding: 10px;
+  font-size: 30px;
+  font-family: times;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+  
+main .container .content .main-slide-box .first-protected-file .error-text {
+  background-color: pink;
+  color: red;
+  width: 95.7%;
+  margin-left: 10px;
+  margin-bottom: -52px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi';
+  text-align: center;
+  display: none;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+main .container .content .main-slide-box .first-protected-file .text-input:focus {
+  outline:none;
+}
+  
+main .container .content .main-slide-box .first-protected-file label {
+  background: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 20px;
+  top: -52px;
+  left: 15px;
+  padding: 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi';
+  position: relative;
+  text-transform: capitalize;
+  transition: top .3s;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+main .container .content .main-slide-box .first-protected-file input:focus ~ label,
+main .container .content .main-slide-box .first-protected-file input:valid ~ label {
+  background: tomato;
+  color: yellow;
+  margin-left: 90px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi';
+  top: 151px;
+  position: absolute;
+  opacity: 1;
+  border-left: 2px solid yellow;
+  border-right: 2px solid yellow;
+}
+  
+main .container .content .main-slide-box .first-protected-file .submit-btn {
+  background-color: blue;
+  color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'solaiman-lipi';
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  border: 2px solid red;
+  text-shadow: 0px 1px 0px #7cacde;
+  box-shadow: inset 0px 1px 0px 0px #bee2f9;
+}
+
+
+
+
 /*======================================== Footer ========================================*/
 .footer {
   background-color: red;
