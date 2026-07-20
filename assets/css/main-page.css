@@ -807,7 +807,7 @@ main .container .content .solar-system ol {
 
 main .container .content .solar-system li {
   width: var(--d, 2cqi);
-  height: 500px;
+  height: 460px;
   color: red;
   aspect-ratio: 1 / 1;
   border: 1px dashed;
