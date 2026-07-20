@@ -783,6 +783,7 @@ content-box {
 main .container .content .solar-system {
 	width: auto;
   margin: 0px;
+	z-index: -1;
 	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
