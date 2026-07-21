@@ -1,0 +1,1081 @@
+@import url('https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css');
+@import url('https://masumbillah6778.github.io/fonts/english/english-custom-font.css');
+
+:root {
+  --body-color: #E4E9F7;
+  --nav-color: #4070F4;
+  --side-nav: #010718;
+  --text-color: #FFF;
+  --search-bar: #F2F2F2;
+  --search-text: #010718;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+body {
+  background-color: var(--body-color);
+  width: 100%;
+  height: 100vh;
+  border: 4px solid red;
+}
+
+body.dark {
+  --body-color: #18191A;
+  --nav-color: #242526;
+  --side-nav: #242526;
+  --text-color: #CCC;
+  --search-bar: #242526;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.main-content nav {
+  background-color: #006400;
+  width: 100%;
+  height: 10%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  -index: 100;
+  border: 2px solid red;
+}
+
+body.dark .main-content nav {
+  background-color: #242526;
+}
+
+.main-content nav .nav-bar {
+  background-color: green;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body.dark .main-content nav .nav-bar {
+  background-color: red;
+}
+
+nav .nav-bar .sidebarOpen {
+  color: white;
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+nav .nav-bar .logo a {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'sonsieone';
+  text-decoration: none;
+}
+
+.menu .logo-toggle {
+  display: none;
+}
+
+.nav-bar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .nav-links li {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.nav-bar .nav-links li i {
+  color: yellow;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-links li a.active {
+  background-color: red;
+}
+
+body.dark .nav-links li a.active {
+  background-color: green;
+}
+
+.nav-links li a::before {
+  content: '';
+  background-color: yellow;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.nav-links li:hover a::before {
+  opacity: 1;
+}
+
+.nav-bar .darkLight-searchBox {
+  display: flex;
+  align-items: center;
+}
+
+.darkLight-searchBox .dark-light {
+  background-color: red;
+  width: 50px;
+  height: 25px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+body.dark .darkLight-searchBox .dark-light {
+  background-color: green;
+}
+
+.bx.bx-moon.moon::before {
+  color: yellow;
+  margin-left: -20px;
+}
+
+.bx.bx-sun.sun::before {
+  color: white;
+  margin-left: 20px;
+}
+
+.darkLight-searchBox .searchToggle {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.searchToggle i {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-light i {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-light i.sun {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dark-light.active i.sun {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+  color: #000;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchToggle i.cancel {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchToggle.active i.cancel {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.searchToggle.active i.search {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchBox {
+  position: relative;
+}
+
+.searchBox .search-field {
+  background-color: blue;
+  position: absolute;
+  bottom: -85px;
+  right: 5px;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-radius: 6px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+body.dark .searchBox .search-field {
+  background-color: white;
+}
+
+.searchToggle.active ~ .search-field {
+  bottom: -74px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-field::before {
+  background-color: red;
+  content: '';
+  position: absolute;
+  right: 14px;
+  top: -4px;
+  height: 12px;
+  width: 12px;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+body.dark .search-field::before {
+  background-color: green;
+}
+
+.search-field input {
+  color: var(--search-text);
+  background-color: var(--search-bar);
+  width: 100%;
+  height: 100%;
+  padding: 0 45px 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+body.dark .search-field input {
+  color: var(--text-color);
+}
+
+.search-field i {
+  position: absolute;
+  color: var(--nav-color);
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+body.dark .search-field i {
+  color: var(--text-color);
+}
+
+
+
+
+
+
+
+
+
+
+/*======================================= Main =======================================*/
+main {
+  background-image: url(https://masumbillah6778.github.io/images/stone-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 517px;
+  padding: 5px;
+  border: 2px solid;
+  border-left-color: yellow;
+  border-top-color: yellow;
+  border-right-color: yellow;
+  border-bottom-color: red;
+}
+
+main .container {
+  width: 100%;
+  height: 100%;
+  border: 2px solid blue;
+}
+
+main .container .content {
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+}
+
+main .container .content .heading {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: red;
+  padding: 5px 0px;
+  font-size: 15px;
+  font-family: 'sonsieone';
+  font-weight: bold;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 4px solid red;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
+
+
+
+
+
+/*======================================= Main Slide Box =======================================*/
+
+main .container .content .main-slide-box {
+	width: 100%;
+  height: 100%;
+  margin: 0px;
+	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+main .container .content .main-slide-box .slide-box {
+  height: 462px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	row-gap: 10px;
+  overflow-y: scroll;
+	order: 2px solid green;
+}
+
+main .container .content .main-slide-box .slide-box .slide {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: auto;
+	margin: 10px;
+	padding: 10px;
+  backdrop-filter: blur(5px);
+	transition: transform .5s;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+main .container .content .main-slide-box .slide-box .slide:hover {
+  transform: rotate(360deg);
+}
+
+main .container .content .main-slide-box .slide-box .slide .box {
+  display: grid;
+  place-items: center;
+}
+
+main .container .content .main-slide-box .slide-box .slide .box .cover-image {
+	width: auto;
+}
+
+main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
+	width: 100%;
+  border: 2px solid yellow;
+  border-radius: 50%;
+}
+
+main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
+	background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  border: 1px solid yellow;
+  border-radius: 0px 0px 10px 10px;
+}
+
+main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
+	color: yellow;
+  font-size: 20px;
+  font-family: solaiman-lipi;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  animation: 4s animation ease infinite;
+}
+
+/*@keyframes animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: red;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: yellow;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: green;
+    transform: scale(0.5);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}*/
+
+
+
+
+
+
+
+
+/*======================================= Disc =======================================*/
+
+ .win10-disks {
+    margin-top: 20px;
+    display: flex;
+        flex-wrap: wrap;
+        padding: 0px 10px;
+        width: 100%;
+        justify-content: center;
+    }
+    .disk {
+        display: flex;
+        flex-shrink: 0;
+        margin: 10px 8px 0 0;
+        box-sizing: border-box;
+        width: 300px;
+        height: 57px;
+        background: white;
+        user-select: none;
+        border: solid 1px transparent;
+        cursor: pointer;
+    }
+    .disk:hover {
+        border: solid 1px #999;
+    }
+    .disk .icon {
+        margin: 0 2px 4px 1px;
+        align-self: flex-end;
+        width: 52px;
+        height: 40px;
+        pointer-events: none;
+    }
+    .disk p.title,
+    .disk p.space {
+        margin: 0px;
+        font-size: 10px;
+        line-height: 1.65;
+        font-family: san-serif;
+    }
+    .disk .right {
+        display: flex;
+        flex-direction: column;
+    }
+    meter {
+        display: flex;
+        width: unset;
+        height: 15px;
+    }
+    meter::-webkit-meter-bar {
+        background-color: green;
+        width: 230px;
+        height: 20px;
+        border: solid 1px #bcbcbc;
+        border-radius: 0px;
+    }
+    meter::-webkit-meter-optimum-value {
+        background: #26a0da;
+    }
+    meter::-webkit-meter-suboptimum-value {
+        background: #da2626;
+    }
+
+
+
+
+
+/*============================= Player Details =============================*/
+
+content-box {
+  background-image: url("https://masumbillah6778.github.io/images/a4.jpg");
+  background-repeat: no-repeat;
+  background-size: over;
+  background-size: 100% 330px;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+}
+
+/*.content-box #overlay {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  cursor: pointe;
+}*/
+
+.content-box .content {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 630px;
+  height: calc(100% - 80px);
+  heigh: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  z-index: ;
+  border: 10px solid blue;
+  border-radius: 20px;
+}
+
+.content-box .content .lyrics {
+  height: 280px;
+  padding: 10px 0;
+  margin: 0 20px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.content-box .content .lyrics>div {
+  color: pink;
+  position: relative;
+  font-size: 30px;
+  ont-weight: bold;
+  font-family: 'solaiman-lipi', times;
+  line-height: 80px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.content-box .content .lyrics>div.highlighted {
+  color: yellow;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.content-box .player {
+  background: linear-gradient(135deg, Red 0, Green 49%, Yellow 49%, Blue 100%);
+  margin: 0px 0px;
+  border: 2px solid red;
+}
+
+.content-box .player .main-container table {
+  width: 100%;
+  background-color: yello;
+  border: 2px solid magenta;
+}
+
+.content-box .player .main-container table td.images {
+  background-color: gree;
+  idth: 200%;
+  overflow: hidden;
+  grid-area: content-1;
+  border-radius: 0px;
+  border: 2px solid red;
+}
+
+.content-box .player .main-container table td.images img {
+  width: 100px;
+  border: 2px solid Yellow;
+}
+
+.content-box .player .main-container table td.images img:hover {
+  border: 2px solid Yellow;
+  border-radius: 50%;
+  animation:rotating 3s linear infinite
+}
+  
+@keyframes rotating {
+  from {
+    transform:rotate(0deg)
+  }
+  to {
+    transform:rotate(360deg)
+  }
+}
+
+.content-box .player .main-container table td.name {
+  overflow: hidden;
+  border: 2px solid green;
+}
+
+.content-box .player .main-container table td.name a {
+  width: max-content;
+  color: White;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi', times;
+  text-decoration: none;
+  display: flex;
+  animation: AutoScroll 10s linear infinite;
+  text-shadow: 1px 1px 2px Black;
+}
+
+@keyframes AutoScroll {
+  from {transform: translateX(0)}
+  to {transform: translateX(-100%)}
+}
+
+.content-box .player .main-container table td.artist {
+  background-color: yello;
+  color: Cyan;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: 'shokun-tola', times;
+  grid-area: content-2;
+  text-shadow: 1px 1px 2px Black;
+  border: 2px solid yellow;
+}
+
+
+
+
+
+/*========= Player Controls =========*/
+.content-box .player .main-container table td.player {
+  border: 2px solid blue;
+}
+  
+.content-box .player .main-container table td.player video {
+  background-color: red;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border-radius: 0px;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-panel {
+  background: red;
+  width: 100%;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-play-button {
+  background-color: Yellow;
+  border-radius: 50%;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-play-button:hover {
+  background-color: cyan;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-current-time-display {
+  color: White;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-time-remaining-display {
+  color: Yellow;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
+}
+    
+.content-box .player .main-container table td.player video::-webkit-media-controls-timeline {
+  background-color: Blue;
+  margin: 10px;
+  border-radius: ;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-volume-slider {
+  background-color: green;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-mute-button {
+  background-color: Yellow;
+  border-radius: 50%;
+}
+
+.content-box .player .main-container table td.player video::-webkit-media-controls-mute-button:hover {
+  background-color: cyan;
+}
+
+  
+
+
+
+
+
+
+/*======================================== Solar System ========================================*/
+
+main .container .content .solar-system {
+	width: auto;
+  margin: 0px;
+	z-index: -1;
+	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+main .container .content .solar-system a {
+  color: white;
+	margin-left: 40px;
+  text-decoration: none;
+}
+
+body.dark main .container .content .solar-system a {
+  color: #18191A;
+}
+
+main .container .content .solar-system ol {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  all: unset;
+  container-type: inline-size;
+  display: grid;
+}
+
+main .container .content .solar-system li {
+  width: var(--d, 2cqi);
+  height: 460px;
+  color: red;
+  aspect-ratio: 1 / 1;
+  border: 1px dashed;
+  border-radius: 50%;
+  display: grid;
+  grid-area: 1 / 1;
+  place-self: center;
+  z-index: -1;
+  &::after {
+    animation: rotate var(--t, 3s) linear infinite;
+    aspect-ratio: 1 / 1;
+    background: var(--b, hsl(0, 0%, 50%));
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    content: '';
+    display: block;
+    offset-path: content-box;
+    width: var(--w, 2cqi);
+  }
+}
+
+@keyframes rotate {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+body.dark main .container .content .solar-system li {
+  color: yellow;
+}
+
+main .container .content .solar-system .sun {
+  --b: radial-gradient(circle, #f9d71c 0%, #f9a825 50%, #f9a825 100%);
+  --d: 10cqi;
+  --w: 8cqi;
+  border: 0;
+  &::after {
+    animation: none;
+    offset-path: none;
+    place-self: center;
+  }
+}
+
+main .container .content .solar-system .mercury {
+  --b: radial-gradient(circle, #c2c2c2 0%, #8a8a8a 100%);
+  --d: 15cqi;
+  --t: 2105.26ms;
+  --w: 2.0526cqi;
+}
+
+main .container .content .solar-system .venus {
+  --b: radial-gradient(circle, #f4d03f 0%, #c39c43 100%);
+  --d: 25cqi;
+  --t: 4210.53ms;
+  --w: 2.6053cqi;
+}
+
+main .container .content .solar-system .earth {
+  --b: radial-gradient(circle, #3a82f7 0%, #2f9e44 80%, #1a5e20 100%);
+  --d: 35cqi;
+  --t: 6315.79ms;
+  --w: 3.1579cqi;
+}
+
+main .container .content .solar-system .mars {
+  --b: radial-gradient(circle, #e57373 0%, #af4448 100%);
+  --d: 45cqi;
+  --t: 8421.05ms;
+  --w: 3.7105cqi;
+}
+
+main .container .content .solar-system .jupiter {
+  --b: radial-gradient(circle, #d4a373 0%, #b36d32 50%, #f4e7d3 100%);
+  --d: 60cqi;
+  --t: 12631.58ms;
+  --w: 4.8158cqi;
+}
+
+main .container .content .solar-system .saturn {
+  --b: radial-gradient(circle, #e6dba0 0%, #c2a13e 100%);
+  --d: 75cqi;
+  --t: 14736.84ms;
+  --w: 5.3684cqi;
+}
+
+main .container .content .solar-system .uranus {
+  --b: radial-gradient(circle, #7de3f4 0%, #3ba0b5 100%);
+  --d: 84.5cqi;
+  --t: 10526.32ms;
+  --w: 4.2632cqi;
+}
+
+main .container .content .solar-system .neptune {
+  --b: radial-gradient(circle, #4c6ef5 0%, #1b3b8c 100%);
+  --d: 94cqi;
+  --t: 20000ms;
+  --w: 6cqi;
+}
+
+
+
+
+
+
+
+
+
+
+/*======================================== 1st Protected File ========================================*/
+
+main .container .content .main-slide-box .first-protected-file {
+  background-image: url('https://masumbillah6778.github.io/images/stone-bg.jpg');
+  background-size: cover;
+  width: 650px;
+  height: 390px;
+  margin-top: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 50px;
+  border: 2px solid yellow;
+}
+
+main .container .content .main-slide-box .first-protected-file h1 {
+  color: yellow;
+  margin: 0p;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: solaiman-lipi;
+  text-align: center;
+  text-shadow: #000;
+}
+
+main .container .content .main-slide-box .first-protected-file .password-head {
+  color: blue;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'shokun-tola';
+  text-align: center;
+}
+  
+main .container .content .main-slide-box .first-protected-file .text-input {
+  background-color: tomato;
+  color: yellow;
+  width: 95.7%;
+  height: 60px;
+  margin: 70px 10px 10px 10px;
+  padding: 10px;
+  font-size: 30px;
+  font-family: times;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+  
+main .container .content .main-slide-box .first-protected-file .error-text {
+  background-color: pink;
+  color: red;
+  width: 95.7%;
+  margin-left: 10px;
+  margin-bottom: -52px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi';
+  text-align: center;
+  display: none;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+main .container .content .main-slide-box .first-protected-file .text-input:focus {
+  outline:none;
+}
+  
+main .container .content .main-slide-box .first-protected-file label {
+  background: white;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 20px;
+  top: -52px;
+  left: 15px;
+  padding: 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi';
+  position: relative;
+  text-transform: capitalize;
+  transition: top .3s;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+main .container .content .main-slide-box .first-protected-file input:focus ~ label,
+main .container .content .main-slide-box .first-protected-file input:valid ~ label {
+  background: tomato;
+  color: yellow;
+  margin-left: 90px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi';
+  top: 151px;
+  position: absolute;
+  opacity: 1;
+  border-left: 2px solid yellow;
+  border-right: 2px solid yellow;
+}
+  
+main .container .content .main-slide-box .first-protected-file .submit-btn {
+  background-color: blue;
+  color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'solaiman-lipi';
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  border-radius: 10px;
+  border: 2px solid red;
+  text-shadow: 0px 1px 0px #7cacde;
+  box-shadow: inset 0px 1px 0px 0px #bee2f9;
+}
+
+
+
+
+/*======================================== Footer ========================================*/
+.footer {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-color: red;
+  width: 99.4%;
+  height: 5%;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+  border: 2px solid white;
+}
+
+.footer marquee {
+  color: yellow;
+  padding: px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: solaiman-lipi;
+  cursor: pointer;
+}
+
+
+
