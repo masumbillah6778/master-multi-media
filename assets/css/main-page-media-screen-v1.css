@@ -172,6 +172,78 @@
   }
 
 
+
+
+
+
+  /*======================================== 1st  ========================================*/
+  main .container .content .main-slide-box {
+    background-image: url('https://masumbillah6778.github.io/images/stone-bg2.jpg');
+    background-size: cover;
+    width: 350px;
+    height: 290px;
+  }
+  
+  main .container .content .main-slide-box .first-protected-file {
+    width: 280px;
+    height: 230px;
+    padding: 0px;
+    border: 2px solid red;
+    border-radius: 25px;
+  }
+
+  main .container .content .main-slide-box .first-protected-file h1 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  main .container .content .main-slide-box .first-protected-file .password-head {
+    color: blue;
+  }
+
+  main .container .content .main-slide-box .first-protected-file .text-input {
+    background-color: green;
+    color: yellow;
+    width: 93%;
+    height: 40px;
+  }
+
+  main .container .content .main-slide-box .first-protected-file .error-text {
+    background-color: pink;
+    color: red;
+    width: 93%;
+  }
+    
+  main .container .content .main-slide-box .first-protected-file label {
+    background: white;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 0 5px;
+    top: -42px;
+    left: 15px;
+  }
+
+  main .container .content .main-slide-box .first-protected-file input:focus ~ label,
+  main .container .content .main-slide-box .first-protected-file input:valid ~ label {
+    background: green;
+    color: yellow;
+    margin-left: 40px;
+    font-size: 15px;
+    top: 143px;
+  }
+    
+  main .container .content .main-slide-box .first-protected-file .submit-btn {
+    background-color: blue;
+    color: yellow;
+    width: 90px;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+
+
+
+	
   /*======================================== Footer ========================================*/
   .footer {
     background-color: blue;
