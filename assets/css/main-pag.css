@@ -39,12 +39,12 @@ body.dark {
 .main-content nav {
   background-color: #006400;
   width: 100%;
-  height: 70px;
+  height: 10%;
   position: sticky;
   top: 0;
   left: 0;
   -index: 100;
-  border: 2px solid red;
+  border: 2px solid white;
 }
 
 body.dark .main-content nav {
@@ -339,35 +339,43 @@ body.dark .search-field i {
 
 /*======================================= Main =======================================*/
 main {
-  background-color: hite;
+  background-image: url(https://masumbillah6778.github.io/images/stone-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
   width: 100%;
-  height: 595px;
-  padding: 10px;
-  border: 2px solid blue;
+  min-height: 88vh;
+  padding: 5px;
+  border: 2px solid;
+  border-left-color: yellow;
+  border-top-color: yellow;
+  border-right-color: yellow;
+  border-bottom-color: red;
 }
 
 main .container {
   width: 100%;
-  height: 100%;
-  border: 4px solid blue;
+  height: 86.5vh;
+  border: 2px solid blue;
 }
 
 main .container .content {
   width: 100%;
   height: 100%;
-  border: 4px solid red;
+  border: 2px solid white;
 }
 
 main .container .content .heading {
-  color: red;
-  padding: 10px 0px;
-  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: yellow;
+  padding: 5px 0px;
+  font-size: 15px;
   font-family: 'sonsieone';
   font-weight: bold;
   text-align: center;
+  backdrop-filter: blur(10px);
   border-bottom: 4px solid red;
   animation: Color 6s linear infinite;
-  -webkit-animation: text-animation 4s ease-in-out infinite;
+  -webkit-animation: ext-animation 4s ease-in-out infinite;
 }
 
 @keyframes text-animation {
@@ -397,6 +405,9 @@ main .container .content .heading {
 }
 
 
+main .container .content .heading span.text {
+  color: rgb(85,85,85);
+}
 
 
 
@@ -404,14 +415,15 @@ main .container .content .heading {
 /*======================================= Main Slide Box =======================================*/
 
 main .container .content .main-slide-box {
-	width: auto;
-  height: 500px;
+	width: 100%;
+  height: 81.2vh;
   margin: 0px;
+  border: 4px solid yellow;
 	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
 main .container .content .main-slide-box .slide-box {
-  height: 450px;
+  height: 80.1vh;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	row-gap: 10px;
@@ -420,9 +432,11 @@ main .container .content .main-slide-box .slide-box {
 }
 
 main .container .content .main-slide-box .slide-box .slide {
+  background-color: rgba(0, 0, 0, 0.4);
   width: auto;
 	margin: 10px;
 	padding: 10px;
+  backdrop-filter: blur(5px);
 	transition: transform .5s;
 	border-radius: 10px;
 	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
@@ -443,13 +457,18 @@ main .container .content .main-slide-box .slide-box .slide .box .cover-image {
 
 main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
 	width: 100%;
+  border: 2px solid yellow;
+  border-radius: 50%;
 }
 
 main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
-	background-color: #2980b9;
+	background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
+  margin-top: 10px;
   padding: 10px 0px;
   text-align: center;
+  backdrop-filter: blur(5px);
+  border: 1px solid yellow;
   border-radius: 0px 0px 10px 10px;
 }
 
@@ -460,7 +479,7 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
   font-weight: bold;
   text-decoration: none;
   display: block;
-  animation: 4s animation ease infinite;
+  animation: 4s nimation ease infinite;
 }
 
 /*@keyframes animation {
@@ -783,7 +802,7 @@ content-box {
 main .container .content .solar-system {
 	width: auto;
   margin: 0px;
-	z-index: -1;
+	-index: -1;
 	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
@@ -807,7 +826,7 @@ main .container .content .solar-system ol {
 
 main .container .content .solar-system li {
   width: var(--d, 2cqi);
-  height: 460px;
+  height: 550px;
   color: red;
   aspect-ratio: 1 / 1;
   border: 1px dashed;
@@ -815,7 +834,7 @@ main .container .content .solar-system li {
   display: grid;
   grid-area: 1 / 1;
   place-self: center;
-  z-index: -1;
+  -index: -1;
   &::after {
     animation: rotate var(--t, 3s) linear infinite;
     aspect-ratio: 1 / 1;
@@ -928,19 +947,26 @@ main .container .content .main-slide-box .first-protected-file {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1;
+  -index: -1;
   border-radius: 50px;
   border: 2px solid yellow;
 }
 
 main .container .content .main-slide-box .first-protected-file h1 {
+  background-color: rgba(0, 0, 0, 0.4);
   color: yellow;
   margin: 0p;
+	padding: 10px;
   font-size: 40px;
   font-weight: bold;
   font-family: solaiman-lipi;
   text-align: center;
   text-shadow: #000;
+  backdrop-filter: blur(5px);
+  border-radius: 50px 50px 0px 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-color: yellow;
 }
 
 main .container .content .main-slide-box .first-protected-file .password-head {
@@ -1007,11 +1033,11 @@ main .container .content .main-slide-box .first-protected-file input:focus ~ lab
 main .container .content .main-slide-box .first-protected-file input:valid ~ label {
   background: tomato;
   color: yellow;
-  margin-left: 90px;
+  margin-left: 20px;
   font-size: 15px;
   font-weight: bold;
   font-family: 'solaiman-lipi';
-  top: 151px;
+  top: 173px;
   position: absolute;
   opacity: 1;
   border-left: 2px solid yellow;
@@ -1038,28 +1064,222 @@ main .container .content .main-slide-box .first-protected-file .submit-btn {
 
 
 
+/*======================================== Page Marquee ========================================*/
+
+main .container .content .main-slide-box .page-marquee {
+  height: 100%;
+  overflow-y: scroll;
+	order: 2px solid green;
+}
+
+main .container .content .main-slide-box .page-marquee marquee {
+  width: 100%;
+  height: 70px;
+}
+
+main .container .content .main-slide-box .page-marquee .box {
+  background-color: red;
+  width: 60px;
+  height: 60px;
+  margin: ;
+  padding: 10px;
+  position: relative;
+  border-radius: 50px;
+  animation-iteration-count: infinite;
+  animation-name: animation;
+  animation-duration: 4s;
+  border-radius: 50px;
+  border: 4px solid white;
+}
+
+@keyframes animation {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+main .container .content .main-slide-box .page-marquee .box:hover {
+  border: none;
+}
+
+main .container .content .main-slide-box .page-marquee .box i {
+  color: transparent;
+  font-size: 40px;
+  transform: scale(1);
+  transition: all ease-in-out .5s;
+}
+
+main .container .content .main-slide-box .page-marquee .box i:nth-child(1):hover {
+  color: white;
+}
+
+main .container .content .main-slide-box .page-marquee .box i:nth-child(2):hover {
+  color: white;
+}
+
+main .container .content .main-slide-box .page-marquee .box i:nth-child(3):hover {
+  color: white;
+}
+
+main .container .content .main-slide-box .page-marquee .box i:nth-child(4):hover {
+  color: white;
+}
+
+main .container .content .main-slide-box .page-marquee .box i:nth-child(5):hover {
+  color: white;
+}
+
+main .container .content .main-slide-box .page-marquee .box i:nth-child(6):hover {
+  color: white;
+}
+
+main .container .content .main-slide-box .page-marquee .box i:nth-child(7):hover {
+  color: white;
+}
+
+main .container .content .main-slide-box .page-marquee .box i:nth-child(8):hover {
+  color: white;
+}
+
+main .container .content .main-slide-box .page-marquee .box i:nth-child(9):hover {
+  color: white;
+}
+
+
+
+
+
+/*======================================== 2nd Protected File ========================================*/
+
+main .container .content .main-slide-box .second-protected-file {
+  background-image: url('https://masumbillah6778.github.io/images/stone-bg.jpg');
+  background-size: cover;
+  width: 650px;
+  height: 390px;
+  margin-top: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -index: -1;
+  border-radius: 50px;
+  border: 2px solid yellow;
+}
+
+main .container .content .main-slide-box .second-protected-file h3 {
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: yellow;
+  padding: 15px 0px;
+  font-size: 30px;
+  font-family: solaiman-lipi;
+  backdrop-filter: blur(5px);
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-color: yellow;
+  border-radius: 50px 50px 0px 0px;
+}
+
+main .container .content .main-slide-box .second-protected-file .password-head {
+  color: red;
+  margin-top: 20px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: shokun-tola;
+  text-align: center;
+}
+
+main .container .content .main-slide-box .second-protected-file .input-box {
+  width: 100%;
+  margin: 70px 0px;
+  padding: 0px 20px;
+}
+
+main .container .content .main-slide-box .second-protected-file input {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: yellow;
+  width: 85%;
+  padding: 10px;
+  font-size: 20px;
+  font-family: times;
+  font-weight: bold;
+  backdrop-filter: blur(5px);
+  border-radius: 10px 0px 0px 10px;
+}
+
+main .container .content .main-slide-box .second-protected-file .form-box input::placeholder {
+  color: white;
+  opacity: .3;
+}
+
+main .container .content .main-slide-box .second-protected-file button {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: yellow;
+  padding: 10px;
+  font-size: 20px;
+  font-family: times;
+  font-weight: bold;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  border-radius: 0px 10px 10px 0px;
+}
+
+main .container .content .main-slide-box .second-protected-file button:hover {
+  background-color: rgba(0, 0, 0 , .1);
+  color: white;
+}
+  
+main .container .content .main-slide-box .second-protected-file p {
+  background: -webkit-linear-gradient(135deg, red, white, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  
+main .container .content .main-slide-box .input-box p#error {
+  color: rgb(255,255,0);
+  margin-top: 30px;
+  padding: 5px;
+  font-size: 25px;
+  font-family: times;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.3);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+main .container .content .main-slide-box .input-box p#error {
+  backdrop-filter: blur(5px);
+  border: 4px solid yellow;
+  border-radius: 10px;
+}
+
+
 /*======================================== Footer ========================================*/
 .footer {
+  background-color: rgba(0, 0, 0, 0.4);
   background-color: red;
-  width: 99.5%;
-  height: 70px;
+  width: 99.4%;
+  height: 5%;
   margin-left: 4px;
   margin-bottom: 4px;
   position: fixed;
   left: 0;
   bottom: 0;
-  border: 2px solid green;
+  backdrop-filter: blur(5px);
+  border: 2px solid white;
 }
 
 .footer marquee {
-  color: white;
-  padding: 15px;
-  font-size: 30px;
+  color: yellow;
+  padding: px;
+  font-size: 20px;
   font-weight: bold;
   font-family: solaiman-lipi;
   cursor: pointer;
 }
-
-
 
 
