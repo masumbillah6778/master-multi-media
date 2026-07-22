@@ -96,7 +96,9 @@
     border: 0px solid blue;
   }
 
-
+  main .container .content .heading {
+    z-index: -1;
+  }
 
 
 
