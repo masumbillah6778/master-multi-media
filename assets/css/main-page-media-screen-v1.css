@@ -137,6 +137,333 @@
 
 
 
+  /*======================================= Music Box =======================================*/
+
+    main .container .content .main-music-box {
+    width: 100%;
+    border: 2px solid magenta;
+  }
+	
+  main .container .content .main-music-box .music-box .wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    border: 0px solid orange;
+    border-radius: 0px;
+    box-shadow: 0px 6px 15px var(--lightbshadow);
+  }
+
+  main .container .content .main-music-box .music-box .wrapper i {
+    cursor: pointer;
+  }
+
+  main .container .content .main-music-box .music-box .top-bar i {
+    font-size: 26px;
+    color: white
+  }
+
+  main .container .content .main-music-box .music-box .top-bar i:first-child {
+    margin-left: 5px;
+  }
+
+  main .container .content .main-music-box .music-box .top-bar span {
+    color: yellow;
+    margin-left: -3px;
+    font-size: 15px;
+    font-family: solaiman-lipi;
+    font-weight: bold;
+  }
+
+  main .container .content .main-music-box .music-box .heading {
+    font-size: 20px;
+  }
+
+  main .container .content .main-music-box .music-box .img-area {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 15px;
+  }
+
+  main .container .content .main-music-box .music-box .img-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  main .container .content .main-music-box .music-box .song-details {
+    margin: 10px 0;
+    line-height: 25px;
+  }
+
+  main .container .content .main-music-box .music-box .song-details .name {
+    color: white;
+    font-size: 20px;
+    font-family: 'solaiman-lipi';
+    font-weight: bold;
+  }
+
+  main .container .content .main-music-box .music-box .song-details .artist {
+    color: yellow;
+    font-size: 15px;
+    font-family: 'solaiman-lipi';
+    opacity: 0.9;
+  }
+
+  /*=========== progress-area ==========*/
+  main .container .content .main-music-box .music-box .progress-area {
+    height: 8px;
+    width: 100%;
+    border-radius: 50px;
+    background: #f0f0f0;
+    cursor: pointer;
+  }
+
+  main .container .content .main-music-box .music-box .progress-area .progress-bar {
+    height: 5px;
+    position: relative;
+    border-radius: inherit;
+    background: linear-gradient(90deg, green 0%, red 100%);
+    /*cursor: grabbing;*/
+    cursor: pointer;
+  }
+
+  main .container .content .main-music-box .music-box .progress-bar::before {
+    content: "";
+    background-color: red;
+    height: 10px;
+    width: 10px;
+    margin-top: -10px;
+    border-radius: 0%;
+  }
+
+  main .container .content .main-music-box .music-box .progress-area:hover .progress-bar::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  main .container .content .main-music-box .music-box .progress-area .song-timer {
+    margin-top: 5px;
+  }
+
+  main .container .content .main-music-box .music-box .song-timer .current-time {
+    font-size: 15px;
+    color: yellow;
+    font-family: times;
+    font-weight: bold;
+  }
+
+  main .container .content .main-music-box .music-box .song-timer .max-duration {
+    font-size: 15px;
+    color: white;
+    font-family: times;
+    font-weight: bold;
+  }
+    
+  main .container .content .main-music-box .music-box .song-timer span {
+    font-size: 10px;
+    color: var(--lightblack);
+  }
+
+
+
+  main .container .content .main-music-box .music-box .volume-area {
+    margin: 30px 0px;
+  }
+
+  main .container .content .main-music-box .music-box .volume-area i {
+    font-size: 10px;
+  }
+
+  main .container .content .main-music-box .music-box .volume-area input[type="range"] {
+      width: 230px;
+    }
+
+  main .container .content .main-music-box .music-box .volume-area #display1 {
+    font-size: 10px;
+  }
+
+  /*========== Control ==========*/
+  .controls {
+    margin: 5px 0px;
+    padding: 2px 5px;
+    border: 2px solid yellow;
+  }
+
+  .controls #repeat-plist {
+    background: blue;
+    color: yellow;
+    padding: 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px yellow;
+  }
+    
+  .controls #prev {
+    background: green;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px yellow;
+  }
+
+  .controls .play-pause {
+    background: linear-gradient(white 0%, white 100%);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px var(--pink);
+  }
+
+  .play-pause::before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: inherit;
+    background-color: red;
+  }
+
+  .play-pause i {
+    height: 43px;
+    width: 43px;
+    line-height: 43px;
+    text-align: center;
+    background: inherit;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+  }
+
+  .controls #next {
+    background: green;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px yellow;
+  }
+    
+  .controls #more-music {
+    background: gold;
+    color: red;
+    padding: 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px red;
+  }
+
+  /*======== Music List Header =======*/
+  .music-list {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -55%;
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: blur(10px);
+    z-index: 5;
+    padding: 15px;
+    border: 2px solid yellow;
+    border-radius: 15px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease-out;
+  }
+
+  .music-list-header {
+    background-color: teal;
+  }
+
+  .music-list-header .row span {
+    color: white;
+    margin-left: 80px;
+    font-size: 20px;
+    font-family: times;
+    font-weight: bold;
+    align-items: center;
+  }
+
+  .music-list ul {
+    margin: 10px 0;
+    max-height: 260px;
+    overflow: auto;
+  }
+
+  .music-list ul::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .music-list ul li {
+    color: yellow;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    border-bottom: 1px solid yellow;
+  }
+
+  .music-list ul li:last-child {
+    border-bottom: 0px;
+  }
+
+  /*=================== Active Song ==============================*/
+  .music-list ul li.playing {
+      background-color: green;
+      pointer-events: none;
+      position: relative;
+  }
+
+  .music-list ul li .row span {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px green, 0 0 2px blue, 0 0 2px red;
+  }
+
+  .music-list ul li .row p {
+    color: yellow;
+    font-size: 10px;
+    opacity: 1;
+  }
+
+  .music-list ul li.playing .audio-duration {
+    background-color: yellow;
+    width: 30px;
+	height: 30px;
+    color: red;
+    margin: 12px 15px 0px 0px;
+    border-radius: 50px;
+    border: 2px solid blue;
+  }
+
+
+
+
+	
   /*======================================= Music Lyrics =======================================*/
   .content-box {
     background-image: url("https://masumbillah6778.github.io/images/a4.jpg");
