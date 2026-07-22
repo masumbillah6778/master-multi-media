@@ -103,8 +103,9 @@
 
 
   /*======================================= Main Slide Box =======================================*/
-
+	  
   main .container .content .main-slide-box {
+	height: 90vh;
     margin: 0px;
   }
 
