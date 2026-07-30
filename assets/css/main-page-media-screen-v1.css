@@ -3,6 +3,15 @@
 @media only screen and (max-width: 767px) {*/
 
 @media screen and (max-width: 768px) {
+  .main-content nav {
+    z-index: 999;
+  }
+
+  .main-content nav .nav-bar .logo.navLogo a {
+    color: yellow;
+    font-size: 20px;
+  }
+  
   .main-content nav .nav-bar .sidebarOpen {
     display: block;
   }
@@ -15,22 +24,8 @@
     position: fixed;
     left: -100%;
     top: 0;
-    z-index: 200;
     transition: all 0.4s ease;
-  }
-
-  .main-content nav .nav-bar .logo a {
-    font-size: 14px;
-    color: white;
-  }
-
-  .main-content nav.active .menu{
-    left: -0%;
-  }
-
-  .main-content nav.active .nav-bar .navLogo a {
-    opacity: 0;
-    transition: all 0.3s ease;
+    z-index: 1000;
   }
 
   .main-content nav .nav-bar .menu .logo-toggle {
@@ -45,9 +40,25 @@
   }
 	
   .main-content nav .nav-bar .menu .logo-toggle .logo {
-	font-size: 40px;
+    margin-top: -20px;
+    font-size: 40px;
     font-family: 'love-letters';
-    letter-spacing: 2px;}
+    letter-spacing: 2px;
+  }
+
+  .main-content nav .nav-bar .menu .logo-toggle .logo a {
+    font-size: 14px;
+    color: white;
+  }
+
+  .main-content nav.active .menu {
+    left: -0%;
+  }
+
+  .main-content nav.active .nav-bar .navLogo a {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
 	
   .logo-toggle .siderbarClose{
     color: var(--text-color);
@@ -62,9 +73,64 @@
   }
 
   .main-content nav .nav-bar .nav-links li a {
+    color: yellow;
     display: block;
     margin-top: 20px;
   }
+
+  .main-content nav .nav-bar .nav-links li a::before {
+    content: '';
+    background-color: yellow;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 93%;
+    right: 0;
+    top: 27px;
+    transform: translateY(-100%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .main-content nav .nav-bar .nav-links li a i {
+    padding-right: 20px;
+  }
+
+  .main-content nav .nav-bar .nav-links li.admin {
+    background-color: yellow;
+    height: 80px;
+    margin-bottom: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .main-content nav .nav-bar .nav-links li.admin:after {
+    content: '';
+    display: block;  
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid yellow;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+
+  .main-content nav .nav-bar .nav-links li.admin a {
+    color: red;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  
 
 
   
@@ -74,26 +140,32 @@
 
 
   /*======================================= Main =======================================*/
-  main {
+  .main-content main {
 	height: 620px;
     padding: 0px;
-	border: 2px solid black;
+	border: 20px solid black;
+  z-index: -999;
   }
 
-  main .container-box {
+  .main-content main .container-box {
     width: 100%;
     height: 100%;
     border: 0px solid blue;
   }
 
-	main .container-box .content .heading {
+	.main-content main .container-box .content .heading {
     font-size: 15px;
     padding: 5px;
     border-bottom: 4px solid black;
   }
 
-  main .container-box .content {
+  .main-content main .container-box .content {
     border: 0px solid blue;
+  }
+
+  .main-content main .container-box .content .heading {
+    
+    z-index: -999;
   }
 
 
