@@ -68,7 +68,7 @@ body.dark .main-content nav .nav-bar {
   background-color: red;
 }
 
-nav .nav-bar .sidebarOpen {
+.main-content nav .nav-bar .sidebarOpen {
   color: white;
   font-size: 25px;
   padding: 5px;
@@ -76,7 +76,7 @@ nav .nav-bar .sidebarOpen {
   display: none;
 }
 
-nav .nav-bar .logo a {
+.main-content nav .nav-bar .logo a {
   color: white;
   font-size: 30px;
   font-weight: bold;
@@ -84,21 +84,21 @@ nav .nav-bar .logo a {
   text-decoration: none;
 }
 
-.menu .logo-toggle {
+.main-content nav .nav-bar .menu .logo-toggle {
   display: none;
 }
 
-.nav-bar .nav-links {
+.main-content nav .nav-bar .nav-links {
   display: flex;
   align-items: center;
 }
 
-.nav-bar .nav-links li {
+.main-content nav .nav-bar .nav-links li {
   margin: 0 5px;
   list-style: none;
 }
 
-.nav-bar .nav-links li i {
+.main-content nav .nav-bar .nav-links li i {
   color: yellow;
   animation: Color 6s linear infinite;
   -webkit-animation: text-animation 4s ease-in-out infinite;
@@ -130,7 +130,7 @@ nav .nav-bar .logo a {
   }
 }
 
-.nav-links li a {
+.main-content nav .nav-bar .nav-links li a {
   color: white;
   font-size: 17px;
   font-weight: 400;
@@ -139,15 +139,15 @@ nav .nav-bar .logo a {
   padding: 10px;
 }
 
-.nav-links li a.active {
+.main-content nav .nav-bar .nav-links li a.active {
   background-color: red;
 }
 
-body.dark .nav-links li a.active {
+body.dark .main-content nav .nav-bar .nav-links li a.active {
   background-color: green;
 }
 
-.nav-links li a::before {
+.main-content nav .nav-bar .nav-links li a::before {
   content: '';
   background-color: yellow;
   width: 6px;
@@ -161,16 +161,16 @@ body.dark .nav-links li a.active {
   transition: all 0.3s ease;
 }
 
-.nav-links li:hover a::before {
+.main-content nav .nav-bar .nav-links li:hover a::before {
   opacity: 1;
 }
 
-.nav-bar .darkLight-searchBox {
+.main-content nav .nav-bar .darkLight-searchBox {
   display: flex;
   align-items: center;
 }
 
-.darkLight-searchBox .dark-light {
+.main-content nav .nav-bar .darkLight-searchBox .dark-light {
   background-color: red;
   width: 50px;
   height: 25px;
@@ -182,21 +182,21 @@ body.dark .nav-links li a.active {
   transition: all 0.3s ease;
 }
 
-body.dark .darkLight-searchBox .dark-light {
+body.dark .main-content nav .nav-bar .darkLight-searchBox .dark-light {
   background-color: green;
 }
 
-.bx.bx-moon.moon::before {
+.main-content nav .nav-bar .darkLight-searchBox .dark-light .bx.bx-moon.moon::before {
   color: yellow;
   margin-left: -20px;
 }
 
-.bx.bx-sun.sun::before {
+.main-content nav .nav-bar .darkLight-searchBox .dark-light .bx.bx-sun.sun::before {
   color: white;
   margin-left: 20px;
 }
 
-.darkLight-searchBox .searchToggle {
+.main-content nav .nav-bar .darkLight-searchBox .searchToggle {
   height: 40px;
   width: 40px;
   display: flex;
@@ -205,7 +205,7 @@ body.dark .darkLight-searchBox .dark-light {
   margin: 0 5px;
 }
 
-.searchToggle i {
+.main-content nav .nav-bar .darkLight-searchBox .searchToggle i {
   position: absolute;
   color: white;
   font-size: 22px;
@@ -213,7 +213,7 @@ body.dark .darkLight-searchBox .dark-light {
   transition: all 0.3s ease;
 }
 
-.dark-light i {
+.main-content nav .nav-bar .darkLight-searchBox .dark-light i {
   position: absolute;
   color: white;
   font-size: 22px;
@@ -221,42 +221,42 @@ body.dark .darkLight-searchBox .dark-light {
   transition: all 0.3s ease;
 }
 
-.dark-light i.sun {
+.main-content nav .nav-bar .darkLight-searchBox .dark-light i.sun {
   opacity: 0;
   pointer-events: none;
 }
 
-.dark-light.active i.sun {
+.main-content nav .nav-bar .darkLight-searchBox .dark-light.active i.sun {
   opacity: 1;
   pointer-events: auto;
 }
 
-.dark-light.active i.moon {
+.main-content nav .nav-bar .darkLight-searchBox .dark-light.active i.moon {
   color: #000;
   opacity: 0;
   pointer-events: none;
 }
 
-.searchToggle i.cancel {
+.main-content nav .nav-bar .darkLight-searchBox .searchBox .searchToggle i.cancel {
   opacity: 0;
   pointer-events: none;
 }
 
-.searchToggle.active i.cancel {
+.main-content nav .nav-bar .darkLight-searchBox .searchBox .searchToggle.active i.cancel {
   opacity: 1;
   pointer-events: auto;
 }
 
-.searchToggle.active i.search {
+.main-content nav .nav-bar .darkLight-searchBox .searchBox .searchToggle.active i.search {
   opacity: 0;
   pointer-events: none;
 }
 
-.searchBox {
+.main-content nav .nav-bar .darkLight-searchBox .searchBox  {
   position: relative;
 }
 
-.searchBox .search-field {
+.main-content .searchBox .search-field {
   background-color: blue;
   position: absolute;
   bottom: -85px;
@@ -271,19 +271,20 @@ body.dark .darkLight-searchBox .dark-light {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
+  z-index: 100;
 }
 
-body.dark .searchBox .search-field {
+body.dark .main-content .searchBox .search-field {
   background-color: white;
 }
 
-.searchToggle.active ~ .search-field {
+.main-content .searchBox .searchToggle.active ~ .search-field {
   bottom: -74px;
   opacity: 1;
   pointer-events: auto;
 }
 
-.search-field::before {
+.main-content .searchBox .search-field::before {
   background-color: red;
   content: '';
   position: absolute;
@@ -295,11 +296,11 @@ body.dark .searchBox .search-field {
   z-index: -1;
 }
 
-body.dark .search-field::before {
+body.dark .main-content .searchBox .search-field::before {
   background-color: green;
 }
 
-.search-field input {
+.main-content .searchBox .search-field input {
   color: var(--search-text);
   background-color: var(--search-bar);
   width: 100%;
@@ -312,11 +313,11 @@ body.dark .search-field::before {
   border-radius: 4px;
 }
 
-body.dark .search-field input {
+body.dark .main-content .searchBox .search-field input {
   color: var(--text-color);
 }
 
-.search-field i {
+.main-content .searchBox .search-field i {
   position: absolute;
   color: var(--nav-color);
   right: 15px;
@@ -324,9 +325,10 @@ body.dark .search-field input {
   cursor: pointer;
 }
 
-body.dark .search-field i {
+body.dark .main-content .searchBox .search-field i {
   color: var(--text-color);
 }
+
 
 
 
@@ -338,33 +340,32 @@ body.dark .search-field i {
 
 
 /*======================================= Main =======================================*/
-main {
+.main-content main {
   background-image: url(https://masumbillah6778.github.io/images/stone-bg.jpg);
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  min-height: 88vh;
+  min-height: 82.9vh;
   padding: 5px;
   border: 2px solid;
-  border-left-color: yellow;
-  border-top-color: yellow;
-  border-right-color: yellow;
-  border-bottom-color: red;
+  border-left-color: blue;
+  border-top-color: black;
+  border-right-color: blue;
+  border-bottom-color: black;
 }
 
-main .container-box {
+.main-content main .container-box {
   width: 100%;
-  height: 82.1vh;
   border: 2px solid blue;
 }
 
-main .container-box .content {
+.main-content main .container-box .content {
   width: 100%;
   height: 100%;
-  border: 2px solid white;
+  border: 2px solid red;
 }
 
-main .container-box .content .heading {
+.main-content main .container-box .content .heading {
   background-color: rgba(0, 0, 0, 0.6);
   color: red;
   padding: 5px 0px;
@@ -372,6 +373,7 @@ main .container-box .content .heading {
   font-family: 'sonsieone';
   font-weight: bold;
   text-align: center;
+  z-index: -999;
   backdrop-filter: blur(10px);
   border-bottom: 4px solid red;
   animation: Color 6s linear infinite;
@@ -413,19 +415,18 @@ main .container-box .content .heading {
 
 main .container-box .content .main-slide-box {
 	width: 100%;
-  height: 76.7vh;
   margin: 0px;
   border: 4px solid yellow;
 	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
 main .container-box .content .main-slide-box .slide-box {
-  height: 75.6vh;
+  height: 74.6vh;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	row-gap: 10px;
   overflow-y: scroll;
-	order: 2px solid green;
+	border: 2px solid green;
 }
 
 main .container-box .content .main-slide-box .slide-box .slide {
