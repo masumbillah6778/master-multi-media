@@ -173,8 +173,9 @@
   /*======================================= Main Slide Box =======================================*/
 	  
   main .container-box .content .main-slide-box {
-	height: 90vh;
+	height: 80vh;
     margin: 0px;
+    border: 2px solid yellow;
   }
 
   main .container-box .content .main-slide-box .slide-box {
