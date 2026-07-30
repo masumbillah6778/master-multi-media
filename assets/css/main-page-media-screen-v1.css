@@ -15,7 +15,7 @@
     position: fixed;
     left: -100%;
     top: 0;
-    z-index: 100;
+    z-index: 200;
     transition: all 0.4s ease;
   }
 
@@ -80,57 +80,53 @@
 	border: 2px solid black;
   }
 
-  main .container {
+  main .container-box {
     width: 100%;
     height: 100%;
     border: 0px solid blue;
   }
 
-	main .container .content .heading {
+	main .container-box .content .heading {
     font-size: 15px;
     padding: 5px;
     border-bottom: 4px solid black;
   }
 
-  main .container .content {
+  main .container-box .content {
     border: 0px solid blue;
-  }
-
-  main .container .content .heading {
-    z-index: -1;
   }
 
 
 
   /*======================================= Main Slide Box =======================================*/
 	  
-  main .container .content .main-slide-box {
+  main .container-box .content .main-slide-box {
 	height: 90vh;
     margin: 0px;
   }
 
-  main .container .content .main-slide-box .slide-box {
+  main .container-box .content .main-slide-box .slide-box {
     width: auto;
     height: 600px;
     grid-template-columns: repeat(1, 1fr);
     overflow-y: scroll;
   }
 
-  main .container .content .main-slide-box .slide-box .slide {
+  main .container-box .content .main-slide-box .slide-box .slide {
     border: ;
   }
 
-  main .container .content .main-slide-box .slide-box .slide .box {
+  main .container-box .content .main-slide-box .slide-box .slide .box {
     padding: 0px;
   }
     
-  main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
+  main .container-box .content .main-slide-box .slide-box .slide .box .cover-image img {
 		width: 300px;
     margin: 0 auto;
     display: block;
   }
 
-  main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
+  main .container-box .content .main-slide-box .slide-box .slide .box .aritst-name {
     margin-top: 10px;
   }
 
@@ -579,6 +575,7 @@
     background-color: blue;
     width: 98%;
     height: 40px;
+    z-index: -1;
     border: 2px solid white;
   }
 
