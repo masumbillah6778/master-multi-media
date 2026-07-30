@@ -352,19 +352,19 @@ main {
   border-bottom-color: red;
 }
 
-main .container {
+main .container-box {
   width: 100%;
   height: 86.5vh;
   border: 2px solid blue;
 }
 
-main .container .content {
+main .container-box .content {
   width: 100%;
   height: 100%;
   border: 2px solid white;
 }
 
-main .container .content .heading {
+main .container-box .content .heading {
   background-color: rgba(0, 0, 0, 0.6);
   color: yellow;
   padding: 5px 0px;
@@ -405,7 +405,7 @@ main .container .content .heading {
 }
 
 
-main .container .content .heading span.text {
+main .container-box .content .heading span.text {
   color: rgb(85,85,85);
 }
 
@@ -414,7 +414,7 @@ main .container .content .heading span.text {
 
 /*======================================= Main Slide Box =======================================*/
 
-main .container .content .main-slide-box {
+main .container-box .content .main-slide-box {
 	width: 100%;
   height: 81.2vh;
   margin: 0px;
@@ -422,7 +422,7 @@ main .container .content .main-slide-box {
 	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
-main .container .content .main-slide-box .slide-box {
+main .container-box .content .main-slide-box .slide-box {
   height: 80.1vh;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -431,7 +431,7 @@ main .container .content .main-slide-box .slide-box {
 	order: 2px solid green;
 }
 
-main .container .content .main-slide-box .slide-box .slide {
+main .container-box .content .main-slide-box .slide-box .slide {
   background-color: rgba(0, 0, 0, 0.4);
   width: auto;
 	margin: 10px;
@@ -442,26 +442,26 @@ main .container .content .main-slide-box .slide-box .slide {
 	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
-main .container .content .main-slide-box .slide-box .slide:hover {
+main .container-box .content .main-slide-box .slide-box .slide:hover {
   transform: rotate(360deg);
 }
 
-main .container .content .main-slide-box .slide-box .slide .box {
+main .container-box .content .main-slide-box .slide-box .slide .box {
   display: grid;
   place-items: center;
 }
 
-main .container .content .main-slide-box .slide-box .slide .box .cover-image {
+main .container-box .content .main-slide-box .slide-box .slide .box .cover-image {
 	width: auto;
 }
 
-main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
+main .container-box .content .main-slide-box .slide-box .slide .box .cover-image img {
 	width: 100%;
   border: 2px solid yellow;
   border-radius: 50%;
 }
 
-main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
+main .container-box .content .main-slide-box .slide-box .slide .box .aritst-name {
 	background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   margin-top: 10px;
@@ -472,7 +472,7 @@ main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
   border-radius: 0px 0px 10px 10px;
 }
 
-main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
+main .container-box .content .main-slide-box .slide-box .slide .box .aritst-name a {
 	color: yellow;
   font-size: 20px;
   font-family: solaiman-lipi;
