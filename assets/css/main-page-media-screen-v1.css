@@ -172,7 +172,7 @@
 
   main .container-box .content .main-slide-box .slide-box {
     width: auto;
-    height: 81.7vh;
+    height: 81.6vh;
     grid-template-columns: repeat(1, 1fr);
     overflow-y: scroll;
   }
