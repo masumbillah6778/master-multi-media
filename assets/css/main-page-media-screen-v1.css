@@ -150,7 +150,7 @@
   .main-content main .container-box {
     width: 100%;
     height: 100%;
-    border: none;
+    border: 2px solid gold;
   }
 
   .main-content main .container-box .content .heading {
