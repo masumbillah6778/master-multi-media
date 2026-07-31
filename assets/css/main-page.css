@@ -98,6 +98,11 @@ body.dark .main-content nav .nav-bar {
   list-style: none;
 }
 
+.main-content nav .nav-bar .nav-links li:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
 .main-content nav .nav-bar .nav-links li i {
   color: yellow;
   animation: Color 6s linear infinite;
