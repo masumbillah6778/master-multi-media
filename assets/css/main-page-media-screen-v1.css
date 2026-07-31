@@ -143,21 +143,19 @@
   .main-content main {
 	height: 646px;
     padding: 0px;
-	border: 2px solid black;
-  z-index: -999;
+	border: 2px solid yellow;
   }
 
   .main-content main .container-box {
     width: 100%;
     height: 100%;
-    border: 2px solid gold;
+    border: 0px solid gold;
   }
 
   .main-content main .container-box .content .heading {
     font-size: 14px;
     padding: 5px;
     border-bottom: 4px solid black;
-	z-index: -999;
   }
 
 
