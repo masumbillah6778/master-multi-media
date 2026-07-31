@@ -117,7 +117,47 @@
     right: 0;
     bottom: 0;
     left: 0;
+  
+	margin: -2px -4px -6px;
+	padding: 2px 4px 6px;
+	mix-blend-mode: multiply;
+	position: relative;
+	overflow: hidden;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.5);
   }
+
+  .rainbow-text::before {
+	content: "";
+	background: white repeating-linear-gradient(90deg, #14ffe9 0%, #ffc800 16.66666%, #ff00e0 33.33333%, #14ffe9 50.0%);
+	position: absolute;
+	top:0;
+	left:-100%;
+	right:0;
+	bottom:0;
+	mix-blend-mode: screen;
+	pointer-events: none;
+	animation: move 1s linear infinite;
+  }
+
+@keyframes move {
+	0%{transform: translateX(0);}
+	100%{transform: translateX(50%);}
+}
+
+@supports not (mix-blend-mode: multiply) {
+	.rainbow-text {
+		background: white repeating-linear-gradient(90deg, #14ffe9, #ffc800, #ff00e0, #14ffe9);
+		background-clip: text !important;
+		-webkit-text-fill-color: transparent;
+		text-shadow: none;
+	}
+
+	.rainbow-text::before {
+		content: none;
+	}
+  }
+
+	
 
   .main-content nav .nav-bar .nav-links li.admin:after {
     content: '';
