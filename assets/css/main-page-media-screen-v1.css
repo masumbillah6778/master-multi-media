@@ -155,7 +155,12 @@
   .main-content main {
 	height: 646px;
     padding: 0px;
-	border: 2px solid yellow;
+	border-width: 2px;
+    border-style: solid;
+    border-left-color: yellow;
+    border-right-color: yellow;
+    border-top-color: black;
+    border-bottom-color: black;
   }
 
   .main-content main .container-box {
