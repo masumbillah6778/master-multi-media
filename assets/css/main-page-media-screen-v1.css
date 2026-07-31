@@ -9,7 +9,7 @@
 
   .main-content nav .nav-bar .logo.navLogo a {
     color: yellow;
-    font-size: 20px;
+    font-size: 17px;
   }
   
   .main-content nav .nav-bar .sidebarOpen {
@@ -153,19 +153,11 @@
     border: 0px solid blue;
   }
 
-	.main-content main .container-box .content .heading {
+  .main-content main .container-box .content .heading {
     font-size: 14px;
     padding: 5px;
     border-bottom: 4px solid black;
-  }
-
-  .main-content main .container-box .content {
-    border: 0px solid blue;
-  }
-
-  .main-content main .container-box .content .heading {
-    
-    z-index: -999;
+	z-index: -999;
   }
 
 
