@@ -141,7 +141,7 @@
 
   /*======================================= Main =======================================*/
   .main-content main {
-	height: 650px;
+	height: 645px;
     padding: 0px;
 	border: 2px solid black;
   z-index: -999;
