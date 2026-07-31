@@ -110,51 +110,13 @@
   }
 
   .main-content nav .nav-bar .nav-links li.admin {
-    background-color: yellow;
+    background-color: black;
     height: 80px;
     margin-bottom: 5px;
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
-  
-	margin: -2px -4px -6px;
-	padding: 2px 4px 6px;
-	mix-blend-mode: multiply;
-	position: relative;
-	overflow: hidden;
-	text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-  }
-
-  .main-content nav .nav-bar .nav-links li.admin::before {
-	content: "";
-	background: white repeating-linear-gradient(90deg, #14ffe9 0%, #ffc800 16.66666%, #ff00e0 33.33333%, #14ffe9 50.0%);
-	position: absolute;
-	top:0;
-	left:-100%;
-	right:0;
-	bottom:0;
-	mix-blend-mode: screen;
-	pointer-events: none;
-	animation: move 1s linear infinite;
-  }
-
-@keyframes move {
-	0%{transform: translateX(0);}
-	100%{transform: translateX(50%);}
-}
-
-@supports not (mix-blend-mode: multiply) {
-	.main-content nav .nav-bar .nav-links li.admin {
-		background: white repeating-linear-gradient(90deg, #14ffe9, #ffc800, #ff00e0, #14ffe9);
-		background-clip: text !important;
-		-webkit-text-fill-color: transparent;
-		text-shadow: none;
-	}
-
-	.main-content nav .nav-bar .nav-links li.admin::before {
-		content: none;
-	}
   }
 
 	
@@ -170,16 +132,31 @@
     bottom: 100%;
     width: 0;
     height: 0;
-    border-bottom: 10px solid yellow;
+    border-bottom: 10px solid black;
     border-top: 10px solid transparent;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
   }
 
   .main-content nav .nav-bar .nav-links li.admin a {
-    color: red;
-    font-size: 17px;
+    background: linear-gradient(to left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    background-size: 500px 100%;
+    font-size: 30px;
     font-weight: bold;
+    animation: move 1s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+
+  @keyframes move {
+      0%   { background-position: 0 0; }
+      100% { background-position: -500px 0; }
+  }
+
+  .main-content nav .nav-bar .nav-links li.admin a::before {
+    background-color: transparent;
   }
 
   
