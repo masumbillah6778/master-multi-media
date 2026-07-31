@@ -126,7 +126,7 @@
 	text-shadow: 0 2px 4px rgba(0,0,0,0.5);
   }
 
-  .rainbow-text::before {
+  .main-content nav .nav-bar .nav-links li.admin::before {
 	content: "";
 	background: white repeating-linear-gradient(90deg, #14ffe9 0%, #ffc800 16.66666%, #ff00e0 33.33333%, #14ffe9 50.0%);
 	position: absolute;
@@ -145,14 +145,14 @@
 }
 
 @supports not (mix-blend-mode: multiply) {
-	.rainbow-text {
+	.main-content nav .nav-bar .nav-links li.admin {
 		background: white repeating-linear-gradient(90deg, #14ffe9, #ffc800, #ff00e0, #14ffe9);
 		background-clip: text !important;
 		-webkit-text-fill-color: transparent;
 		text-shadow: none;
 	}
 
-	.rainbow-text::before {
+	.main-content nav .nav-bar .nav-links li.admin::before {
 		content: none;
 	}
   }
