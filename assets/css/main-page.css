@@ -359,18 +359,18 @@ body.dark .main-content .searchBox .search-field i {
   border-bottom-color: black;
 }
 
-.main-content main .container-box {
+.main-content main .container {
   width: 100%;
   border: 2px solid blue;
 }
 
-.main-content main .container-box .content {
+.main-content main .container .content {
   width: 100%;
   height: 100%;
   border: 2px solid red;
 }
 
-.main-content main .container-box .content .heading {
+.main-content main .container .content .heading {
   background-color: rgba(0, 0, 0, 0.6);
   color: red;
   padding: 5px 0px;
@@ -418,14 +418,14 @@ body.dark .main-content .searchBox .search-field i {
 
 /*======================================= Main Slide Box =======================================*/
 
-main .container-box .content .main-slide-box {
+.main-content main .container .content .main-slide-box {
 	width: 100%;
   margin: 0px;
   border: 4px solid yellow;
 	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
-main .container-box .content .main-slide-box .slide-box {
+.main-content main .container .content .main-slide-box .slide-box {
   height: 74.6vh;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -434,7 +434,7 @@ main .container-box .content .main-slide-box .slide-box {
 	border: 2px solid green;
 }
 
-main .container-box .content .main-slide-box .slide-box .slide {
+.main-content main .container .content .main-slide-box .slide-box .slide {
   background-color: rgba(0, 0, 0, 0.4);
   width: auto;
 	margin: 10px;
@@ -445,26 +445,26 @@ main .container-box .content .main-slide-box .slide-box .slide {
 	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
-main .container-box .content .main-slide-box .slide-box .slide:hover {
+.main-content main .container .content .main-slide-box .slide-box .slide:hover {
   transform: rotate(360deg);
 }
 
-main .container-box .content .main-slide-box .slide-box .slide .box {
+.main-content main .container .content .main-slide-box .slide-box .slide .box {
   display: grid;
   place-items: center;
 }
 
-main .container-box .content .main-slide-box .slide-box .slide .box .cover-image {
+.main-content main .container .content .main-slide-box .slide-box .slide .box .cover-image {
 	width: auto;
 }
 
-main .container-box .content .main-slide-box .slide-box .slide .box .cover-image img {
+.main-content main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
 	width: 100%;
   border: 2px solid yellow;
   border-radius: 50%;
 }
 
-main .container-box .content .main-slide-box .slide-box .slide .box .aritst-name {
+.main-content main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
 	background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   margin-top: 10px;
@@ -475,7 +475,7 @@ main .container-box .content .main-slide-box .slide-box .slide .box .aritst-name
   border-radius: 0px 0px 10px 10px;
 }
 
-main .container-box .content .main-slide-box .slide-box .slide .box .aritst-name a {
+.main-content main .container .content .main-slide-box .slide-box .slide .box .aritst-name a {
 	color: yellow;
   font-size: 20px;
   font-family: solaiman-lipi;
