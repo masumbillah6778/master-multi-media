@@ -664,7 +664,30 @@
 
 
 
-    
+  
+
+  /*======================================= Images  Gallery =======================================*/
+
+  .main-content main .container .content .main-slide-box {
+    margin: 0px;
+  }
+
+  .main-content main .container .content .main-slide-box .image-box {
+    width: auto;
+    height: 640px;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-y: scroll;
+  }
+
+
+
+
+
+
+
+
+
+
   /*======================================== 1st  ========================================*/
   main .container .content .main-slide-box {
     background-image: url('https://masumbillah6778.github.io/images/stone-bg2.jpg');
