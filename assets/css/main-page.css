@@ -991,165 +991,6 @@ main .container .content .main-music-box .music-box .controls #more-music {
 
 
 
-/*============================= Video Player Details =============================*/
-
-.main-content main .container .content .main-slide-box .video-container-box .video-container {
-	max-width: 100%;
-	margin: auto;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-	gap: 10px;
-  text-transform: capitalize;
-}
-	
-.main-content main .container .content .main-slide-box .video-container-box .video-container .main-video-container {
-	background-color: ;
-	width: 100%;
-	height: ;
-	padding: 5px;
-  border-right: 4px solid yellow;
-	border-radius: 0px;
-}
-
-.main-content main .container .content .main-slide-box .video-container-box .video-container .main-video-container .main-video {
-	ackground-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-	height: 520px;
-  margin-bottom: 10px;
-  backdrop-filter: blur(10px);
-  border: 2px solid red;
-	border-radius: 5px;
-}
-	
-.main-content main .container .content .main-slide-box .video-container-box .video-container .main-video-container .main-vid-title {
-  background-color: rgba(0, 0, 0, 0.5);
-	color:White;
-  padding: 10px;
-	font-size: 20px;
-  font-family: 'sonsieone';
-  backdrop-filter: blur(10px);
-  border: 2px solid red;
-  border-radius: 5px;
-}
-	
-.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container {
-	background-color: transparent;
-	width: 100%;
-	height: ;
-	padding: 5px;
-  backdrop-filter: blur(10px);
-	overflow-y: scroll;
-  border-left: 4px solid yellow;
-}
-
-.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list {
-  width: 100%;
-  margin-bottom: 10px;
-  border: 3px solid blue;
-  border-radius: 10px;
-}
-
-.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list.active {
-	background-color: red;
-  border: 3px solid red;
-}
-
-.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list video {
-	width: 100%;
-  border-bottom: 4px solid yellow;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list h3.list-title {
-	background-color: rgba(0, 0, 0, 0.8);
-  color: yellow;
-  padding: 5px;
-  backdrop-filter: blur(10px);
-  border-radius: 0px 0px 8px 8px;
-}
-
-.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list.active h3.list-title {
-	background-color: transparent;
-  color: white;
-}
-  
-  
-  
-  
-  
-  
-.container .video-list-container::-webkit-scrollbar {
-  width: 5px;
-}
-	
-.container .video-list-container::-webkit-scrollbar-track {
-  background-color: Blue;
-  border-radius: 5px;
-}
-	
-.container .video-list-container::-webkit-scrollbar-thumb {
-  background-color: Red;
-  border-radius: 5px;
-}
-
-  
-  
-  
-  
-  
-  
-main .container .content .main-slide-box .slide-box .video-container .video-list-container .list {
-	background-color: Green;
-	display: flex;
-	align-items: center;
-	gap:15px;
-	padding:10px;
-	cursor: pointer;
-	border-radius: 5px;
-	margin-bottom: 10px;
-}
-	
-main .container .content .main-slide-box .slide-box .video-container .video-list-container .list:last-child {
-	margin-bottom: 0;
-}
-	
-main .container .content .main-slide-box .slide-box .video-container .video-list-container .list.active {
-	background-color: Red;
-}
-
-main .container .content .main-slide-box .slide-box .video-container .video-list-container .list.active .list-title {
-	color:White;
-}
-	
-main .container .content .main-slide-box .slide-box .video-container .video-list-container .list .list-video {
-	width: 100px;
-	border-radius: 5px;
-}
-	
-main .container .content .main-slide-box .slide-box .video-container .video-list-container .list .list-title {
-	font-size: 17px;
-	color:Yellow;
-}
-
-
-
-main .container .content .main-slide-box .slide-box .video-container .list video .list-video {
-  border: 1px solid #075e54;
-  border-radius: 0px 20px 0px 20px;
-  box-shadow: 0 0 2px 1px #075e54;
-  padding: 3px;
-  width: 100px;
-  height: 50px;
-}
-
-
-
-
-
-
-
-
-
 
 /*============================= Lyrics Player Details =============================*/
 
@@ -1361,6 +1202,227 @@ main .container .content .main-slide-box .slide-box .video-container .list video
 }
 
   
+
+
+
+
+
+
+
+/*============================= Video Player =============================*/
+
+.main-content main .container .content .main-slide-box .video-container-box .video-container {
+	max-width: 100%;
+	margin: auto;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+	gap: 10px;
+  text-transform: capitalize;
+}
+	
+.main-content main .container .content .main-slide-box .video-container-box .video-container .main-video-container {
+	background-color: ;
+	width: 100%;
+	height: ;
+	padding: 5px;
+  border-right: 4px solid yellow;
+	border-radius: 0px;
+}
+
+.main-content main .container .content .main-slide-box .video-container-box .video-container .main-video-container .main-video {
+	ackground-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+	height: 520px;
+  margin-bottom: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid red;
+	border-radius: 5px;
+}
+	
+.main-content main .container .content .main-slide-box .video-container-box .video-container .main-video-container .main-vid-title {
+  background-color: rgba(0, 0, 0, 0.5);
+	color:White;
+  padding: 10px;
+	font-size: 20px;
+  font-family: 'sonsieone';
+  backdrop-filter: blur(10px);
+  border: 2px solid red;
+  border-radius: 5px;
+}
+	
+.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container {
+	background-color: transparent;
+	width: 100%;
+	height: ;
+	padding: 5px;
+  backdrop-filter: blur(10px);
+	overflow-y: scroll;
+  border-left: 4px solid yellow;
+}
+
+.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 3px solid blue;
+  border-radius: 10px;
+}
+
+.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list.active {
+	background-color: red;
+  border: 3px solid red;
+}
+
+.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list video {
+	width: 100%;
+  border-bottom: 4px solid yellow;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list h3.list-title {
+	background-color: rgba(0, 0, 0, 0.8);
+  color: yellow;
+  padding: 5px;
+  backdrop-filter: blur(10px);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list.active h3.list-title {
+	background-color: transparent;
+  color: white;
+}
+  
+  
+  
+  
+  
+  
+.container .video-list-container::-webkit-scrollbar {
+  width: 5px;
+}
+	
+.container .video-list-container::-webkit-scrollbar-track {
+  background-color: Blue;
+  border-radius: 5px;
+}
+	
+.container .video-list-container::-webkit-scrollbar-thumb {
+  background-color: Red;
+  border-radius: 5px;
+}
+
+  
+  
+  
+  
+  
+  
+main .container .content .main-slide-box .slide-box .video-container .video-list-container .list {
+	background-color: Green;
+	display: flex;
+	align-items: center;
+	gap:15px;
+	padding:10px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+	
+main .container .content .main-slide-box .slide-box .video-container .video-list-container .list:last-child {
+	margin-bottom: 0;
+}
+	
+main .container .content .main-slide-box .slide-box .video-container .video-list-container .list.active {
+	background-color: Red;
+}
+
+main .container .content .main-slide-box .slide-box .video-container .video-list-container .list.active .list-title {
+	color:White;
+}
+	
+main .container .content .main-slide-box .slide-box .video-container .video-list-container .list .list-video {
+	width: 100px;
+	border-radius: 5px;
+}
+	
+main .container .content .main-slide-box .slide-box .video-container .video-list-container .list .list-title {
+	font-size: 17px;
+	color:Yellow;
+}
+
+
+
+main .container .content .main-slide-box .slide-box .video-container .list video .list-video {
+  border: 1px solid #075e54;
+  border-radius: 0px 20px 0px 20px;
+  box-shadow: 0 0 2px 1px #075e54;
+  padding: 3px;
+  width: 100px;
+  height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/*======================================= Images  Gallery =======================================*/
+
+.main-content main .container .content .main-slide-box .image-box {
+  height: 80vh;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	row-gap: 10px;
+  overflow-y: scroll;
+	order: 2px solid green;
+}
+
+.main-content main .container .content .main-slide-box .image-box .card {
+  aspect-ratio: 9/16;
+  margin: 5px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+}
+
+.main-content main .container .content .main-slide-box .image-box .card .card-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-top: 70%;
+  position: relative;
+  width: 100%;
+}
+
+.main-content main .container .content .main-slide-box .image-box .card .card-image a {
+  background: yellow;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-content main .container .content .main-slide-box .image-box .card .card-image a:hover {
+  background: yellow;
+  color: white;
+  
+}
+
+.main-content main .container .content .main-slide-box .image-box .card .card-image img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
 
 
 
@@ -1745,5 +1807,4 @@ main .container .content .main-slide-box .first-protected-file .submit-btn {
   font-family: solaiman-lipi;
   cursor: pointer;
 }
-
 
