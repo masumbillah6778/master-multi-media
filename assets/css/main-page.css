@@ -986,229 +986,6 @@ main .container .content .main-music-box .music-box .controls #more-music {
 
 
 
-
-
-
-
-
-
-/*============================= Lyrics Player Details =============================*/
-
-.content-box {
-  background-image: url("https://masumbillah6778.github.io/images/a4.jpg");
-  background-repeat: no-repeat;
-  background-size: over;
-  background-size: 100% 330px;
-  display: flex;
-  flex-direction: column;
-  outline: none;
-}
-
-/*.content-box #overlay {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  cursor: pointe;
-}*/
-
-.content-box .content {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  max-width: 630px;
-  height: calc(100% - 80px);
-  heigh: 300px;
-  margin: 10px auto;
-  padding: 10px;
-  overflow: hidden;
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-  z-index: ;
-  border: 10px solid blue;
-  border-radius: 20px;
-}
-
-.content-box .content .lyrics {
-  height: 280px;
-  padding: 10px 0;
-  margin: 0 20px;
-  text-align: center;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-  position: relative;
-}
-
-.content-box .content .lyrics>div {
-  color: pink;
-  position: relative;
-  font-size: 30px;
-  ont-weight: bold;
-  font-family: 'solaiman-lipi', times;
-  line-height: 80px;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-}
-
-.content-box .content .lyrics>div.highlighted {
-  color: yellow;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.content-box .player {
-  background: linear-gradient(135deg, Red 0, Green 49%, Yellow 49%, Blue 100%);
-  margin: 0px 0px;
-  border: 2px solid red;
-}
-
-.content-box .player .main-container table {
-  width: 100%;
-  background-color: yello;
-  border: 2px solid magenta;
-}
-
-.content-box .player .main-container table td.images {
-  background-color: gree;
-  idth: 200%;
-  overflow: hidden;
-  grid-area: content-1;
-  border-radius: 0px;
-  border: 2px solid red;
-}
-
-.content-box .player .main-container table td.images img {
-  width: 100px;
-  border: 2px solid Yellow;
-}
-
-.content-box .player .main-container table td.images img:hover {
-  border: 2px solid Yellow;
-  border-radius: 50%;
-  animation:rotating 3s linear infinite
-}
-  
-@keyframes rotating {
-  from {
-    transform:rotate(0deg)
-  }
-  to {
-    transform:rotate(360deg)
-  }
-}
-
-.content-box .player .main-container table td.name {
-  overflow: hidden;
-  border: 2px solid green;
-}
-
-.content-box .player .main-container table td.name a {
-  width: max-content;
-  color: White;
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'solaiman-lipi', times;
-  text-decoration: none;
-  display: flex;
-  animation: AutoScroll 10s linear infinite;
-  text-shadow: 1px 1px 2px Black;
-}
-
-@keyframes AutoScroll {
-  from {transform: translateX(0)}
-  to {transform: translateX(-100%)}
-}
-
-.content-box .player .main-container table td.artist {
-  background-color: yello;
-  color: Cyan;
-  padding-left: 10px;
-  font-size: 20px;
-  font-family: 'shokun-tola', times;
-  grid-area: content-2;
-  text-shadow: 1px 1px 2px Black;
-  border: 2px solid yellow;
-}
-
-
-
-
-
-/*========= Player Controls =========*/
-.content-box .player .main-container table td.player {
-  border: 2px solid blue;
-}
-  
-.content-box .player .main-container table td.player video {
-  background-color: red;
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-  width: 100%;
-  height: 50px;
-  outline: none;
-  border-radius: 0px;
-}
-
-.content-box .player .main-container table td.player video::-webkit-media-controls-panel {
-  background: red;
-  width: 100%;
-}
-
-.content-box .player .main-container table td.player video::-webkit-media-controls-play-button {
-  background-color: Yellow;
-  border-radius: 50%;
-}
-
-.content-box .player .main-container table td.player video::-webkit-media-controls-play-button:hover {
-  background-color: cyan;
-}
-
-.content-box .player .main-container table td.player video::-webkit-media-controls-current-time-display {
-  color: White;
-  font-size: 15px;
-  font-family: times;
-  font-weight: bold;
-}
-
-.content-box .player .main-container table td.player video::-webkit-media-controls-time-remaining-display {
-  color: Yellow;
-  font-size: 15px;
-  font-family: times;
-  font-weight: bold;
-}
-    
-.content-box .player .main-container table td.player video::-webkit-media-controls-timeline {
-  background-color: Blue;
-  margin: 10px;
-  border-radius: ;
-}
-
-.content-box .player .main-container table td.player video::-webkit-media-controls-volume-slider {
-  background-color: green;
-  margin-right: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.content-box .player .main-container table td.player video::-webkit-media-controls-mute-button {
-  background-color: Yellow;
-  border-radius: 50%;
-}
-
-.content-box .player .main-container table td.player video::-webkit-media-controls-mute-button:hover {
-  background-color: cyan;
-}
-
-  
-
-
-
-
-
-
-
 /*============================= Video Player =============================*/
 
 .main-content main .container .content .main-slide-box .video-container-box .video-container {
@@ -1423,6 +1200,224 @@ main .container .content .main-slide-box .slide-box .video-container .list video
 
 
 
+
+
+
+
+/*======================================= Music Lyrics Player =======================================*/
+
+.main-content main .container .content .main-slide-box .lyrics-box {
+  width: 100%;
+  height: 80vh;
+}
+  
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content {
+  background-image: url("https://masumbillah6778.github.io/images/a4.jpg");
+  background-repeat: no-repeat;
+  background-size: over;
+  background-size: 100% 420px;
+  height: 595px;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .lyric-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 630px;
+  height: calc(100% - 80px);
+  heigh: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  backdrop-filter: blur(10px);
+  border: 5px;
+  border-style: solid ;
+  border-color: Blue red green orange ;
+  border-radius: 50px;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .lyric-box .lyrics {
+  height: 280px;
+  padding: 10px 0;
+  margin: 0 20px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .lyric-box .lyrics>div {
+  color: pink;
+  position: relative;
+  font-size: 30px;
+  ont-weight: bold;
+  font-family: 'solaiman-lipi', times;
+  line-height: 80px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .lyric-box .lyrics>div.highlighted {
+  color: yellow;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box {
+  background: linear-gradient(135deg, Red 0, Green 49%, Yellow 49%, Blue 100%);
+  margin: 0px 0px;
+  border: 2px solid red;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player {
+  width: 100%;
+  background-color: yello;
+  border: 2px solid magenta;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table {
+  width: 100%;
+  background-color: yello;
+  border: 2px solid magenta;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.images {
+  background-color: gree;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  overflow: hidden;
+  grid-area: content-1;
+  border-radius: 0px;
+  border: 2px solid yellow;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player  table td.images img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player  table td.images img:hover {
+  border: 2px solid Yellow;
+  border-radius: 50%;
+  animation:rotating 3s linear infinite
+}
+  
+@keyframes rotating {
+  from {
+    transform:rotate(0deg)
+  }
+  to {
+    transform:rotate(360deg)
+  }
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.name {
+  overflow: hidden;
+  border: 2px solid blue;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player  table td.name a {
+  width: max-content;
+  color: White;
+  padding-left: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi', times;
+  text-decoration: none;
+  display: flex;
+  animation: AutoScroll 10s linear infinite;
+  text-shadow: 1px 1px 2px Black;
+}
+
+@keyframes AutoScroll {
+  from {transform: translateX(0)}
+  to {transform: translateX(-100%)}
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.artist {
+  background-color: yello;
+  color: Cyan;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: 'shokun-tola', times;
+  grid-area: content-2;
+  text-shadow: 1px 1px 2px Black;
+  border: 2px solid yellow;
+}
+
+
+
+
+
+/*========= Music Lyrics Player Controls =========*/
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player {
+  border: 2px solid blue;
+}
+  
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video {
+  background-color: red;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border-radius: 0px;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-panel {
+  background: red;
+  width: 100%;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-play-button {
+  background-color: Yellow;
+  border-radius: 50%;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-play-button:hover {
+  background-color: cyan;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-current-time-display {
+  color: White;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-time-remaining-display {
+  color: Yellow;
+  font-size: 15px;
+  font-family: times;
+  font-weight: bold;
+}
+    
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-timeline {
+  background-color: Blue;
+  margin: 10px;
+  border-radius: ;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-volume-slider {
+  background-color: green;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-mute-button {
+  background-color: Yellow;
+  border-radius: 50%;
+}
+
+.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-mute-button:hover {
+  background-color: cyan;
+}
 
 
 
@@ -1807,4 +1802,3 @@ main .container .content .main-slide-box .first-protected-file .submit-btn {
   font-family: solaiman-lipi;
   cursor: pointer;
 }
-
