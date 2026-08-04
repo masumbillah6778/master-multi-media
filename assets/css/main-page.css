@@ -1643,81 +1643,97 @@ main .container .content .solar-system .neptune {
 
 /*======================================== 1st Protected File ========================================*/
 
-main .container .content .main-slide-box .first-protected-file {
-  background-image: url('https://masumbillah6778.github.io/images/stone-bg.jpg');
+.main-content main .container .content .main-slide-box .first-protected-file-box {
+  
+  height: 80vh;
+}
+
+.main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file {
+  ackground-image: url('https://masumbillah6778.github.io/images/stone-bg.jpg');
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
   width: 650px;
   height: 390px;
-  margin-top: 30px;
+  margin-top: 20px;
   position: absolute;
+  backdrop-filter: blur(10px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -index: -1;
-  border-radius: 50px;
+  border-radius: 20px;
   border: 2px solid yellow;
 }
 
-main .container .content .main-slide-box .first-protected-file h1 {
+.main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file h1 {
+  background-color: rgba(0, 0, 0, 0.2);
   color: yellow;
   margin: 0p;
+  padding: 10px 0px;
   font-size: 40px;
   font-weight: bold;
   font-family: solaiman-lipi;
   text-align: center;
   text-shadow: #000;
+  backdrop-filter: blur(10px);
+  border-bottom: 4px solid yellow;
+  border-radius: 20px 20px 0px 0px;
 }
 
-main .container .content .main-slide-box .first-protected-file .password-head {
-  color: blue;
-  padding-left: 10px;
+.main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file .password-head {
+  color: white;
+  padding: 10px;
   font-size: 20px;
   font-weight: bold;
-  font-family: 'shokun-tola';
+  font-family: solaiman-lipi;
   text-align: center;
 }
+
+.main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form {
+  padding: 0px 10px;
+}
   
-main .container .content .main-slide-box .first-protected-file .text-input {
-  background-color: tomato;
+.main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form input.text-input {
+  background-color: rgba(0, 0, 0, 0.4);
   color: yellow;
-  width: 95.7%;
+  width: 100%;
   height: 60px;
-  margin: 70px 10px 10px 10px;
+  margin: 90px 0px 30px 0px;
   padding: 10px;
   font-size: 30px;
   font-family: times;
   font-weight: bold;
-  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
   
-main .container .content .main-slide-box .first-protected-file .error-text {
-  background-color: pink;
+.main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form .error-text {
+  background-color: rgba(0, 0, 0, 0.2);
   color: red;
-  width: 95.7%;
-  margin-left: 10px;
+  width: 100%;
   margin-bottom: -52px;
-  padding: 10px;
+  padding: 12px;
   font-size: 20px;
   font-weight: bold;
   font-family: 'solaiman-lipi';
   text-align: center;
   display: none;
-  border: 1px solid blue;
+  text-shadow: white;
+  backdrop-filter: blur(10px);
+  border: 1px solid yellow;
   border-radius: 5px;
 }
 
-main .container .content .main-slide-box .first-protected-file .text-input:focus {
+.main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form .text-input:focus {
   outline:none;
 }
   
-main .container .content .main-slide-box .first-protected-file label {
+.main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form label {
   background: white;
   -webkit-background-clip: text;
   color: transparent;
-  padding: 20px;
-  top: -52px;
-  left: 15px;
-  padding: 0 5px;
+  top: -72px;
+  padding-left: 10px;
   font-size: 20px;
   font-weight: bold;
   font-family: 'solaiman-lipi';
@@ -1728,24 +1744,27 @@ main .container .content .main-slide-box .first-protected-file label {
   opacity: 0.3;
 }
 
-main .container .content .main-slide-box .first-protected-file input:focus ~ label,
-main .container .content .main-slide-box .first-protected-file input:valid ~ label {
-  background: tomato;
+.main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form input:focus ~ label,
+.main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form input:valid ~ label {
+  background: rgba(0, 0, 0, 1);
   color: yellow;
   margin-left: 90px;
+  padding: 0px 10px;
   font-size: 15px;
   font-weight: bold;
   font-family: 'solaiman-lipi';
-  top: 151px;
+  top: 207px;
+  left: -60px;
   position: absolute;
   opacity: 1;
   border-left: 2px solid yellow;
   border-right: 2px solid yellow;
 }
   
-main .container .content .main-slide-box .first-protected-file .submit-btn {
-  background-color: blue;
+.main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form .submit-btn {
+  background-color: rgba(0, 0, 0, 0.2);
   color: yellow;
+  margin-top: -25px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -1754,13 +1773,17 @@ main .container .content .main-slide-box .first-protected-file .submit-btn {
   font-weight: bold;
   text-align: center;
   display: block;
+  backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 2px solid red;
   text-shadow: 0px 1px 0px #7cacde;
   box-shadow: inset 0px 1px 0px 0px #bee2f9;
 }
 
-
+.main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form input:focus ~ .submit-btn,
+.main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form input:valid ~ .submit-btn {
+  margin-top: 0px;
+}
 
 
 
