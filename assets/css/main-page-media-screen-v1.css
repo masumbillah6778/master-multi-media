@@ -253,7 +253,7 @@
 
     main .container .content .main-music-box {
     width: 100%;
-	height: 82vh;
+    height: 82vh;
     border: 2px solid magenta;
   }
 	
@@ -668,92 +668,83 @@
 
 
 
-  
-
-  /*======================================= Images  Gallery =======================================*/
-
-  .main-content main .container .content .main-slide-box {
-    margin: 0px;
-  }
-
-  .main-content main .container .content .main-slide-box .image-box {
-    width: auto;
-    height: 640px;
-    grid-template-columns: repeat(2, 1fr);
-    overflow-y: scroll;
-  }
-
-
-
-
-
-
-
-
-
-
+    
   /*======================================== 1st  ========================================*/
-  main .container .content .main-slide-box {
+  .main-content main .container .content .main-slide-box .first-protected-file-box {
     background-image: url('https://masumbillah6778.github.io/images/stone-bg2.jpg');
     background-size: cover;
     width: 350px;
     height: 290px;
   }
   
-  main .container .content .main-slide-box .first-protected-file {
+  .main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file {
     width: 280px;
     height: 230px;
     padding: 0px;
     border: 2px solid red;
-    border-radius: 25px;
+    border-radius: 10px;
   }
 
-  main .container .content .main-slide-box .first-protected-file h1 {
+  .main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file h1 {
     margin-bottom: 10px;
     font-size: 20px;
+    border-radius: 10px 10px 0px 0px;
   }
 
-  main .container .content .main-slide-box .first-protected-file .password-head {
-    color: blue;
+  .main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file .password-head {
+    color: cyan;
+    margin-top: -15px;
+    font-size: 15px;
   }
 
-  main .container .content .main-slide-box .first-protected-file .text-input {
-    background-color: green;
+  .main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form input.text-input {
     color: yellow;
-    width: 93%;
-    height: 40px;
+    width: 100%;
+    height: 30px;
+    margin: 50px 0px 20px 0px;
+    padding: 0px 10px;
   }
 
-  main .container .content .main-slide-box .first-protected-file .error-text {
-    background-color: pink;
+  .main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form .error-text {
     color: red;
-    width: 93%;
+    width: 100%;
+    height: 30px;
+    margin-bottom: -30px;
+    padding: 5px;
+    font-size: 15px;
   }
     
-  main .container .content .main-slide-box .first-protected-file label {
+  .main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form label {
     background: white;
     -webkit-background-clip: text;
     color: transparent;
-    padding: 0 5px;
-    top: -42px;
+    margin-left: -5px;
+    padding: 0px;
+    font-size: 15px;
+    top: -45px;
     left: 15px;
   }
 
-  main .container .content .main-slide-box .first-protected-file input:focus ~ label,
-  main .container .content .main-slide-box .first-protected-file input:valid ~ label {
-    background: green;
-    color: yellow;
+  .main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form input:focus ~ label,
+  .main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form input:valid ~ label {
+    color: white;
     margin-left: 40px;
-    font-size: 15px;
-    top: 143px;
+    font-size: 10px;
+    top: 132px;
+    left: -15px;
   }
     
-  main .container .content .main-slide-box .first-protected-file .submit-btn {
-    background-color: blue;
+  .main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form .submit-btn {
     color: yellow;
     width: 90px;
-    padding: 5px;
-    font-size: 20px;
+    margin-top: -28px;
+    padding: 5px 0px;
+    font-size: 15px;
+  }
+
+  .main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form input:focus ~ .submit-btn,
+  .main-content main .container .content .main-slide-box .first-protected-file-box .first-protected-file form input:valid ~ .submit-btn {
+    margin-top: -8px;
   }
 
 
