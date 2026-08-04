@@ -230,17 +230,20 @@
   }
 
   .main-content main .container .content .main-slide-box .slide-box .slide .box {
-    padding: 0px;
+    display: flex;
   }
     
   .main-content main .container .content .main-slide-box .slide-box .slide .box .cover-image img {
-		width: 300px;
+		width: 100px;
     margin: 0 auto;
-    display: block;
+    display: block;backdrop-filter: blur(10px);
+    border-radius: 10px;
   }
 
   .main-content main .container .content .main-slide-box .slide-box .slide .box .aritst-name {
-    margin-top: 10px;
+    line-height: 50px;
+    margin-top: -.1px;
+    border-radius: 0px 10px 10px 0px;
   }
 
 
