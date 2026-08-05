@@ -1425,7 +1425,7 @@ main .container .content .main-slide-box .slide-box .video-container .list video
 
 /*======================================= Death Anniversary =======================================*/
 
-.content {
+.main-content main .container .content .main-slide-box {
   width: 98.5%;
   height: 600px;
   margin: 5px;
