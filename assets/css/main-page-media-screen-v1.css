@@ -678,8 +678,7 @@
     color: ;
   }
   
-  .main-content main .container .content .main-slide-box .death-anniversary {
-.death-box .death-info {
+  .main-content main .container .content .main-slide-box .death-anniversary .death-box .death-info {
     color: white;
     font-size: 15px;
     font-weight: bold;
@@ -687,19 +686,20 @@
     line-height: 30px;
   }
 
-  .main-content main .container .content .main-slide-box .death-anniversary {
-.death-box .death-info h1 {
-	
+  .main-content main .container .content .main-slide-box .death-anniversary .death-box .death-info
+   h1 {
+	background-color: rgba(0, 0, 0, 0.6);
     color: white;
+	backdrop-filter: blur(10px);
   }
 
-  main-content main .container .content .main-slide-box .death-anniversary {
-.death-box #timer {
+  .main-content main .container .content .main-slide-box .death-anniversary .death-box .death-info
+   #timer {
     font-size: 15px;
   }
   
-  main-content main .container .content .main-slide-box .death-anniversary {
-.death-box #timer div span {
+  .main-content main .container .content .main-slide-box .death-anniversary .death-box .death-info
+   #timer div span {
     font-size: 10px;
   }
 
