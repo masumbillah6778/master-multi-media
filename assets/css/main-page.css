@@ -1461,8 +1461,13 @@ main .container .content .main-slide-box .slide-box .video-container .list video
 }
   
 .main-content main .container .content .main-slide-box .death-anniversary .death-box h1 {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: yellow;
   margin: 0px 10px;
   font-size: 20px;
+  backdrop-filter: blur(10px);
+  border: 2px solid white;
+  border-radius: 20px;
 }
      
 .main-content main .container .content .main-slide-box .death-anniversary .death-box .death-info {
