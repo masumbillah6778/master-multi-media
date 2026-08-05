@@ -1425,25 +1425,26 @@ main .container .content .main-slide-box .slide-box .video-container .list video
 
 /*======================================= Death Anniversary =======================================*/
 
-.main-content main .container .content .main-slide-box {
-  width: 98.5%;
-  height: 600px;
+.main-content main .container .content .main-slide-box .death-anniversary {
+  width: 100%;
+  height: 80vh;
   margin: 5px;
 }
   
-.content .death-box {
+.main-content main .container .content .main-slide-box .death-anniversary .death-box {
   background: grey;
   width: 98%;
   height: 600px;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   display: block;
   border: 2px solid red;
   border-radius: 20px;
 }
   
-.content .death-image {
+.main-content main .container .content .main-slide-box .death-anniversary .death-box .death-image {
   width: 250px;
   height: 250px;
   margin-top: 5px;
@@ -1454,18 +1455,18 @@ main .container .content .main-slide-box .slide-box .video-container .list video
   box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
   
-.content .death-image img {
+.main-content main .container .content .main-slide-box .death-anniversary .death-box .death-image img {
   width: 100%;
   height:100%;
     
 }
   
-.content h1 {
+.main-content main .container .content .main-slide-box .death-anniversary .death-box h1 {
   margin: 0px 10px;
   font-size: 20px;
 }
      
-.content .death-info {
+.main-content main .container .content .main-slide-box .death-anniversary .death-box .death-info {
   color: white;
   margin-top: 10px;
   font-size: 20px;
@@ -1474,11 +1475,7 @@ main .container .content .main-slide-box .slide-box .video-container .list video
   line-height: 30px;
 }
 
-.death-box {
-  text-align: center;
-}
-
-#timer {
+.main-content main .container .content .main-slide-box .death-anniversary .death-box #timer {
   background: black;
   color: #fff;
   margin: 10px;
