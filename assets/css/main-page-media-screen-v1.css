@@ -671,6 +671,39 @@
 
 
 
+	/*======================================= Death Anniversary =======================================*/
+
+ .main-content main .container .content .main-slide-box .death-anniversary {
+.death-box {
+    background: green;
+    width: 355px;
+    height: 580px;
+  }
+  
+  .main-content main .container .content .main-slide-box .death-anniversary {
+.death-box .death-info {
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  main-content main .container .content .main-slide-box .death-anniversary {
+.death-box #timer {
+    font-size: 20px;
+  }
+  
+  main-content main .container .content .main-slide-box .death-anniversary {
+.death-box #timer div span {
+    font-size: 15px;
+  }
+
+
+
+
+
 
     
   /*======================================== 1st  ========================================*/
