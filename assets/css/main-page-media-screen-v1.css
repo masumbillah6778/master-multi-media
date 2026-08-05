@@ -673,39 +673,48 @@
 
 	/*======================================= Death Anniversary =======================================*/
 
- .main-content main .container .content .main-slide-box .death-anniversary {
-.death-box {
-    color: ;
+  .main-content main .container .content .main-slide-box .death-anniversary {
+    width: 100%;
+    margin: 0px;
+    border: 2px solid yellow;
+  }
+  
+  .main-content main .container .content .main-slide-box .death-anniversary .death-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-content main .container .content .main-slide-box .death-anniversary .death-box .death-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .main-content main .container .content .main-slide-box .death-anniversary .death-box h1 {
+    color: white;
+    border-radius: 10px;
   }
   
   .main-content main .container .content .main-slide-box .death-anniversary .death-box .death-info {
-    color: white;
+    color: yellow;
+    padding: 10px;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
     line-height: 30px;
   }
 
-  .main-content main .container .content .main-slide-box .death-anniversary .death-box .death-image {
-    width: 200px;
-    height: 200px;
-  }
-
-  .main-content main .container .content .main-slide-box .death-anniversary .death-box .death-info
-   h1 {
-	background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-	backdrop-filter: blur(10px);
-  }
-
-  .main-content main .container .content .main-slide-box .death-anniversary .death-box .death-info
-   #timer {
+  .main-content main .container .content .main-slide-box .death-anniversary .death-box #timer {
     font-size: 15px;
+    border-radius: 10px;
   }
   
-  .main-content main .container .content .main-slide-box .death-anniversary .death-box .death-info
-   #timer div span {
-    font-size: 10px;
+  .main-content main .container .content .main-slide-box .death-anniversary .death-box #timer div {
+    min-width: 60px;
+  }
+  
+  .main-content main .container .content .main-slide-box .death-anniversary .death-box #timer div span {
+    padding-top: 10px;
+    font-size: 15px;
   }
 
 
