@@ -675,29 +675,32 @@
 
  .main-content main .container .content .main-slide-box .death-anniversary {
 .death-box {
-    background: green;
-    width: 355px;
-    height: 580px;
+    color: ;
   }
   
   .main-content main .container .content .main-slide-box .death-anniversary {
 .death-box .death-info {
     color: white;
-    margin-top: 10px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: bold;
     text-align: center;
     line-height: 30px;
   }
 
+  .main-content main .container .content .main-slide-box .death-anniversary {
+.death-box .death-info h1 {
+	
+    color: white;
+  }
+
   main-content main .container .content .main-slide-box .death-anniversary {
 .death-box #timer {
-    font-size: 20px;
+    font-size: 15px;
   }
   
   main-content main .container .content .main-slide-box .death-anniversary {
 .death-box #timer div span {
-    font-size: 15px;
+    font-size: 10px;
   }
 
 
