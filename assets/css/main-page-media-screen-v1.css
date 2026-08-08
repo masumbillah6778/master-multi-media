@@ -675,6 +675,7 @@
 
   .main-content main .container .content .main-slide-box .death-anniversary {
     width: 100%;
+	height: 80vh;
     margin: 0px;
     border: 4px solid;
     border-image: linear-gradient(to right, blue 0%,yellow 20%,red 20%,
@@ -714,7 +715,7 @@
   }
   
   .main-content main .container .content .main-slide-box .death-anniversary .death-box #timer div {
-    min-width: 50px;
+    min-width: 48px;
   }
   
   .main-content main .container .content .main-slide-box .death-anniversary .death-box #timer div span {
