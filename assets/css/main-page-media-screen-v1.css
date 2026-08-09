@@ -678,6 +678,21 @@
 
 
 
+	/*======================================= Images  Gallery =======================================*/
+	
+	.main-content main .container .content .main-slide-box .slide-box .image-box {
+      height: 80vh;
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  row-gap: 0px;
+      overflow-y: scroll;
+	  order: 2px solid green;
+    }
+
+
+
+
+
 	/*======================================= Death Anniversary =======================================*/
 
   .main-content main .container .content .main-slide-box .death-anniversary {
