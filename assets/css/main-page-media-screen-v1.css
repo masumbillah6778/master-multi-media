@@ -232,6 +232,7 @@
 
 
 .main-content main .container .content .main-slide-box #fr {
+  width: auto;
   height: 83.3vh;
   border: 4px solid;
   border-image: linear-gradient(to right, blue 0%,yellow 20%,red 20%,
