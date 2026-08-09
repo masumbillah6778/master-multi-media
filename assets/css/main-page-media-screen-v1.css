@@ -829,7 +829,6 @@
     background-color: blue;
     width: 98%;
     height: 40px;
-    z-index: -1;
     border: 2px solid white;
   }
 
