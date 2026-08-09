@@ -497,13 +497,7 @@ body.dark .main-content .searchBox .search-field i {
 
 
 /*======================================= Main Music Box =======================================*/
-main .container .content .main-music-box {
-  width: 100%;
-  height: 80vh;
-  border: 2px solid green;
-}
-
-main .container .content .main-music-box .music-box {
+main .container .content #slide-box-not-fr .music-box {
   margin: 0;
   background-size: cover;
   display: flex;
@@ -511,15 +505,15 @@ main .container .content .main-music-box .music-box {
   justify-content: center;
 }
 
-main .container .content .main-music-box .music-box .headering {
+main .container .content #slide-box-not-fr .music-box .headering {
   border: 2px solid ellow;
 }
 
-main .container .content .main-music-box .music-box .headering #header-title {
+main .container .content #slide-box-not-fr .music-box .headering #header-title {
   border: 2px solid ed;
 }
 
-main .container .content .main-music-box .music-box .wrapper {
+main .container .content #slide-box-not-fr .music-box .wrapper {
   background-color: rgba(0, 0, 0, 0.6);
   width: 50%;
   margin: 10px;
@@ -531,25 +525,25 @@ main .container .content .main-music-box .music-box .wrapper {
   border: 3px solid blue;
 }
 
-main .container .content .main-music-box .music-box .wrapper i {
+main .container .content #slide-box-not-fr .music-box .wrapper i {
   cursor: pointer;
 }
 
-main .container .content .main-music-box .music-box .wrapper .top-bar,
+main .container .content #slide-box-not-fr .music-box .wrapper .top-bar,
 .progress-area .song-timer,
 .controls,
-main .container .content .main-music-box .music-box .wrapper .music-list .music-list-header ul li {
+main .container .content #slide-box-not-fr .music-box .wrapper .music-list .music-list-header ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-main .container .content .main-music-box .music-box .top-bar i {
+main .container .content #slide-box-not-fr .music-box .top-bar i {
   font-size: 30px;
   color: white
 }
 
-main .container .content .main-music-box .music-box .top-bar span {
+main .container .content #slide-box-not-fr .music-box .top-bar span {
   color: yellow;
   margin-left: -3px;
   font-size: 20px;
@@ -557,7 +551,7 @@ main .container .content .main-music-box .music-box .top-bar span {
   font-weight: bold;
 }
 
-main .container .content .main-music-box .music-box .img-area {
+main .container .content #slide-box-not-fr .music-box .img-area {
   width: 67%;
   aspect-ratio: 16 / 9;
   /*height: 256px;*/
@@ -571,25 +565,25 @@ main .container .content .main-music-box .music-box .img-area {
   box-shadow: 0px 6px 12px var(--lightbshadow);
 }
 
-main .container .content .main-music-box .music-box .img-area img {
+main .container .content #slide-box-not-fr .music-box .img-area img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-main .container .content .main-music-box .music-box .img-area:hover {
+main .container .content #slide-box-not-fr .music-box .img-area:hover {
   text-decoration: none;
 }
 
-main .container .content .main-music-box .music-box .hide {
+main .container .content #slide-box-not-fr .music-box .hide {
   display:none;
 }
 
-main .container .content .main-music-box .music-box .img-area:hover img:first-child {
+main .container .content #slide-box-not-fr .music-box .img-area:hover img:first-child {
   display:none;
 }
 
-main .container .content .main-music-box .music-box .img-area:hover img:last-child {
+main .container .content #slide-box-not-fr .music-box .img-area:hover img:last-child {
   display:inline-block;
 }
 
@@ -597,24 +591,24 @@ main .container .content .main-music-box .music-box .img-area:hover img:last-chi
 
 
 
-main .container .content .main-music-box .music-box .song-details {
+main .container .content #slide-box-not-fr .music-box .song-details {
   text-align: center;
   margin: 10px 0;
   line-height: 30px;
 }
 
-main .container .content .main-music-box .music-box .song-details p {
+main .container .content #slide-box-not-fr .music-box .song-details p {
   color: white;
 }
 
-main .container .content .main-music-box .music-box .song-details .name {
+main .container .content #slide-box-not-fr .music-box .song-details .name {
   color: white;
   font-size: 20px;
   font-family: 'solaiman-lipi';
   font-weight: bold;
 }
 
-main .container .content .main-music-box .music-box .song-details .artist {
+main .container .content #slide-box-not-fr .music-box .song-details .artist {
   color: yellow;
   font-size: 15px;
   font-family: 'solaiman-lipi';
@@ -622,7 +616,7 @@ main .container .content .main-music-box .music-box .song-details .artist {
 }
 
 /*======================================= Progress Area =======================================*/
-main .container .content .main-music-box .music-box .progress-area {
+main .container .content #slide-box-not-fr .music-box .progress-area {
   background: blue;
   height: 8px;
   width: 100%;
@@ -630,7 +624,7 @@ main .container .content .main-music-box .music-box .progress-area {
   border: 2px solid yellow;
 }
 
-main .container .content .main-music-box .music-box .progress-area .progress-bar {
+main .container .content #slide-box-not-fr .music-box .progress-area .progress-bar {
   background: linear-gradient(90deg, green 0%, yellow 33%, red 100%);
   height: inherit;
   width: 0%;
@@ -641,7 +635,7 @@ main .container .content .main-music-box .music-box .progress-area .progress-bar
   cursor: pointer;
 }
 
-main .container .content .main-music-box .music-box .progress-bar::before {
+main .container .content #slide-box-not-fr .music-box .progress-bar::before {
   content: "";
   background-color: red;
   height: 10px;
@@ -670,23 +664,23 @@ main .container .content .main-music-box .music-box .progress-bar::before {
   }
 }
 
-main .container .content .main-music-box .music-box .progress-area:hover .progress-bar::before {
+main .container .content #slide-box-not-fr .music-box .progress-area:hover .progress-bar::before {
   opacity: 1;
   pointer-events: auto;
 }
 
-main .container .content .main-music-box .music-box .progress-area .song-timer {
+main .container .content #slide-box-not-fr .music-box .progress-area .song-timer {
   margin-top: 10px;
 }
 
-main .container .content .main-music-box .music-box .song-timer .current-time {
+main .container .content #slide-box-not-fr .music-box .song-timer .current-time {
   font-size: 20px;
   color: yellow;
   font-family: times;
   font-weight: bold;
 }
 
-main .container .content .main-music-box .music-box .song-timer .max-duration {
+main .container .content #slide-box-not-fr .music-box .song-timer .max-duration {
   font-size: 20px;
   color: white;
   font-family: times;
@@ -694,20 +688,20 @@ main .container .content .main-music-box .music-box .song-timer .max-duration {
 }
 
 /*======================================= Volume =======================================*/
-main .container .content .main-music-box .music-box .volume-area {
+main .container .content #slide-box-not-fr .music-box .volume-area {
   background-color: lue;
   color: white;
   margin-top: 40px;
   text-align: center;
 }
 
-main .container .content .main-music-box .music-box .volume-area i {
+main .container .content #slide-box-not-fr .music-box .volume-area i {
   background: red;
   color: yellow;
   padding: 5px;
 }
   
-main .container .content .main-music-box .music-box .volume-area #display1 {
+main .container .content #slide-box-not-fr .music-box .volume-area #display1 {
   background: red;
   color: white;
   padding: 5px;
@@ -716,7 +710,7 @@ main .container .content .main-music-box .music-box .volume-area #display1 {
   font-weight: bold;
 }
   
-main .container .content .main-music-box .music-box .volume-area input[type="range"] {
+main .container .content #slide-box-not-fr .music-box .volume-area input[type="range"] {
   width: 88%;
   margin: 2px;
   padding: initial;
@@ -726,14 +720,14 @@ main .container .content .main-music-box .music-box .volume-area input[type="ran
   border: 2px solid white;
 }
 
-main .container .content .main-music-box .music-box #slider1::-webkit-slider-runnable-track {
+main .container .content #slide-box-not-fr .music-box #slider1::-webkit-slider-runnable-track {
   background-color: red;
   height: 5px;
   border: none;
   border-radius: 3px;
 }
 
-main .container .content .main-music-box .music-box #slider1::-webkit-slider-thumb {
+main .container .content #slide-box-not-fr .music-box #slider1::-webkit-slider-thumb {
   background-color: yellow;
   -webkit-appearance: none;
   width: 20px;
@@ -744,26 +738,26 @@ main .container .content .main-music-box .music-box #slider1::-webkit-slider-thu
   border: 4px solid red;
 }
 
-main .container .content .main-music-box .music-box #slider1::-webkit-slider-thumb:hover {
+main .container .content #slide-box-not-fr .music-box #slider1::-webkit-slider-thumb:hover {
   transform: scale(1.3);
 }
 
-main .container .content .main-music-box .music-box input[type=range]:focus {
+main .container .content #slide-box-not-fr .music-box input[type=range]:focus {
   outline: none;
 }
 
-main .container .content .main-music-box .music-box #slider1[type=range]:focus::-webkit-slider-runnable-track {
+main .container .content #slide-box-not-fr .music-box #slider1[type=range]:focus::-webkit-slider-runnable-track {
   background: magenta;
 }
 
 /*======================================= Control =======================================*/
-main .container .content .main-music-box .music-box .controls {
+main .container .content #slide-box-not-fr .music-box .controls {
   margin: 20px 0 5px 0;
   border-radius: 10px;
   border: 2px solid cyan;
 }
   
-main .container .content .main-music-box .music-box .controls #repeat-plist {
+main .container .content #slide-box-not-fr .music-box .controls #repeat-plist {
   background: blue;
   color: yellow;
   padding: 10px;
@@ -775,7 +769,7 @@ main .container .content .main-music-box .music-box .controls #repeat-plist {
   box-shadow: 0px 0px 5px yellow;
 }
   
-main .container .content .main-music-box .music-box .controls #prev {
+main .container .content #slide-box-not-fr .music-box .controls #prev {
   background: green;
   color: white;
   padding: 10px;
@@ -787,7 +781,7 @@ main .container .content .main-music-box .music-box .controls #prev {
   box-shadow: 0px 0px 5px yellow;
 }
 
-main .container .content .main-music-box .music-box .controls .play-pause {
+main .container .content #slide-box-not-fr .music-box .controls .play-pause {
   background: linear-gradient(white 0%, white 100%);
   height: 54px;
   width: 54px;
@@ -799,7 +793,7 @@ main .container .content .main-music-box .music-box .controls .play-pause {
   box-shadow: 0px 0px 5px var(--pink);
 }
 
-main .container .content .main-music-box .music-box .play-pause::before {
+main .container .content #slide-box-not-fr .music-box .play-pause::before {
   position: absolute;
   content: "";
   height: 43px;
@@ -808,7 +802,7 @@ main .container .content .main-music-box .music-box .play-pause::before {
   background-color: red;
 }
 
-main .container .content .main-music-box .music-box .play-pause i {
+main .container .content #slide-box-not-fr .music-box .play-pause i {
   height: 43px;
   width: 43px;
   line-height: 43px;
@@ -820,7 +814,7 @@ main .container .content .main-music-box .music-box .play-pause i {
   position: absolute;
 }
   
-main .container .content .main-music-box .music-box .controls #next {
+main .container .content #slide-box-not-fr .music-box .controls #next {
   background: green;
   color: white;
   padding: 10px;
@@ -832,7 +826,7 @@ main .container .content .main-music-box .music-box .controls #next {
   box-shadow: 0px 0px 5px yellow;
 }
   
-main .container .content .main-music-box .music-box .controls #more-music {
+main .container .content #slide-box-not-fr .music-box .controls #more-music {
   background: gold;
   color: red;
   padding: 10px;
