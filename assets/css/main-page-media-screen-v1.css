@@ -638,6 +638,7 @@
 
     /*============================= Video Player Details =============================*/
     .main-content main .container .content .main-slide-box .video-container-box .video-container {
+    .main-content main .container .content .main-slide-box #slide-box-not-fr .video-container {
       max-width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -646,38 +647,39 @@
       gap: 20px;
     }
 
-    .main-content main .container .content .main-slide-box .video-container-box .video-container .main-video-container {
-      border: 4px solid yellow;
+    .main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .main-video-container {
+      border: 1px solid yellow;
     }
 
-    .main-content main .container .content .main-slide-box .video-container-box .video-container .main-video-container .main-video {
+    .main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .main-video-container .main-video {
       width: 100%;
-      height: 280px;
+      height: 180px;
       margin-bottom: 0px;
     }
 
-    .main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container {
+    .main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .video-list-container {
       background-color: transparent;
       width: 100%;
-      height: 240px;
-      border: 4px solid blue;
+      height: 338px;
+      border: 1px solid gold;
     }
 
-    .main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list {
+    .main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .video-list-container .list {
       display: flex;
+      border-radius: 5px;
     }
 
-    .main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list video {
+    .main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .video-list-container .list video {
       width: 100px;
       border-right: 4px solid yellow;
       border-bottom: none;
-      border-radius: 10px 0px 0px 10px;
+      border-radius: 5px 0px 0px 5px;
     }
 
-    .main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list h3.list-title {
+    .main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .video-list-container .list h3.list-title {
       width: 100%;
       padding: 15px 10px;
-      border-radius: 0px 10px 10px 0px;
+      border-radius: 0px 5px 5px 0px;
     }
 
 
