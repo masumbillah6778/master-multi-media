@@ -988,7 +988,7 @@ main .container .content .main-music-box .music-box .controls #more-music {
 
 /*============================= Video Player =============================*/
 
-.main-content main .container .content .main-slide-box .video-container-box .video-container {
+.main-content main .container .content .main-slide-box #slide-box-not-fr .video-container {
 	max-width: 100%;
 	margin: auto;
   display: grid;
@@ -997,7 +997,7 @@ main .container .content .main-music-box .music-box .controls #more-music {
   text-transform: capitalize;
 }
 	
-.main-content main .container .content .main-slide-box .video-container-box .video-container .main-video-container {
+.main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .main-video-container {
 	background-color: ;
 	width: 100%;
 	height: ;
@@ -1006,7 +1006,7 @@ main .container .content .main-music-box .music-box .controls #more-music {
 	border-radius: 0px;
 }
 
-.main-content main .container .content .main-slide-box .video-container-box .video-container .main-video-container .main-video {
+.main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .main-video-container .main-video {
 	ackground-color: rgba(0, 0, 0, 0.5);
   width: 100%;
 	height: 520px;
@@ -1016,7 +1016,7 @@ main .container .content .main-music-box .music-box .controls #more-music {
 	border-radius: 5px;
 }
 	
-.main-content main .container .content .main-slide-box .video-container-box .video-container .main-video-container .main-vid-title {
+.main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .main-video-container .main-vid-title {
   background-color: rgba(0, 0, 0, 0.5);
 	color:White;
   padding: 10px;
@@ -1027,7 +1027,7 @@ main .container .content .main-music-box .music-box .controls #more-music {
   border-radius: 5px;
 }
 	
-.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container {
+.main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .video-list-container {
 	background-color: transparent;
 	width: 100%;
 	height: ;
@@ -1037,25 +1037,25 @@ main .container .content .main-music-box .music-box .controls #more-music {
   border-left: 4px solid yellow;
 }
 
-.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list {
+.main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .video-list-container .list {
   width: 100%;
   margin-bottom: 10px;
-  border: 3px solid blue;
+  border: 4px solid blue;
   border-radius: 10px;
 }
 
-.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list.active {
+.main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .video-list-container .list.active {
 	background-color: red;
-  border: 3px solid red;
+  border: 4px solid red;
 }
 
-.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list video {
+.main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .video-list-container .list video {
 	width: 100%;
   border-bottom: 4px solid yellow;
   border-radius: 10px 10px 0px 0px;
 }
 
-.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list h3.list-title {
+.main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .video-list-container .list h3.list-title {
 	background-color: rgba(0, 0, 0, 0.8);
   color: yellow;
   padding: 5px;
@@ -1063,7 +1063,7 @@ main .container .content .main-music-box .music-box .controls #more-music {
   border-radius: 0px 0px 8px 8px;
 }
 
-.main-content main .container .content .main-slide-box .video-container-box .video-container .video-list-container .list.active h3.list-title {
+.main-content main .container .content .main-slide-box #slide-box-not-fr .video-container .video-list-container .list.active h3.list-title {
 	background-color: transparent;
   color: white;
 }
@@ -1072,7 +1072,7 @@ main .container .content .main-music-box .music-box .controls #more-music {
   
   
   
-  
+
 .container .video-list-container::-webkit-scrollbar {
   width: 5px;
 }
@@ -1087,12 +1087,12 @@ main .container .content .main-music-box .music-box .controls #more-music {
   border-radius: 5px;
 }
 
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
 main .container .content .main-slide-box .slide-box .video-container .video-list-container .list {
 	background-color: Green;
 	display: flex;
