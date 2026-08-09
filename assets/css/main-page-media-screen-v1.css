@@ -637,7 +637,6 @@
 
 
     /*============================= Video Player Details =============================*/
-    .main-content main .container .content .main-slide-box .video-container-box .video-container {
     .main-content main .container .content .main-slide-box #slide-box-not-fr .video-container {
       max-width: 100%;
       display: flex;
