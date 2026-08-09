@@ -229,6 +229,18 @@
                                                       yellow 80%,blue 100%) 1 stretch repeat;
   }
 
+
+
+.main-content main .container .content .main-slide-box #fr {
+  height: 83.3vh;
+  border: 4px solid;
+  border-image: linear-gradient(to right, blue 0%,yellow 20%,red 20%,
+                                                      yellow 20%,red 40%,
+                                                      green 60%,green 60%,
+                                                      yellow 80%,blue 80%,
+                                                      yellow 80%,blue 100%) 1 stretch repeat;
+  }
+	
   .main-content main .container .content .main-slide-box .slide-box .slide {
     border: ;
   }
