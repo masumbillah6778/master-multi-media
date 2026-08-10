@@ -747,7 +747,11 @@
 
 
 
-
+ /*======================================== Solar System  ========================================*/ 
+ .main-content main .container .content .solar-system li {
+   height: 565px;
+   color: white;
+ }
 
 
     
