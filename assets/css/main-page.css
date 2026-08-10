@@ -1589,9 +1589,11 @@ meter::-webkit-meter-suboptimum-value {
 /*======================================== Solar System ========================================*/
 
 main .container .content .solar-system {
-	width: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: auto;
+  height: 100%;
   margin: 0px;
-	ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+  backdrop-filter: blur(10px);
 }
 
 main .container .content .solar-system a {
