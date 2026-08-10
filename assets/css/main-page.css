@@ -385,6 +385,11 @@ body.dark .main-content .searchBox .search-field i {
   -webkit-animation: text-animation 4s ease-in-out infinite;
 }
 
+.main-content main .container .content .heading a {
+  color: rgba(0, 0, 0, 0.2);
+  animation: none;
+}
+
 @keyframes text-animation {
   0% {
     color: green;
