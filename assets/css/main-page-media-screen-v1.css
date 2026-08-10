@@ -836,6 +836,16 @@
 
 
 
+
+  /*======================================== 2nd password Box ========================================*/
+  .main-content main .container .content .main-slide-box #slide-box-not-fr .second-protected-file {
+	width: 300px;
+    height: 300px;
+  }
+
+
+
+
 	
   /*======================================== Footer ========================================*/
   .footer {
