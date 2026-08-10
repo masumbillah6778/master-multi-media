@@ -1717,8 +1717,31 @@ main .container .content .solar-system .neptune {
 
 
 
+/*=================================== Page Marquee ========================================*/
+.main-content main .container .content .main-slide-box .page-marquee {
+  background-color: rgba(0, 0, 0, 0.2);
+	width: auto;
+	height: auto;
+  margin: 0px;
+  backdrop-filter: blur(10px);
+}
 
+.main-content main .container .content .main-slide-box .page-marquee marquee {
+  background-color: hite;
+}
 
+.main-content main .container .content .main-slide-box .page-marquee marquee .box {
+  background-color: red;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.main-content main .container .content .main-slide-box .page-marquee marquee .box i {
+  color: yellow;
+  font-size: 40px;
+}
 
 
 
