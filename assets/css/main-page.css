@@ -1597,7 +1597,7 @@ main .container .content .solar-system {
 }
 
 main .container .content .solar-system a {
-  color: white;
+  color: rgba(0, 0, 0, 0.2);
   margin-left: 40px;
   text-decoration: none;
 }
