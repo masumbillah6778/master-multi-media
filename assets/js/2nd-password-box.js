@@ -2,7 +2,7 @@ const correctPassword = 'M@$uM';
   function checkPassword() {
     const inputPassword = document.getElementById('password').value;
     if (inputPassword === correctPassword) {
-      window.location="https://masumbillah6778.github.io/master-multi-media/assets/html/secrects/music/secrects-music-main-page.html";
+      window.location="https://masumbillah6778.github.io/master-multi-media/assets/html/secrects/books/secrects-book-main-page.html";
     }
     else{
       document.getElementById('error').innerText = 'Incorrect password. Please try again.';
