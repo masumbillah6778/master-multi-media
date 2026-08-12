@@ -1026,7 +1026,7 @@ main .container .content #slide-box-not-fr .music-box .controls #more-music {
   color:White;
   padding: 10px;
   font-size: 20px;
-  font-family: 'sonsieone';
+  font-family: 'khalid-bin-olid';
   backdrop-filter: blur(10px);
   border: 2px solid red;
   border-radius: 5px;
@@ -1064,6 +1064,7 @@ main .container .content #slide-box-not-fr .music-box .controls #more-music {
 	background-color: rgba(0, 0, 0, 0.8);
   color: yellow;
   padding: 5px;
+  font-family: 'solaiman-lipi';
   backdrop-filter: blur(10px);
   border-radius: 0px 0px 8px 8px;
 }
