@@ -1,0 +1,707 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:
+    Arial,
+    "Noto Sans Bengali",
+    sans-serif;
+
+    background:#eef3f7;
+    color:#172033;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    background:#117d73;
+    color:white;
+    padding:18px 20px;
+    text-align:center;
+
+    border-radius:0 0 22px 22px;
+
+    box-shadow:0 4px 15px #0002;
+}
+
+.header h1{
+    margin:0;
+    font-size:25px;
+}
+
+.header p{
+    margin:5px 0 0;
+    font-size:14px;
+}
+
+/* ================= NAV ================= */
+
+.nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+
+    padding:20px;
+
+    background:white;
+
+    border-bottom:1px solid #d5dee8;
+}
+
+.nav button{
+    border:0;
+
+    padding:14px 25px;
+
+    border-radius:17px;
+
+    font-size:18px;
+    font-weight:bold;
+
+    background:#e2e8f1;
+    color:#334155;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.nav button:hover{
+    transform:translateY(-2px);
+}
+
+.nav button.active{
+    background:#117d73;
+    color:white;
+}
+
+/* ================= MAIN ================= */
+
+.container{
+    max-width:1250px;
+
+    margin:auto;
+
+    padding:20px;
+}
+
+/* ================= SECTION ================= */
+
+.section{
+    display:none;
+}
+
+.section.active{
+    display:block;
+}
+
+/* ================= CARD ================= */
+
+.card{
+    background:white;
+
+    border:1px solid #d6e0e8;
+
+    border-radius:25px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 4px 18px #0f172a12;
+}
+
+.card h2{
+    margin-top:0;
+
+    font-size:28px;
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:18px;
+}
+
+.stat{
+    background:white;
+
+    border:2px solid #d8e1ea;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    min-height:150px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    box-shadow:0 4px 15px #00000008;
+}
+
+.stat-number{
+    font-size:48px;
+
+    font-weight:bold;
+
+    color:#117d73;
+
+    margin-bottom:8px;
+}
+
+.stat-title{
+    font-size:22px;
+
+    color:#64748b;
+}
+
+/* ================= FORM ================= */
+
+.form-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:18px;
+}
+
+.field{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:7px;
+}
+
+.field label{
+    font-size:17px;
+
+    font-weight:bold;
+
+    color:#334155;
+}
+
+.field input,
+.field textarea{
+    width:100%;
+
+    padding:13px;
+
+    border:2px solid #d4dde7;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    outline:none;
+
+    background:#fff;
+}
+
+.field textarea{
+    min-height:100px;
+
+    resize:vertical;
+}
+
+.field input:focus,
+.field textarea:focus{
+    border-color:#117d73;
+
+    box-shadow:
+    0 0 0 3px #117d7320;
+}
+
+/* ================= BUTTONS ================= */
+
+.buttons{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:20px;
+}
+
+.btn{
+    border:0;
+
+    border-radius:12px;
+
+    padding:12px 20px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+.btn-primary{
+    background:#117d73;
+    color:white;
+}
+
+.btn-secondary{
+    background:#e2e8f0;
+    color:#334155;
+}
+
+.btn-blue{
+    background:#2563eb;
+    color:white;
+}
+
+.btn-red{
+    background:#dc2626;
+    color:white;
+}
+
+.btn-green{
+    background:#16a34a;
+    color:white;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+/* ================= SEARCH ================= */
+
+.search-area{
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:18px;
+}
+
+.search{
+    flex:1;
+
+    padding:14px;
+
+    border:2px solid #d1dae5;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    outline:none;
+}
+
+.search:focus{
+    border-color:#117d73;
+}
+
+/* ================= TABLE ================= */
+
+.table-container{
+    width:100%;
+
+    overflow-x:auto;
+
+    border-radius:10px;
+}
+
+table{
+    width:100%;
+
+    border-collapse:separate;
+
+    border-spacing:3px;
+
+    min-width:1000px;
+}
+
+/* HEADER */
+
+thead th{
+    background:#078b87;
+
+    color:white;
+
+    font-size:18px;
+
+    text-align:center;
+
+    padding:16px 10px;
+
+    border:3px solid red;
+
+    vertical-align:middle;
+}
+
+/* BODY */
+
+tbody td{
+    padding:13px 10px;
+
+    font-size:17px;
+
+    border:2px solid #079b18;
+
+    background:#eef2fa;
+
+    vertical-align:middle;
+}
+
+/* ALTERNATE ROW */
+
+tbody tr:nth-child(odd) td{
+    background:#8e8e8e;
+}
+
+/* SERIAL */
+
+.serial{
+    text-align:center;
+
+    font-weight:bold;
+}
+
+/* DATE */
+
+.date-cell{
+    white-space:nowrap;
+
+    font-weight:bold;
+}
+
+/* DETAILS */
+
+.details-cell{
+    min-width:220px;
+
+    white-space:normal;
+
+    line-height:1.45;
+}
+
+/* MANPOWER */
+
+.manpower{
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:bold;
+}
+
+/* ADD */
+
+.add-value{
+    color:#008000 !important;
+
+    font-weight:bold;
+
+    font-size:22px;
+}
+
+/* REMOVE */
+
+.remove-value{
+    color:#ff0000 !important;
+
+    font-weight:bold;
+
+    font-size:22px;
+}
+
+/* EMPTY / DASH */
+
+.normal-value{
+    color:#000;
+}
+
+/* ACTION */
+
+.action-cell{
+    text-align:center;
+
+    background:#fff !important;
+
+    min-width:150px;
+}
+
+.action-cell button{
+    margin:3px;
+
+    padding:8px 12px;
+
+    border:0;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+.edit-btn{
+    background:#2563eb;
+
+    color:white;
+}
+
+.delete-btn{
+    background:#dc2626;
+
+    color:white;
+}
+
+/* ================= MODAL ================= */
+
+.modal{
+    position:fixed;
+
+    inset:0;
+
+    background:#0008;
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+    z-index:1000;
+}
+
+.modal-box{
+    width:min(600px,100%);
+
+    max-height:90vh;
+
+    overflow:auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+}
+
+.modal-header{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.close{
+    width:40px;
+
+    height:40px;
+
+    border:0;
+
+    border-radius:50%;
+
+    background:#dc2626;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+/* ================= TOAST ================= */
+
+.toast{
+    position:fixed;
+
+    left:50%;
+
+    bottom:25px;
+
+    transform:translateX(-50%);
+
+    background:#172033;
+
+    color:white;
+
+    padding:13px 20px;
+
+    border-radius:10px;
+
+    display:none;
+
+    z-index:2000;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px){
+
+    .header h1{
+        font-size:20px;
+    }
+
+    .nav{
+        padding:12px;
+
+        gap:10px;
+    }
+
+    .nav button{
+        font-size:16px;
+
+        padding:12px 17px;
+    }
+
+    .container{
+        padding:10px;
+    }
+
+    .card{
+        padding:17px;
+
+        border-radius:20px;
+    }
+
+    .card h2{
+        font-size:24px;
+    }
+
+    .dashboard-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .search-area{
+        flex-direction:column;
+    }
+
+    .stat{
+        min-height:130px;
+    }
+
+    .stat-number{
+        font-size:42px;
+    }
+
+}
+
+/* ================= PRINT ================= */
+
+@media print{
+
+    body{
+        background:white;
+    }
+
+    .header,
+    .nav,
+    .no-print{
+        display:none !important;
+    }
+
+    .container{
+        max-width:none;
+
+        padding:0;
+
+        margin:0;
+    }
+
+    .section{
+        display:none !important;
+    }
+
+    #viewSection{
+        display:block !important;
+    }
+
+    #viewSection > .card{
+        display:block;
+
+        border:0;
+
+        box-shadow:none;
+
+        padding:0;
+
+        margin:0;
+    }
+
+    #viewSection h2,
+    #searchArea,
+    #tableTitle{
+        display:none !important;
+    }
+
+    .table-container{
+        overflow:visible;
+    }
+
+    table{
+        min-width:100%;
+
+        width:100%;
+
+        border-spacing:2px;
+    }
+
+    thead th{
+        font-size:11px;
+
+        padding:7px;
+
+        border:1px solid red;
+    }
+
+    tbody td{
+        font-size:10px;
+
+        padding:6px;
+
+        border:1px solid green;
+    }
+
+    .action-cell{
+        display:none !important;
+    }
+
+    .details-cell{
+        min-width:auto;
+    }
+
+    .manpower,
+    .add-value,
+    .remove-value{
+        font-size:11px;
+    }
+
+    @page{
+        size:A4 landscape;
+
+        margin:8mm;
+    }
+}
+
+.backup-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}.backup-card{background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:20px;box-shadow:0 6px 20px rgba(15,23,42,.06)}.backup-card p{color:#64748b;line-height:1.6;min-height:45px}.backup-card .btn{width:100%;margin-top:8px}.backup-warning{margin-top:20px;padding:15px;border-radius:14px;background:#fff7ed;border:1px solid #fed7aa;color:#9a3412}
