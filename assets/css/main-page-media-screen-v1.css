@@ -629,6 +629,11 @@
     height: 120px;
   }
 
+  .main-content main .container .content .main-slide-box .lyrics-box .content-box .player .main-container table .images img:hover {
+    width: 115px;
+    height: 115px;
+  }
+
   .main-content main .container .content .main-slide-box .lyrics-box .content-box .player .main-container table .artist {
     padding-left: 7px;
   }
