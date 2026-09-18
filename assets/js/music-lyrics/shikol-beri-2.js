@@ -4,7 +4,7 @@ var _data = '';
 var currentLine = '';
 mounted();
 async function setLyric() {
-  await fetch('https://masumbillah6778bd.github.io/music-lyrics/js/lyrics/shikol-beri-2.json', {
+  await fetch('https://masumbillah6778.github.io/master-multi-media/assets/js/music-lyrics/lyrics/shikol-beri-2.json', {
     method: 'GET',
   })
     .then((response) => response.json())
