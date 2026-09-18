@@ -1310,8 +1310,8 @@ main .container .content .main-slide-box .slide-box .video-container .list video
 }
   
 .main-content main .container .content .main-slide-box .lyrics-box .content-box .player .main-container table .images img:hover {
-  width: 150px;
-  height: 150px;
+  width: 145px;
+  height: 145px;
   border: 2px solid Yellow;
   border-radius: 50%;
   animation:rotating 3s linear infinite
