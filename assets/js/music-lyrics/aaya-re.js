@@ -25,7 +25,7 @@ function align() {
   var e = d + a / 2 - c / 2;
   $('.content').animate(
     { scrollTop: e + 'px' },
-    { easing: 'swing', duration: 188 }
+    { easing: 'swing', duration: 250 }
   );
 }
 
