@@ -4,7 +4,7 @@ var _data = '';
 var currentLine = '';
 mounted();
 async function setLyric() {
-  await fetch('https://masumbillah6778bd.github.io/music-lyrics/js/lyrics/aaya-re.json', {
+  await fetch('https://masumbillah6778.github.io/master-multi-media/assets/js/music-lyrics/lyrics/aaya-re.json', {
     method: 'GET',
   })
     .then((response) => response.json())
@@ -25,7 +25,7 @@ function align() {
   var e = d + a / 2 - c / 2;
   $('.content').animate(
     { scrollTop: e + 'px' },
-    { easing: 'swing', duration: 250 }
+    { easing: 'swing', duration: 188 }
   );
 }
 
