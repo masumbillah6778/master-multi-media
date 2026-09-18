@@ -1217,18 +1217,37 @@ main .container .content .main-slide-box .slide-box .video-container .list video
   height: 80vh;
 }
   
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content {
+.content-box {
   background-image: url("https://masumbillah6778.github.io/images/a4.jpg");
   background-repeat: no-repeat;
   background-size: over;
-  background-size: 100% 420px;
-  height: 595px;
+  background-size: 100% 365px;
   display: flex;
   flex-direction: column;
   outline: none;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .lyric-box {
+overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+  
+  
+  
+  
+  
+/*============================= Lyrics Content =============================*/
+  
+.content-box .content {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   max-width: 630px;
@@ -1239,15 +1258,13 @@ main .container .content .main-slide-box .slide-box .video-container .list video
   overflow: hidden;
   -webkit-box-flex: 1;
   flex-grow: 1;
-  backdrop-filter: blur(10px);
-  border: 5px;
-  border-style: solid ;
-  border-color: Blue red green orange ;
-  border-radius: 50px;
+  z-index: 9;
+  border: 2px solid red;
+  border-radius: 20px;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .lyric-box .lyrics {
-  height: 280px;
+.content-box .content .lyrics {
+  height: 300px;
   padding: 10px 0;
   margin: 0 20px;
   text-align: center;
@@ -1256,7 +1273,7 @@ main .container .content .main-slide-box .slide-box .video-container .list video
   position: relative;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .lyric-box .lyrics>div {
+.content-box .content .lyrics>div {
   color: pink;
   position: relative;
   font-size: 30px;
@@ -1267,47 +1284,55 @@ main .container .content .main-slide-box .slide-box .video-container .list video
   transition: all 0.25s;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .lyric-box .lyrics>div.highlighted {
+.content-box .content .lyrics>div.highlighted {
   color: yellow;
   font-weight: bold;
   font-size: 30px;
 }
+  
+  
+  
+  
+  
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box {
+/*============================= Player Box =============================*/
+  
+.content-box .player {
   background: linear-gradient(135deg, Red 0, Green 49%, Yellow 49%, Blue 100%);
-  margin: 0px 0px;
-  border: 2px solid red;
-}
-
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player {
+  color: white;
   width: 100%;
-  background-color: yello;
-  border: 2px solid magenta;
+  height: 140px;
+  margin-top: 20px;
+  argin: 0px 10px 10px;
+  z-index: 10;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  outline: none;
+  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table {
+.content-box .player .left {
+  width: 200px;
+  margin: 5px;
+}
+  
+.content-box .player .left img {
   width: 100%;
-  background-color: yello;
-  border: 2px solid magenta;
-}
-
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.images {
-  background-color: gree;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  overflow: hidden;
-  grid-area: content-1;
-  border-radius: 0px;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 0px;
+  object-fit: cover;
   border: 2px solid yellow;
+  border-top-left-radius: 0px;
 }
-
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player  table td.images img {
-  width: 100%;
-  height: 100%;
-}
-
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player  table td.images img:hover {
+  
+.content-box .player .left img:hover {
+  width: 120px;
+  height: 120px;
+  margin-left: 40px;
   border: 2px solid Yellow;
   border-radius: 50%;
   animation:rotating 3s linear infinite
@@ -1322,22 +1347,67 @@ main .container .content .main-slide-box .slide-box .video-container .list video
   }
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.name {
-  overflow: hidden;
-  border: 2px solid blue;
+.content-box .player .right {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player  table td.name a {
+.content-box .player .right .top {
+  padding-left: 20px;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+  
+/*============================= P =============================*/
+  
+.content-box .player .songs-details {
+  margin: 0px;
+  padding: 10px;
+  line-height: 10px;
+  overflow-x: hidden;
+  text-shadow: 1px 1px 2px Black;
+}
+
+/*.content-box .player .songs-details a {
+  color: White;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'solaiman-lipi', times;
+  text-decoration: none;
+  animation-name: myAnimation;
+  animation: color-change-animation 1s infinite;
+}
+
+@keyframes color-change-animation {
+  0% { color: red; }
+  50% { color: gold; }
+  75% { color: blue; }
+  100% { color: green; }
+}*/
+
+.content-box .player .songs-details a {
   width: max-content;
   color: White;
-  padding-left: 10px;
+  padding: 10px 0;
   font-size: 30px;
   font-weight: bold;
   font-family: 'solaiman-lipi', times;
   text-decoration: none;
   display: flex;
   animation: AutoScroll 10s linear infinite;
-  text-shadow: 1px 1px 2px Black;
+  border: 2p solid White;
 }
 
 @keyframes AutoScroll {
@@ -1345,83 +1415,84 @@ main .container .content .main-slide-box .slide-box .video-container .list video
   to {transform: translateX(-100%)}
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.artist {
-  background-color: yello;
+.content-box .player .songs-details span {
   color: Cyan;
-  padding-left: 10px;
   font-size: 20px;
   font-family: 'shokun-tola', times;
-  grid-area: content-2;
   text-shadow: 1px 1px 2px Black;
-  border: 2px solid yellow;
-}
-
-
-
-
-
-/*========= Music Lyrics Player Controls =========*/
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player {
-  border: 2px solid blue;
 }
   
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video {
+.content-box  .player .right .bottom {
+  display: -webkit-box;
+  display: flex;
+}
+  
+  
+  
+  
+  
+  
+
+/*============================= Player Controls =============================*/
+  
+.content-box .player .right .bottom video {
   background-color: red;
   -webkit-box-flex: 1;
   flex-grow: 1;
   width: 100%;
   height: 50px;
   outline: none;
-  border-radius: 0px;
+  margin: 0px 20px 10px 0px;
+  border: 2px solid White;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-panel {
+.content-box .player .right .bottom video::-webkit-media-controls-panel {
   background: red;
   width: 100%;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-play-button {
+.content-box .player .right .bottom video::-webkit-media-controls-play-button {
   background-color: Yellow;
   border-radius: 50%;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-play-button:hover {
+.content-box .player .right .bottom video::-webkit-media-controls-play-button:hover {
   background-color: cyan;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-current-time-display {
+.content-box .player .right .bottom video::-webkit-media-controls-current-time-display {
   color: White;
   font-size: 15px;
   font-family: times;
   font-weight: bold;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-time-remaining-display {
+.content-box .player .right .bottom video::-webkit-media-controls-time-remaining-display {
   color: Yellow;
   font-size: 15px;
   font-family: times;
   font-weight: bold;
 }
     
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-timeline {
+.content-box .player .right .bottom video::-webkit-media-controls-timeline {
   background-color: Blue;
   margin: 10px;
   border-radius: ;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-volume-slider {
+.content-box .player .right .bottom video::-webkit-media-controls-volume-slider {
   background-color: green;
   margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-mute-button {
+.content-box .player .right .bottom video::-webkit-media-controls-mute-button {
   background-color: Yellow;
   border-radius: 50%;
 }
 
-.main-content main .container .content .main-slide-box .lyrics-box .lyrics-box-content .video-player-box .video-player table td.player video::-webkit-media-controls-mute-button:hover {
+.content-box .player .right .bottom video::-webkit-media-controls-mute-button:hover {
   background-color: cyan;
 }
 
