@@ -624,6 +624,15 @@
     font-size: 20px;
   }
 
+  .main-content main .container .content .main-slide-box .lyrics-box .content-box .player .main-container table .images {
+    width: 120px;
+    height: 120px;
+  }
+
+  .main-content main .container .content .main-slide-box .lyrics-box .content-box .player .main-container table .artist {
+    padding-left: 7px;
+  }
+
 
 
 
