@@ -588,7 +588,7 @@
 
 	
   /*======================================= Music Lyrics =======================================*/
-  .content-box {
+  .main-content main .container .content .main-slide-box .lyrics-box .content-box {
     background-image: url("https://masumbillah6778.github.io/images/a4.jpg");
     background-repeat: no-repeat;
     background-size: over;
@@ -598,7 +598,7 @@
     outline: none;
   }
   
-  .content-box .content {
+ .main-content main .container .content .main-slide-box .lyrics-box .content-box .content {
   width: 100%;
   max-width: 330px;
   heigh: calc(100% - 80px);
@@ -608,17 +608,17 @@
   border: 2px solid yellow;
 }
 
-  .content-box .content .lyrics {
+  .main-content main .container .content .main-slide-box .lyrics-box .content-box .content .lyrics {
     height: 400px;
   }
   
-  .content-box .content .lyrics>div {
+  .main-content main .container .content .main-slide-box .lyrics-box .content-box .content .lyrics>div {
     color: teal;
     font-size: 20px;
     line-height: 50px;
   }
   
-  .content-box .content .lyrics>div.highlighted {
+  .main-content main .container .content .main-slide-box .lyrics-box .content-box .content .lyrics>div.highlighted {
     color: yellow;
     font-weight: bold;
     font-size: 20px;
