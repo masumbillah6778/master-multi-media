@@ -588,7 +588,7 @@
 
 	
   /*======================================= Music Lyrics =======================================*/
-  .main-content main .container .content .main-slide-box .lyrics-box .content-box {
+  .main-content main .container .section-content .main-slide-box .lyrics-box .content-box {
     background-image: url("https://masumbillah6778.github.io/images/a4.jpg");
     background-repeat: no-repeat;
     background-size: over;
@@ -598,7 +598,7 @@
     outline: none;
   }
   
- .main-content main .container .content .main-slide-box .lyrics-box .content-box .content {
+ .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .content {
   width: 100%;
   max-width: 330px;
   heigh: calc(100% - 80px);
@@ -608,33 +608,33 @@
   border: 2px solid yellow;
 }
 
-  .main-content main .container .content .main-slide-box .lyrics-box .content-box .content .lyrics {
+  .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .content .lyrics {
     height: 400px;
   }
   
-  .main-content main .container .content .main-slide-box .lyrics-box .content-box .content .lyrics>div {
+  .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .content .lyrics>div {
     color: teal;
     font-size: 17px;
     line-height: 50px;
   }
   
-  .main-content main .container .content .main-slide-box .lyrics-box .content-box .content .lyrics>div.highlighted {
+  .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .content .lyrics>div.highlighted {
     color: yellow;
     font-weight: bold;
     font-size: 17px;
   }
 
-  .main-content main .container .content .main-slide-box .lyrics-box .content-box .player .main-container table .images {
+  .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .images {
     width: 120px;
     height: 120px;
   }
 
-  .main-content main .container .content .main-slide-box .lyrics-box .content-box .player .main-container table .images img:hover {
+  .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .images img:hover {
     width: 115px;
     height: 115px;
   }
 
-  .main-content main .container .content .main-slide-box .lyrics-box .content-box .player .main-container table .artist {
+  .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .artist {
     padding-left: 7px;
   }
 
