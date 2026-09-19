@@ -624,6 +624,10 @@
     font-size: 17px;
   }
 
+  .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player {
+	margin-top: 0px;
+  }
+
   .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .images {
     width: 120px;
     height: 120px;
