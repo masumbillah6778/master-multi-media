@@ -1212,20 +1212,84 @@ main .container .content .main-slide-box .slide-box .video-container .list video
 
 /*======================================= Music Lyrics Player =======================================*/
 
+.main-content main .container .section-content .text-heading {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: red;
+  padding: 5px 0px;
+  font-size: 15px;
+  font-family: 'sonsieone';
+  font-weight: bold;
+  text-align: center;
+  z-index: -999;
+  backdrop-filter: blur(10px);
+  border-bottom: 4px solid red;
+  animation: Color 6s linear infinite;
+  -webkit-animation: text-animation 4s ease-in-out infinite;
+}
+
+.main-content main .container .section-content .heading a {
+  color: rgba(0, 0, 0, 0.2);
+  animation: none;
+}
+
+@keyframes text-animation {
+  0% {
+    color: green;
+  }
+  
+  20% {
+    color: red;
+  }
+  
+  40% {
+    color: yellow;
+  }
+  
+  60% {
+    color: blue;
+  }
+  
+  80% {
+    color: magenta;
+  }
+  
+  100% {
+    color: gold;
+  }
+}
+
+.main-content main .container .section-content .lyrics-main-slide-box {
+  border: 5px solid blue;
+}
+
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box {
+  background-image: url("https://masumbillah6778.github.io/images/a4.jpg");
+  background-repeat: no-repeat;
+  background-size: over;
+  background-size: 100% 350px;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+}
+
 .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .content {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   max-width: 630px;
   height: calc(100% - 80px);
-  heigh: 300px;
   margin: 10px auto;
   padding: 10px;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(6px);
   overflow: hidden;
   -webkit-box-flex: 1;
   flex-grow: 1;
   z-index: 9;
-  border: 2px solid red;
+  border: 5px;
+  border-style: solid;
+  border-left-color: yellow;
+  border-top-color: blue;
+  border-right-color: red;
+  border-bottom-color: green;
   border-radius: 20px;
 }
 
@@ -1263,13 +1327,13 @@ main .container .content .main-slide-box .slide-box .video-container .list video
 
 /*============================= Player Box =============================*/
   
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player {
   background: linear-gradient(135deg, Red 0, Green 49%, Yellow 49%, Blue 100%);
   color: white;
   width: 100%;
-  height: 225px;
-  margin-top: 20px;
-  padding: 0px 5px;
+  height: 245px;
+  margin-top: 10px;
+  padding: 0px;
   z-index: 10;
   display: -webkit-box;
   display: flex;
@@ -1277,41 +1341,38 @@ main .container .content .main-slide-box .slide-box .video-container .list video
   -webkit-box-direction: normal;
   flex-direction: row;
   outline: none;
-  box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
+  ox-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table {
   ackground-color: black;
   width: 100%;
-  height: 225px;
+  height: 245px;
   border-collapse: collapse;
+  border: 2px solid black;
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table td {
-  border: 5px solid white;
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table td {
+  border: 5px solid yellow;
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .images {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .images {
   background-color: rgba(0, 0, 0 , .4);
   width: 150px;
   height: 150px;
-  margin: 5px;
-  backdrop-filter: blur(3px);
+  ackdrop-filter: blur(3px);
 }
   
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .images img {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .images img {
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0px;
-  object-fit: cover;
   border: 2px solid blue;
   border-top-left-radius: 0px;
 }
   
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .images img:hover {
-  width: 145px;
-  height: 145px;
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .images img:hover {
+  width: 100%;
+  height: 100%;
   border: 2px solid Yellow;
   border-radius: 50%;
   animation:rotating 3s linear infinite
@@ -1328,7 +1389,7 @@ main .container .content .main-slide-box .slide-box .video-container .list video
   
 /*============================= P =============================*/
   
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .name {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .name {
   background-color: rgba(0, 0, 0 , .4);
   width: auto;
   height: 100px;
@@ -1336,11 +1397,11 @@ main .container .content .main-slide-box .slide-box .video-container .list video
   padding: 10px;
   line-height: 10px;
   overflow-x: hidden;
-  backdrop-filter: blur(3px);
+  ackdrop-filter: blur(3px);
   text-shadow: 1px 1px 2px Black;
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .name a {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .name a {
   width: max-content;
   color: White;
   padding-left: 20px;
@@ -1358,15 +1419,15 @@ main .container .content .main-slide-box .slide-box .video-container .list video
   to {transform: translateX(-100%)}
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .artist {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .artist {
   background-color: rgba(0, 0, 0 , .4);
   width: auto;
   height: 50px;
-  padding-left: 20px;
+  padding-left: 10px;
   color: Cyan;
   font-size: 20px;
   font-family: 'shokun-tola', times;
-  backdrop-filter: blur(3px);
+  ackdrop-filter: blur(3px);
   text-shadow: 1px 1px 2px Black;
 }
   
@@ -1377,71 +1438,70 @@ main .container .content .main-slide-box .slide-box .video-container .list video
 
 /*============================= Player Controls =============================*/
   
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .player {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player {
   background-color: rgba(0, 0, 0 , .4);
   width: auto;
   height: 50px;
-  backdrop-filter: blur(3px);
+  ackdrop-filter: blur(3px);
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .player video {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player video {
   background-color: red;
   -webkit-box-flex: 1;
   flex-grow: 1;
   width: 100%;
   height: 50px;
   outline: none;
-  margin: 0px 20px 10px 0px;
   border: 2px solid White;
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .player video::-webkit-media-controls-panel {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player video::-webkit-media-controls-panel {
   background: red;
   width: 100%;
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .player video::-webkit-media-controls-play-button {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player video::-webkit-media-controls-play-button {
   background-color: Yellow;
   border-radius: 50%;
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .player video::-webkit-media-controls-play-button:hover {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player video::-webkit-media-controls-play-button:hover {
   background-color: cyan;
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .player video::-webkit-media-controls-current-time-display {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player video::-webkit-media-controls-current-time-display {
   color: White;
   font-size: 15px;
   font-family: times;
   font-weight: bold;
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .player video::-webkit-media-controls-time-remaining-display {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player video::-webkit-media-controls-time-remaining-display {
   color: Yellow;
   font-size: 15px;
   font-family: times;
   font-weight: bold;
 }
     
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .player video::-webkit-media-controls-timeline {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player video::-webkit-media-controls-timeline {
   background-color: Blue;
   margin: 10px;
   border-radius: ;
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .player video::-webkit-media-controls-volume-slider {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player video::-webkit-media-controls-volume-slider {
   background-color: green;
   margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .player video::-webkit-media-controls-mute-button {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player video::-webkit-media-controls-mute-button {
   background-color: Yellow;
   border-radius: 50%;
 }
 
-.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player .main-container table .player video::-webkit-media-controls-mute-button:hover {
+.main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player video::-webkit-media-controls-mute-button:hover {
   background-color: cyan;
 }
 
