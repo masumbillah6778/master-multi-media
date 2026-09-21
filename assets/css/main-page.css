@@ -1347,7 +1347,7 @@ main .container .content .main-slide-box .slide-box .video-container .list video
 .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table {
   ackground-color: black;
   width: 100%;
-  height: 245px;
+  height: 100%;
   border-collapse: collapse;
   border: 2px solid black;
 }
@@ -1358,21 +1358,20 @@ main .container .content .main-slide-box .slide-box .video-container .list video
 
 .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .images {
   background-color: rgba(0, 0, 0 , .4);
-  width: 150px;
-  height: 150px;
+  width: 11%;
+  height: 59%;
   ackdrop-filter: blur(3px);
 }
-  
+
 .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .images img {
   width: 100%;
   height: 100%;
-  border: 2px solid blue;
-  border-top-left-radius: 0px;
 }
-  
+
 .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .images img:hover {
   width: 100%;
-  height: 100%;
+  height: 93%;
+  margin-top: 5px;
   border: 2px solid Yellow;
   border-radius: 50%;
   animation:rotating 3s linear infinite
@@ -1386,13 +1385,11 @@ main .container .content .main-slide-box .slide-box .video-container .list video
     transform:rotate(360deg)
   }
 }
-  
-/*============================= P =============================*/
-  
+
 .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .name {
   background-color: rgba(0, 0, 0 , .4);
-  width: auto;
-  height: 100px;
+  width: 89%;
+  height: 30%;
   margin: 0px;
   padding: 10px;
   line-height: 10px;
@@ -1421,8 +1418,8 @@ main .container .content .main-slide-box .slide-box .video-container .list video
 
 .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .artist {
   background-color: rgba(0, 0, 0 , .4);
-  width: auto;
-  height: 50px;
+  width: 89%;
+  height: 11%;
   padding-left: 10px;
   color: Cyan;
   font-size: 20px;
@@ -1430,23 +1427,17 @@ main .container .content .main-slide-box .slide-box .video-container .list video
   ackdrop-filter: blur(3px);
   text-shadow: 1px 1px 2px Black;
 }
-  
-  
-  
-  
-  
 
-/*============================= Player Controls =============================*/
-  
 .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player {
   background-color: rgba(0, 0, 0 , .4);
-  width: auto;
-  height: 50px;
+  width: 100%;
+  height: 20%;
   ackdrop-filter: blur(3px);
 }
 
 .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player video {
   background-color: red;
+  margin-top: 4px;
   -webkit-box-flex: 1;
   flex-grow: 1;
   width: 100%;
@@ -1503,7 +1494,7 @@ main .container .content .main-slide-box .slide-box .video-container .list video
 
 .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .video-player video::-webkit-media-controls-mute-button:hover {
   background-color: cyan;
-}
+} */
 
 
 
