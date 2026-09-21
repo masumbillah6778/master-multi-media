@@ -633,6 +633,11 @@
     height: 120px;
   }
 
+  .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .images img {
+    width: 100%;
+    height: 100%;
+  }
+
   .main-content main .container .section-content .main-slide-box .lyrics-box .content-box .player table .images img:hover {
     width: 115px;
     height: 115px;
