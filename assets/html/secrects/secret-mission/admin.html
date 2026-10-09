@@ -1,0 +1,337 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SOROLIPI - Admin Panel</title><style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Bengali",sans-serif;background:#f5f8fc;color:#17324d}
+button,input{font:inherit}.hidden{display:none!important}
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:250px;background:#07579f;color:#fff;padding:18px 14px;z-index:30;transition:.25s}
+.logo{font-size:26px;font-weight:800;padding:8px 10px 24px}.nav button{display:block;width:100%;border:0;background:transparent;color:#fff;text-align:left;padding:13px;border-radius:9px;margin:5px 0;cursor:pointer}
+.nav button:hover,.nav button.active{background:#2389e4}
+.main{margin-left:250px;min-height:100vh}.top{height:66px;background:#fff;border-bottom:1px solid #dce7f1;display:flex;align-items:center;padding:0 20px;gap:15px;position:sticky;top:0;z-index:20}
+.menu{border:0;background:transparent;color:#07579f;font-size:25px;cursor:pointer}.brand{font-weight:800;color:#07579f;font-size:22px}.search{margin-left:auto}.search input{width:260px;padding:9px 12px;border:1px solid #ccdbea;border-radius:8px}
+.content{padding:25px}.welcome h1{margin:0 0 5px;color:#174c7c}.welcome p{margin:0;color:#708396}
+.section{display:flex;justify-content:space-between;align-items:center;margin:25px 0 15px}.section h2{margin:0;font-size:28px}.count b{color:#e33d3d}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:17px}
+.add,.card{min-height:140px;border-radius:14px;display:flex;align-items:center;justify-content:center;position:relative;cursor:pointer;border:1px solid #d6e3ee;box-shadow:0 3px 12px #194c7112}
+.add{background:#fff;border:2px dashed #a9c8e5;color:#07579f;font-weight:800;font-size:21px}.card{justify-content:flex-start;padding:20px}
+.card h3{margin:0;font-size:22px}.dots{position:absolute;right:8px;top:5px;border:0;background:transparent;font-size:25px;cursor:pointer;color:#536b7d}
+.menu-pop{display:none;position:absolute;right:8px;top:38px;background:#fff;border:1px solid #dbe6ef;box-shadow:0 7px 25px #0002;border-radius:8px;overflow:hidden;z-index:10}
+.menu-pop button{display:block;border:0;background:#fff;padding:10px 13px;width:140px;text-align:left;cursor:pointer}.menu-pop button:hover{background:#eef6fd}
+.c1{background:#def2e2}.c2{background:#ffe0e3}.c3{background:#fff8c9}.c4{background:#d9f2fb}.c5{background:#ffe7d1}.c6{background:#e5e5e5}.c7{background:#e9e0ff}.c8{background:#d8f4eb}
+.page{display:none}.page.active{display:block}
+.btn{border:0;border-radius:8px;padding:10px 15px;cursor:pointer;font-weight:700}.primary{background:#0c7fe0;color:#fff}.secondary{background:#edf3f8;color:#39536a}.danger{background:#ffe5e5;color:#bd3030}
+.back{border:0;background:transparent;color:#07579f;font-weight:700;cursor:pointer}.toolbar{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:17px 0}.toolbar input{padding:10px;border:1px solid #cad9e7;border-radius:8px}
+.table-box{background:transparent;border:0;border-radius:0;overflow:visible}.month-section{margin:0 0 24px;border:1px solid #dbe6ef;border-radius:12px;overflow:auto;background:#fff}.month-title{padding:13px 16px;background:#eaf5ff;color:#18527f;font-size:18px;font-weight:700;border-bottom:1px solid #dbe6ef}.month-section table{border:0;border-radius:0}.month-section .month-empty{padding:18px;text-align:center;color:#667b8c}table{border-collapse:collapse;width:100%;min-width:700px}th,td{padding:11px;border-bottom:1px solid #e2ebf2;text-align:left;white-space:nowrap}th{background:#eaf5ff;color:#18527f}
+.act{border:0;border-radius:6px;padding:7px;cursor:pointer;margin-right:4px}.linkIcon{font-size:22px;text-decoration:none;display:inline-block;padding:3px 7px}.linkIcon:hover{transform:scale(1.08)}.money-cell{color:#d00000;font-weight:700}.money-total-row td{background:#fff7f7}.money-total{color:#d00000;font-size:1.05em}.view{background:#e4f0ff;color:#0768bd}.edit{background:#e5f8ed;color:#157d4f}.del{background:#ffe6e6;color:#c22d2d}
+.settings{background:#fff;border:1px solid #dbe6ef;border-radius:13px;padding:22px;max-width:800px}.setting-row{padding:15px 0;border-bottom:1px solid #e4edf4}
+.overlay{position:fixed;inset:0;background:#092b4e99;display:none;align-items:center;justify-content:center;padding:15px;z-index:100}.modal{background:#fff;width:min(620px,100%);max-height:90vh;overflow:auto;border-radius:15px}.mh{padding:17px 20px;border-bottom:1px solid #dfe9f1;display:flex;justify-content:space-between}.mh h3{margin:0}.close{border:0;background:transparent;font-size:25px;cursor:pointer}.mb{padding:20px}.field{margin-bottom:15px}.field label{display:block;font-weight:700;margin-bottom:6px}.field input{width:100%;padding:10px;border:1px solid #c9d8e6;border-radius:8px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:9px}.chip{background:#edf4fa;border:1px solid #d4e2ed;padding:7px 9px;border-radius:7px}.chip button{border:0;background:transparent;cursor:pointer}.row{display:flex;gap:8px}.row input{flex:1}.actions{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}
+.notice{background:#eff7ff;border-left:4px solid #0c7fe0;padding:12px;border-radius:5px;margin-top:12px}
+.login{min-height:100vh;display:grid;place-items:center;background:linear-gradient(135deg,#edf7ff,#f8fbff)}.loginbox{background:#fff;width:min(430px,92%);padding:28px;border-radius:16px;box-shadow:0 12px 50px #174d7b20}.loginbox h1{color:#07579f;text-align:center}.loginbox .field{margin-top:17px}.role-tabs{display:flex;gap:8px}.role-tabs button{flex:1}.role-tabs .selected{background:#07579f;color:#fff}
+@media(max-width:800px){.sidebar{transform:translateX(-100%)}.sidebar.open{transform:translateX(0)}.main{margin-left:0}.search input{width:170px}.content{padding:17px}.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.search{display:none}.cards{gap:10px}.card,.add{min-height:120px}.card h3{font-size:18px}}
+
+.link-mode .link-card-wrap{background:#fff;border:1px solid #dbe6ef;border-radius:12px;padding:14px;margin-bottom:22px}
+.link-mode .link-date{padding:10px 13px;background:#eaf5ff;color:#18527f;font-size:18px;font-weight:800;border-radius:8px;margin-bottom:12px}
+.link-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.link-tile{min-width:0;min-height:105px;border:0;border-radius:12px;padding:12px 9px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 3px 10px #194c7112;color:#17324d;position:relative}
+.link-tile:hover{transform:translateY(-1px)}
+.video-icon{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#07579f;font-size:20px;margin-bottom:7px;box-shadow:0 2px 7px #0002}
+.link-tile-name{font-weight:800;font-size:14px;line-height:1.25;overflow-wrap:anywhere}
+.link-tile-url{font-size:11px;opacity:.7;margin-top:4px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.link-admin-actions{position:absolute;top:5px;right:5px;z-index:8}.link-admin-dots{width:30px;height:30px;border:0;border-radius:7px;background:#fff;color:#536b7d;box-shadow:0 1px 5px #0002;font-size:22px;line-height:1;cursor:pointer}.link-admin-menu{display:none;position:absolute;right:0;top:33px;min-width:125px;background:#fff;border:1px solid #dbe6ef;border-radius:8px;box-shadow:0 7px 22px #0002;overflow:hidden;z-index:20}.link-admin-menu button{display:block;width:100%;border:0;background:#fff;padding:9px 12px;text-align:left;cursor:pointer;font-size:13px}.link-admin-menu button:hover{background:#eef6fd}.link-admin-menu .link-edit{color:#157d4f}.link-admin-menu .link-del{color:#c22d2d}
+.link-empty{padding:18px;text-align:center;color:#667b8c}
+.link-admin-hint{background:#eff7ff;border-left:4px solid #0c7fe0;padding:11px;border-radius:5px;margin-bottom:14px}
+@media(max-width:800px){.link-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.link-tile{min-height:92px;padding:8px 4px}.video-icon{width:32px;height:32px;font-size:17px}.link-tile-name{font-size:12px}.link-tile-url{font-size:9px}}
+@media(max-width:480px){.link-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.link-tile{min-height:82px;border-radius:9px}.video-icon{width:28px;height:28px;font-size:15px;margin-bottom:5px}.link-tile-name{font-size:10px}.link-tile-url{display:none}}
+</style></head><body><div id="app">
+<aside id="sidebar" class="sidebar">
+  <div class="logo">▣ SOROLIPI</div>
+  <nav class="nav">
+    <button data-page="dashboard" class="active">⌂ &nbsp; ড্যাশবোর্ড</button>
+    <button data-page="settings">⚙ &nbsp; সিটিং</button>
+    <button id="logout">⇥ &nbsp; লগআউট</button>
+  </nav>
+</aside>
+<main class="main">
+<header class="top"><button id="menu" class="menu">☰</button><div class="brand">SOROLIPI</div><div class="search"><input id="globalSearch" placeholder="কার্ড সার্চ করুন..."></div></header>
+<section class="content">
+<div id="dashboard" class="page active">
+  <div class="welcome"><h1>স্বাগতম, SOROLIPI</h1><p>সহজে তথ্য সংরক্ষণ ও দেখুন।</p></div>
+  <div class="section"><h2>কার্ডসমূহ</h2><div class="count">মোট কার্ড <b id="cardCount">০</b></div></div>
+  <div id="cards" class="cards"></div>
+</div>
+<div id="tablePage" class="page">
+  <div class="section"><div><button id="back" class="back">← সকল কার্ড</button><h2 id="tableName" style="margin-top:8px"></h2></div>
+    <button id="headerBtn" class="btn secondary">হেডার পরিবর্তন</button></div>
+  <div class="toolbar"><button id="addRow" class="btn primary">＋ তথ্য যোগ করুন</button><input id="tableSearch" placeholder="এই টেবিলে খুঁজুন..."></div>
+    <div class="table-box" id="tableSections"></div>
+</div>
+<div id="settings" class="page">
+  <div class="welcome"><h1>সিটিং</h1><p id="settingIntro"></p></div>
+  <div class="settings" style="margin-top:20px">
+    <div class="setting-row"><b>Backup System</b><p>অ্যাপের ডাটা Backup/Restore করুন।</p>
+      <button id="downloadBackup" class="btn primary">Backup Download</button>
+      <button id="restoreBackup" class="btn secondary">Backup Upload</button>
+      <input id="backupFile" type="file" accept=".json" class="hidden">
+    </div>
+    <div id="passwordSettings">
+      <div class="setting-row"><b>Admin App Password পরিবর্তন</b><div style="margin-top:10px"><button id="changeAdmin" class="btn primary">পাসওয়ার্ড পরিবর্তন</button></div></div>
+      <div class="setting-row"><b>User / View Panel Password Reset</b><p>View Panel-এর পাসওয়ার্ড ভুলে গেলে এখান থেকে Reset করা যাবে।</p><button id="resetUser" class="btn primary">User Password Reset</button></div>
+    </div>
+    <div class="setting-row"><b>বর্তমান Panel:</b> <span id="currentRole"></span></div>
+    <div class="notice">User / View Panel-এ কার্ড ও টেবিল শুধু দেখা যাবে। Edit, Delete বা Card/Header পরিবর্তনের অপশন থাকবে না।</div>
+  </div>
+</div>
+</section></main></div>
+<!-- card modal -->
+<div id="cardModal" class="overlay"><div class="modal"><div class="mh"><h3 id="cardModalTitle">নতুন কার্ড</h3><button class="close" data-close="cardModal">×</button></div><div class="mb">
+<div class="field"><label>কার্ডের নাম *</label><input id="cardName" placeholder="যেমন: অফিসের তথ্য"></div>
+<div class="field"><label>টেবিল Header</label><div id="chips" class="chips"></div><div class="row"><input id="headerInput" placeholder="Header লিখুন"><button id="addHeader" class="btn secondary">＋ যোগ</button></div></div>
+<div class="field"><label>কার্ডের রং</label><div id="colors" style="display:flex;gap:8px;flex-wrap:wrap"></div></div>
+<div class="actions"><button class="btn secondary" data-close="cardModal">বাতিল</button><button id="saveCard" class="btn primary">সংরক্ষণ</button></div>
+</div></div></div>
+<div id="rowModal" class="overlay"><div class="modal"><div class="mh"><h3 id="rowTitle">তথ্য যোগ করুন</h3><button class="close" data-close="rowModal">×</button></div><div class="mb"><div id="rowFields"></div><div class="actions"><button class="btn secondary" data-close="rowModal">বাতিল</button><button id="saveRow" class="btn primary">সংরক্ষণ</button></div></div></div></div>
+<div id="passModal" class="overlay"><div class="modal"><div class="mh"><h3 id="passTitle"></h3><button class="close" data-close="passModal">×</button></div><div class="mb">
+<div class="field"><label>নতুন পাসওয়ার্ড</label><input id="newPass" type="password"></div><div class="field"><label>আবার লিখুন</label><input id="newPass2" type="password"></div>
+<div class="actions"><button class="btn secondary" data-close="passModal">বাতিল</button><button id="savePass" class="btn primary">সংরক্ষণ</button></div></div></div></div>
+
+<script>
+const ROLE="admin";
+const PANEL_NAME="Admin Panel";
+
+const KEY="SOROLIPI_DATA_V2";
+const DEFAULT={adminPass:"1234",userPass:"1111",cards:[]};
+let data=JSON.parse(localStorage.getItem(KEY)||"null")||DEFAULT;
+let role=ROLE,currentId=null,editCard=null,editRow=null,passTarget=null,selectedColor=1;
+const colors=["c1","c2","c3","c4","c5","c6","c7","c8"];
+const $=id=>document.getElementById(id);
+const bn=n=>String(n).replace(/\d/g,d=>"০১২৩৪৫৬৭৮৯"[d]);
+function persist(){localStorage.setItem(KEY,JSON.stringify(data))}
+function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+function modal(id,on=true){$(id).style.display=on?"flex":"none"}
+
+function applyRole(){
+ $("passwordSettings") && $("passwordSettings").classList.toggle("hidden",role!=="admin");
+ $("settingIntro").textContent=role==="admin"?"Admin Panel-এর Backup ও Password Management":"User Panel-এর Backup সীমিত";
+ $("headerBtn").classList.toggle("hidden",role!=="admin");
+ $("addRow").classList.toggle("hidden",role!=="admin");
+}
+
+$("menu").onclick=()=>$("sidebar").classList.toggle("open");
+
+$("logout").onclick=()=>location.href="index.html";
+document.querySelectorAll(".nav button[data-page]").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll(".nav button").forEach(x=>x.classList.remove("active"));b.classList.add("active");
+ document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));$(b.dataset.page).classList.add("active");
+ if(innerWidth<801)$("sidebar").classList.remove("open");
+});
+
+function renderCards(filter=""){
+ const box=$("cards");box.innerHTML="";let arr=data.cards.filter(c=>c.name.toLowerCase().includes(filter.toLowerCase()));
+ $("cardCount").textContent=bn(data.cards.length);
+ if(role==="admin"){
+   const add=document.createElement("div");add.className="add";add.textContent="＋ নতুন কার্ড";add.onclick=()=>openCard();box.appendChild(add);
+ }
+ arr.forEach(c=>{
+   const el=document.createElement("div");el.className="card "+c.color;el.innerHTML=`${isLinkCard(c)?'<span class="video-icon" style="margin-right:10px;flex:0 0 auto">▶</span>':''}<h3>${esc(c.name)}</h3>`;
+   if(role==="admin")el.innerHTML+=`<button class="dots">⋮</button><div class="menu-pop"><button class="rename">✎ নাম পরিবর্তন</button><button class="remove">🗑 Delete</button></div>`;
+   el.onclick=e=>{if(e.target.closest(".dots")||e.target.closest(".menu-pop"))return;openTable(c.id)};
+   if(role==="admin"){
+    el.querySelector(".dots").onclick=e=>{e.stopPropagation();el.querySelector(".menu-pop").style.display="block"};
+    el.querySelector(".rename").onclick=e=>{e.stopPropagation();openCard(c.id)};
+    el.querySelector(".remove").onclick=e=>{e.stopPropagation();if(confirm("কার্ডটি Delete করবেন?")){data.cards=data.cards.filter(x=>x.id!==c.id);persist();renderCards()}};
+   }
+   box.appendChild(el);
+ });
+}
+$("globalSearch").oninput=e=>renderCards(e.target.value);
+
+function isLinkCard(c){return !!c && /(?:লিংক|লিঙ্ক)\s*$/i.test(String(c.name||""));}
+function normalizeLinkCard(c){
+  c.linkMode=isLinkCard(c);
+  if(c.linkMode && (!Array.isArray(c.headers)||!c.headers.length)){c.headers=["তারিখ","নাম","লিংক"];}
+  if(c.linkMode && Array.isArray(c.rows)) c.rows=c.rows.map(r=>{let n={...r}; if(!Object.keys(n).some(k=>/তারিখ|date/i.test(k))) n["তারিখ"]=""; if(!Object.keys(n).some(k=>/নাম|name/i.test(k))) n["নাম"]=""; if(!Object.keys(n).some(k=>/লিংক|link|url/i.test(k))) n["লিংক"]=""; return n;});
+}
+function openCard(id=null){
+ editCard=id;let c=id&&data.cards.find(x=>x.id===id);selectedColor=c?colors.indexOf(c.color)+1:1;
+ $("cardModalTitle").textContent=c?"কার্ড পরিবর্তন":"নতুন কার্ড";$("cardName").value=c?c.name:"";
+ let heads=c?c.headers:[]; if(c&&isLinkCard(c)&&(!heads||!heads.length)) heads=["তারিখ","নাম","লিংক"];
+ renderChips(heads);renderColors();modal("cardModal");
+}
+function getChips(){return [...document.querySelectorAll(".chip")].map(x=>x.firstChild.textContent.trim())}
+function renderChips(a){$("chips").innerHTML="";a.forEach((h,i)=>{let x=document.createElement("span");x.className="chip";x.innerHTML=esc(h)+` <button>×</button>`;x.querySelector("button").onclick=()=>{a.splice(i,1);renderChips(a)};$("chips").appendChild(x)})}
+$("addHeader").onclick=()=>{let v=$("headerInput").value.trim();if(!v)return;let a=getChips();if(!a.includes(v))a.push(v);$("headerInput").value="";renderChips(a)}
+function renderColors(){let b=$("colors");b.innerHTML="";colors.forEach((c,i)=>{let x=document.createElement("button");x.className="btn "+c;x.style.width="45px";x.style.height="35px";x.style.border=selectedColor===i+1?"3px solid #07579f":"1px solid #ccd";x.onclick=()=>{selectedColor=i+1;renderColors()};b.appendChild(x)})}
+$("saveCard").onclick=()=>{
+ if(role!=="admin")return;let name=$("cardName").value.trim(),heads=getChips(),linkMode=/(?:লিংক|লিঙ্ক)\s*$/i.test(name);
+ if(!name)return alert("কার্ডের নাম লিখুন");
+ if(linkMode && !heads.length) heads=["তারিখ","নাম","লিংক"];
+ if(!heads.length)return alert("কমপক্ষে একটি Header দিন");
+ if(editCard){let c=data.cards.find(x=>x.id===editCard),old=c.rows||[];c.name=name;c.headers=heads;c.color=colors[selectedColor-1];c.linkMode=linkMode;c.rows=old.map(r=>{let n={};heads.forEach(h=>n[h]=r[h]||"");return n})}
+ else data.cards.push({id:Date.now().toString(),name,headers:heads,color:colors[selectedColor-1],rows:[],linkMode});
+ persist();renderCards();modal("cardModal",false);
+}
+
+function openTable(id){currentId=id;let c=data.cards.find(x=>x.id===id);normalizeLinkCard(c);$("dashboard").classList.remove("active");$("settings").classList.remove("active");$("tablePage").classList.add("active");$("tableName").textContent=c.name;renderTable()}
+$("back").onclick=()=>{$("tablePage").classList.remove("active");$("dashboard").classList.add("active");renderCards()}
+$("headerBtn").onclick=()=>{if(role==="admin")openCard(currentId)}
+$("addRow").onclick=()=>{if(role==="admin")openRow()}
+$("tableSearch").oninput=renderTable;
+function isLinkHeader(h){return /^(লিংক|link)(?:\s*(নাম|name))?$/i.test(String(h).trim()) || /লিংক/i.test(String(h));}
+function isMoneyHeader(h){return /টাকা|amount|taka|money/i.test(String(h||''));}
+function toEnglishDigits(v){return String(v??'').replace(/[০-৯]/g,d=>'০১২৩৪৫৬৭৮৯'.indexOf(d));}
+function toBanglaDigits(v){return String(v??'').replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[Number(d)]);}
+function moneyNumber(v){
+ let s=toEnglishDigits(v).replace(/[,\s৳$]/g,'').trim();
+ if(!s)return 0;
+ let n=Number(s);
+ return Number.isFinite(n)?n:0;
+}
+function moneyText(v){
+ let n=moneyNumber(v);
+ if(!n)return '০';
+ return toBanglaDigits(n.toLocaleString('en-US',{maximumFractionDigits:2}));
+}
+function safeUrl(v){
+ let s=String(v||'').trim();
+ if(!s)return '';
+ if(!/^https?:\/\//i.test(s)) s='https://'+s;
+ try{let u=new URL(s);return /^https?:$/.test(u.protocol)?u.href:''}catch(e){return ''}
+}
+function linkCell(v){
+ let u=safeUrl(v);
+ return u?`<a class="linkIcon" href="${esc(u)}" target="_blank" rel="noopener noreferrer" title="লিংক খুলুন" aria-label="লিংক খুলুন">🔗</a>`:'—';
+}
+function monthKeyFromRow(c,r){
+ let dh=c.headers.find(h=>/তারিখ|date/i.test(String(h||'')));
+ let v=dh?(r[dh]||''):'';
+ let m=String(v).match(/^(\d{2})-(\d{2})-(\d{4})$/);
+ if(!m){m=String(v).match(/^(\d{4})-(\d{2})-(\d{2})$/); if(m) return `${m[1]}-${m[2]}`;}
+ return m?`${m[3]}-${m[2]}`:'0000-00';
+}
+function monthLabel(key){
+ const names=['জানুয়ারি','ফেব্রুয়ারি','মার্চ','এপ্রিল','মে','জুন','জুলাই','আগস্ট','সেপ্টেম্বর','অক্টোবর','নভেম্বর','ডিসেম্বর'];
+ let m=key.match(/^(\d{4})-(\d{2})$/); if(!m)return 'তারিখ নেই';
+ let mi=Number(m[2]); return (mi>=1&&mi<=12)?`${names[mi-1]} - ${toBanglaDigits(m[1])}`:'তারিখ নেই';
+}
+function findHeader(c,rx,fallback=""){return c.headers.find(h=>rx.test(String(h||"")))||fallback;}
+function exactDateFromRow(c,r){
+ let h=findHeader(c,/তারিখ|date/i,c.headers[0]||""); let v=String(r[h]||"").trim();
+ let m=v.match(/^(\d{2})-(\d{2})-(\d{4})$/); if(m)return `${m[3]}-${m[2]}-${m[1]}`;
+ m=v.match(/^(\d{4})-(\d{2})-(\d{2})$/); if(m)return v; return "0000-00-00";
+}
+function displayExactDate(key){if(key==="0000-00-00")return "তারিখ নেই";let m=key.match(/^(\d{4})-(\d{2})-(\d{2})$/);return m?`${toBanglaDigits(m[3])}-${toBanglaDigits(m[2])}-${toBanglaDigits(m[1])}`:key;}
+function renderLinkCardView(c,q){
+ const wrap=$("tableSections");wrap.innerHTML="";wrap.classList.add("link-mode");
+ const dateH=findHeader(c,/তারিখ|date/i,c.headers[0]||"");
+ const nameH=findHeader(c,/নাম|name|শিরোনাম|title/i,c.headers[1]||"");
+ const urlH=findHeader(c,/লিংক|link|url/i,c.headers.find(h=>h!==nameH&&h!==dateH)||c.headers[2]||"");
+ const groups={};
+ (c.rows||[]).forEach((r,i)=>{let text=Object.values(r||{}).join(" ").toLowerCase();if(q&&!text.includes(q))return;let k=exactDateFromRow(c,r);(groups[k]||(groups[k]=[])).push({r,i});});
+ const keys=Object.keys(groups).sort();
+ if(!keys.length){wrap.innerHTML='<div class="link-empty">কোনো লিংক তথ্য পাওয়া যায়নি</div>';return;}
+ keys.forEach(k=>{
+   let sec=document.createElement("section");sec.className="link-card-wrap";
+   let dt=document.createElement("div");dt.className="link-date";dt.textContent=displayExactDate(k);sec.appendChild(dt);
+   let grid=document.createElement("div");grid.className="link-grid";
+   groups[k].forEach(({r,i},idx)=>{
+     let name=String(r[nameH]||"লিংক").trim()||"লিংক", url=safeUrl(r[urlH]);
+     let tile=document.createElement("div");tile.className="link-tile "+(c.color||"c4");tile.innerHTML=`<span class="video-icon" aria-hidden="true">▶</span><span class="link-tile-name">${esc(name)}</span>`;
+     if(url) tile.innerHTML+=`<span class="link-tile-url">${esc(url)}</span>`;
+     else tile.title="লিংক দেওয়া হয়নি";
+     if(role==="admin"){
+       tile.title="লিংক খুলতে কার্ডে ক্লিক করুন";
+       const actions=document.createElement("div"); actions.className="link-admin-actions";
+       const dots=document.createElement("button"); dots.className="link-admin-dots"; dots.type="button"; dots.textContent="⋮"; dots.title="অপশন"; dots.setAttribute("aria-label","অপশন");
+       const menu=document.createElement("div"); menu.className="link-admin-menu";
+       const eb=document.createElement("button"); eb.className="link-edit"; eb.type="button"; eb.textContent="✎  Edit";
+       eb.onclick=e=>{e.stopPropagation();menu.style.display="none";openRow(i,false)};
+       const db=document.createElement("button"); db.className="link-del"; db.type="button"; db.textContent="🗑  Delete";
+       db.onclick=e=>{e.stopPropagation();menu.style.display="none";if(confirm("এই লিংক তথ্যটি Delete করবেন?")){c.rows.splice(i,1);persist();renderTable()}};
+       menu.appendChild(eb);menu.appendChild(db);
+       dots.onclick=e=>{e.stopPropagation();document.querySelectorAll('.link-admin-menu').forEach(m=>{if(m!==menu)m.style.display='none'});menu.style.display=menu.style.display==='block'?'none':'block'};
+       actions.appendChild(dots);actions.appendChild(menu);tile.appendChild(actions);
+     }
+     tile.onclick=()=>{if(url)window.open(url,"_blank","noopener,noreferrer");else alert("এই কার্ডে কোনো লিংক দেওয়া হয়নি।")};
+     grid.appendChild(tile);
+   });
+   sec.appendChild(grid);wrap.appendChild(sec);
+ });
+}
+document.addEventListener("click",()=>{document.querySelectorAll('.link-admin-menu').forEach(m=>m.style.display='none')});
+
+function renderTable(){
+ let c=data.cards.find(x=>x.id===currentId),q=$("tableSearch").value.toLowerCase();if(!c)return;
+ normalizeLinkCard(c); if(isLinkCard(c)){renderLinkCardView(c,q);return;}
+ let wrap=$("tableSections");wrap.innerHTML='';wrap.classList.remove("link-mode");
+ let groups={};
+ c.rows.forEach((r,i)=>{
+   let txt=c.headers.map(h=>r[h]||'').join(' ').toLowerCase();
+   if(q&&!txt.includes(q))return;
+   let k=monthKeyFromRow(c,r);(groups[k]||(groups[k]=[])).push({r,i});
+ });
+ let keys=Object.keys(groups).sort((a,b)=>a.localeCompare(b));
+ if(!keys.length){wrap.innerHTML='<div class="month-empty">কোনো তথ্য পাওয়া যায়নি</div>';return;}
+ keys.forEach(k=>{
+   let section=document.createElement('section');section.className='month-section';
+   let title=document.createElement('div');title.className='month-title';title.textContent=monthLabel(k);section.appendChild(title);
+   let table=document.createElement('table');
+   table.innerHTML='<thead><tr><th>নং</th>'+c.headers.map(h=>`<th>${esc(h)}</th>`).join('')+'<th>অ্যাকশন</th></tr></thead><tbody></tbody>';
+   let body=table.querySelector('tbody');
+   groups[k].forEach((item,displayIndex)=>{
+     let r=item.r,i=item.i,tr=document.createElement('tr');
+     tr.innerHTML=`<td>${bn(displayIndex+1)}</td>`+c.headers.map(h=>{let v=r[h]||'';return `<td class="${isMoneyHeader(h)?'money-cell':''}">${isLinkHeader(h)?linkCell(v):esc(v)}</td>`}).join('')+`<td><button class="act view">View</button>${role==="admin"?`<button class="act edit">Edit</button><button class="act del">Delete</button>`:''}</td>`;
+     tr.querySelector('.view').onclick=()=>openRow(i,true);
+     if(role==="admin"){
+       tr.querySelector('.edit').onclick=()=>openRow(i,false);
+       tr.querySelector('.del').onclick=()=>{if(confirm('তথ্য Delete করবেন?')){c.rows.splice(i,1);persist();renderTable()}};
+     }
+     body.appendChild(tr);
+   });
+   let moneyHeaders=c.headers.filter(isMoneyHeader);
+   if(moneyHeaders.length){
+     let totalTr=document.createElement('tr');totalTr.className='money-total-row';
+     totalTr.innerHTML=`<td><strong>মোট</strong></td>`+c.headers.map(h=>isMoneyHeader(h)?`<td class="money-total"><strong>${moneyText(groups[k].reduce((sum,x)=>sum+moneyNumber(x.r[h]),0))}</strong></td>`:'<td></td>').join('')+'<td></td>';
+     body.appendChild(totalTr);
+   }
+   section.appendChild(table);wrap.appendChild(section);
+ });
+}
+function openRow(index=null,view=false){
+ let c=data.cards.find(x=>x.id===currentId);editRow=index;$("rowTitle").textContent=view?"তথ্য View":index===null?"তথ্য যোগ করুন":"তথ্য পরিবর্তন";$("rowFields").innerHTML="";
+ c.headers.forEach(h=>{
+  let d=document.createElement("div");d.className="field";
+  let isDate=/তারিখ|date/i.test(h);
+  let isLink=isLinkHeader(h);
+  let val=index===null?"":(c.rows[index][h]||"");
+  if(isDate){
+   d.innerHTML=`<label>${esc(h)}</label><input data-key="${esc(h)}" type="date" value="${esc(toISO(val))}" ${view?"disabled":""}>`;
+  }else if(isLink){
+   d.innerHTML=`<label>${esc(h)}</label><input data-key="${esc(h)}" type="url" placeholder="https://example.com" value="${esc(val)}" ${view?"disabled":""}>`;
+  }else d.innerHTML=`<label>${esc(h)}</label><input data-key="${esc(h)}" value="${esc(val)}" ${view?"disabled":""}>`;
+  $("rowFields").appendChild(d)
+ });
+ $("saveRow").classList.toggle("hidden",view);modal("rowModal");
+}
+function toISO(v){let m=String(v).match(/^(\d{2})-(\d{2})-(\d{4})$/);return m?`${m[3]}-${m[2]}-${m[1]}`:v}
+function displayDate(v){if(!v)return"";let m=String(v).match(/^(\d{4})-(\d{2})-(\d{2})$/);return m?`${m[3]}-${m[2]}-${m[1]}`:v}
+$("saveRow").onclick=()=>{
+ let c=data.cards.find(x=>x.id===currentId),r={};document.querySelectorAll("#rowFields input").forEach(i=>r[i.dataset.key]=i.type==="date"?displayDate(i.value):i.value);
+ if(editRow===null)c.rows.push(r);else c.rows[editRow]=r;persist();renderTable();modal("rowModal",false);
+}
+
+document.querySelectorAll("[data-close]").forEach(b=>b.onclick=()=>modal(b.dataset.close,false));
+
+if($("changeAdmin"))$("changeAdmin").onclick=()=>{passTarget="admin";$("passTitle").textContent="Admin App Password পরিবর্তন";$("newPass").value="";$("newPass2").value="";modal("passModal")}
+if($("resetUser"))$("resetUser").onclick=()=>{passTarget="user";$("passTitle").textContent="User / View Password Reset";$("newPass").value="";$("newPass2").value="";modal("passModal")}
+$("savePass").onclick=()=>{let a=$("newPass").value,b=$("newPass2").value;if(!a)return alert("নতুন পাসওয়ার্ড দিন");if(a!==b)return alert("দুই পাসওয়ার্ড মিলছে না");if(passTarget==="admin")data.adminPass=a;else data.userPass=a;persist();modal("passModal",false);alert("পাসওয়ার্ড পরিবর্তন হয়েছে")}
+
+$("downloadBackup").onclick=()=>{let blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="SOROLIPI-backup.json";a.click();URL.revokeObjectURL(a.href)}
+if($("restoreBackup"))$("restoreBackup").onclick=()=>{$("backupFile").click()}
+if($("backupFile"))$("backupFile").onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let x=JSON.parse(r.result);if(!x.cards||!Array.isArray(x.cards))throw 0;data=x;persist();renderCards();alert("Backup Restore সম্পন্ন হয়েছে")}catch{alert("ভুল Backup File")}};r.readAsText(f)}
+if($("currentRole"))$("currentRole").textContent=role==="admin"?"Admin Panel":"User / View Panel";
+(data.cards||[]).forEach(normalizeLinkCard);
+persist();
+applyRole();
+renderCards();
+
+
+</script>
+</body></html>
